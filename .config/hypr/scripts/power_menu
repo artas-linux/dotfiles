@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+# A simple script that displays a power menu with walker
+
+# Options
+options="Shutdown\nReboot\nLock\nSuspend\nLogout"
+
+# Select an option
+selected_option=$(echo -e "$options" | walker --dmenu)
+
+# Do something with the selected option
+case "$selected_option" in
+    "Shutdown")
+        systemctl poweroff
+        ;;
+    "Reboot")
+        systemctl reboot
+        ;;
+    "Lock")
+        hyprlock
+        ;;
+    "Suspend")
+        systemctl suspend
+        ;;
+    "Logout")
+        hyprctl dispatch exit 0
+        ;;
+esac

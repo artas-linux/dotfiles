@@ -1,0 +1,6 @@
+2025/08/29-13:53:34.653 10440 Creating DB /home/archbtw/.config/Upscayl/IndexedDB/file__0.indexeddb.leveldb since it was missing.
+2025/08/29-13:53:34.658 10440 Reusing MANIFEST /home/archbtw/.config/Upscayl/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2025/08/29-13:53:34.941 10457 Level-0 table #5: started
+2025/08/29-13:53:34.944 10457 Level-0 table #5: 641 bytes OK
+2025/08/29-13:53:34.946 10457 Delete type=0 #3
+2025/08/29-13:53:34.947 1043f Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

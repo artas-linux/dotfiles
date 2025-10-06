@@ -1,0 +1,14 @@
+[Unit]
+Description=Surfingkeys configuration server
+After=network.target graphical-session.target
+PartOf=graphical-session.target
+Requires=graphical-session.target
+
+[Service]
+ExecStart=bash -c 'cd /home/archbtw/dev/projects/surfingkeys-conf; npm run gulp serve-simple'
+Type=simple
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=graphical-session.target

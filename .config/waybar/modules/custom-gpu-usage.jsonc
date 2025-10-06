@@ -1,0 +1,9 @@
+{
+  "custom/gpu-usage": {
+    "exec": "radeontop -d - | awk '/GPU/ {print $2}' | sed 's/%//'",
+    "on-click": "pypr toggle radeontop",
+    "format": "GPU: {}%",
+    "return-type": "",
+    "interval": 2
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "git": {
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--mount",
+        "type=bind,src=/home/shricodev/codes,dst=/personal",
+        "mcp/git"
+      ],
+      "command": "docker"
+    }
+  }
+}

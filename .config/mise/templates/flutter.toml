@@ -1,0 +1,16 @@
+# Install dependencies
+[tasks.install]
+alias = "i"
+run = "flutter pub get"
+
+# Run the application
+[tasks.dev]
+run = "flutter run"
+
+# Build the application (Android)
+[tasks.build]
+run = "flutter build apk"
+
+# Clean the project
+[tasks.clean]
+run = "flutter clean"

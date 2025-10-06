@@ -1,0 +1,7 @@
+{
+	"preferences": {
+		"linter": "eslint",
+		"eslint": true,
+		"turbopack": true
+	}
+}
