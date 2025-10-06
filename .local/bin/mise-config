@@ -1,0 +1,61 @@
+#!/bin/bash
+#
+# Interactively create or update a .mise.toml file from templates.
+
+set -euo pipefail
+
+# Use XDG_CONFIG_HOME, with a fallback to ~/.config
+TEMPLATE_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/mise/templates"
+MISE_CONFIG=".mise.toml"
+
+# --- Dependency Check ---
+for cmd in fzf bat; do
+  if ! command -v "$cmd" &> /dev/null;
+  then
+    echo "Error: Required command '$cmd' not found. Please install it." >&2
+    exit 1
+  fi
+done
+
+# --- Main Logic ---
+if [ ! -d "$TEMPLATE_DIR" ]; then
+  echo "Error: Template directory not found at '$TEMPLATE_DIR'" >&2
+  exit 1
+fi
+
+selected_file_base=$(find "$TEMPLATE_DIR" -maxdepth 1 -name "*.toml" -print0 |
+  xargs -0 -n 1 basename |
+  sed 's/\.toml$//' |
+  fzf --prompt="Select a mise template: " \
+      --preview="bat --style=numbers --color=always '$TEMPLATE_DIR/{}.toml'")
+
+if [ -z "$selected_file_base" ]; then
+  echo "No template selected. Exiting."
+  exit 0
+fi
+
+selected_template_path="$TEMPLATE_DIR/$selected_file_base.toml"
+
+if [ -f "$MISE_CONFIG" ]; then
+  printf "File '%s' already exists. What would you like to do?\n" "$MISE_CONFIG"
+  action=$(printf "Append\nOverwrite\nCancel" | fzf --prompt="Action: ")
+
+  case "$action" in
+    "Append")
+      printf "\n# --- Appended from %s ---\n" "$selected_file_base" >> "$MISE_CONFIG"
+      cat "$selected_template_path" >> "$MISE_CONFIG"
+      echo "Template appended."
+      ;;
+    "Overwrite")
+      cp "$selected_template_path" "$MISE_CONFIG"
+      echo "File overwritten."
+      ;;
+    *)
+      echo "Cancelled."
+      exit 0
+      ;;
+  esac
+else
+  cp "$selected_template_path" "$MISE_CONFIG"
+  echo "Created '$MISE_CONFIG'."
+fi
