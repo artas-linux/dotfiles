@@ -40,3 +40,5 @@ easyeffects --gapplication-service &
 # xwaylandvideobridge & # Off when using Vesktop instead of Discord
 
 walker --gapplication-service &
+
+elephant &
