@@ -1,0 +1,82 @@
+#!/bin/bash
+# YADM Bootstrap Script for Arch Linux
+# Optimized for AMD Ryzen 5 3500U, Hyprland, Wayland
+
+cd "$HOME" || exit
+
+echo "🚀 Starting yadm bootstrap for Arch Linux..."
+
+# System info from fastfetch
+echo "📊 System: Arch Linux x86_64, AMD Ryzen 5 3500U"
+echo "🖥️  WM: Hyprland 0.52.1 (Wayland)"
+
+# Update pacman database
+echo "📦 Updating pacman database..."
+sudo pacman -Sy
+
+# Install essential packages for Arch Linux
+echo "📦 Installing essential packages..."
+sudo pacman -S --needed \
+    git \
+    vim \
+    neovim \
+    curl \
+    wget \
+    base-devel \
+    linux-firmware \
+    amd-ucode \
+    mesa \
+    vulkan-radeon \
+    libva-mesa-driver \
+    mesa-vdpau
+
+# Install Hyprland dependencies if not already installed
+echo "🖥️  Ensuring Hyprland dependencies..."
+sudo pacman -S --needed \
+    hyprland \
+    waybar \
+    rofi \
+    alacritty \
+    ghostty \
+    dunst \
+    swaybg \
+    swayidle \
+    wl-clipboard \
+    grim \
+    slurp
+
+# Install development tools
+echo "🔧 Installing development tools..."
+sudo pacman -S --needed \
+    python \
+    python-pip \
+    nodejs \
+    npm \
+    rust \
+    go \
+    docker \
+    docker-compose
+
+# Configure Git with system info
+echo "🔧 Configuring Git..."
+git config --global user.name "archbtw"
+git config --global user.email "archbtw@archlinux.local"
+
+# Initialize submodules if any exist
+echo "📦 Initializing submodules..."
+yadm submodule update --recursive --init 2>/dev/null || true
+
+# Process alternate files based on system
+echo "🔗 Processing alternate files..."
+yadm alt
+
+# Update file permissions
+echo "🔒 Updating file permissions..."
+yadm perms
+
+# Enable and start services
+echo "🔧 Enabling services..."
+sudo systemctl enable --now docker 2>/dev/null || true
+
+echo "✅ Bootstrap complete for Arch Linux!"
+echo "🎯 System ready for development with Hyprland"

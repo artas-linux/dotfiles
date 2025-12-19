@@ -1,0 +1,29 @@
+# YADM Encrypt Configuration
+# Files containing sensitive data to be encrypted
+# Patterns use glob syntax
+
+# SSH keys
+.ssh/id_*
+.ssh/*_rsa
+.ssh/*_ed25519
+
+# GPG keys
+.gnupg/**
+.gpg/**
+
+# Application secrets
+.config/gcloud/**
+.aws/credentials
+.aws/config
+
+# Browser profiles (optional - uncomment if needed)
+# .config/google-chrome/**
+# .config/firefox/**
+
+# Database passwords
+.mysql_history
+.pgpass
+
+# Token files
+.tokens/**
+.secrets/**

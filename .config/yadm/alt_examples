@@ -1,0 +1,34 @@
+# YADM Alternate File Examples
+# These files demonstrate how to use YADM's alternate file system
+
+# OS-specific configurations
+.bashrc##os.Linux
+.bashrc##os.Darwin
+.profile##os.Linux
+.profile##os.Darwin
+
+# Hostname-specific configurations
+.vimrc##hostname.localhost
+.config/alacritty/alacritty.yml##hostname.laptop
+.config/alacritty/alacritty.yml##hostname.desktop
+
+# Arch Linux specific
+.config/pacman.conf##os.Arch
+.pacman.conf##os.Arch
+
+# Hyprland specific (for current system)
+.config/hypr/hyprland.conf##os.Arch
+.config/waybar/config##os.Arch
+
+# Architecture specific
+.config/alacritty/alacritty.yml##arch.x86_64
+
+# Template files
+.gitconfig##template
+.config/git/config##template
+.ssh/config##template
+
+# Class-based configurations (user-defined classes)
+.vimrc##class.development
+.vimrc##class.personal
+.config/hypr/hyprland.conf##class.work
