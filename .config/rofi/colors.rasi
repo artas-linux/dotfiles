@@ -1,0 +1,17 @@
+/* Basic colors for rofi */
+
+* {
+    background: #282c36;
+    text: #f8f9fa;
+    primary: #89b4fa;
+    secondary: #f8f9fa;
+    urgent: #ff5555;
+    selected: #89b4fa;
+    active: #89b4fa;
+}
+
+@theme "default" {
+    background: #282c36;
+    text: #f8f9fa;
+    primary: #89b4fa;
+}

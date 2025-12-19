@@ -1,0 +1,25 @@
+/* Minimal theme definition */
+
+element {
+    children: [ "listview", "inputbar", "textbox" ];
+    orientation: vertical;
+    spacing: 5;
+}
+
+element listview, element inputbar, element textbox, element message {
+    padding: 5px;
+    border: 0;
+    background: #282c36;
+    text-color: #f8f9fa;
+}
+
+window {
+    width: 50%;
+    height: 40%;
+    location: center;
+    anchor: center;
+    background: #282c36;
+    border: 1;
+    border-radius: 5px;
+    padding: 10px;
+}
