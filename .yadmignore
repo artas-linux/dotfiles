@@ -176,7 +176,7 @@ dotfiles/.git/
 # Exclude bootstrap file that should be executable
 !.config/yadm/bootstrap
 
-# Include only essential configs from dotfiles
+# Include only essential configs from dotfiles when ready
 # dotfiles/.config/chromium/  # Exclude browser cache
 # dotfiles/.config/gallery-dl/  # Exclude temp app data
 # dotfiles/.config/neovide/    # Exclude temp editor data
