@@ -3,9 +3,12 @@
 <div align="center">
   <img src="https://img.shields.io/github/stars/artas-linux/dotfiles?style=for-the-badge&logo=github&color=teal" alt="GitHub Stars"/>
   <img src="https://img.shields.io/github/last-commit/artas-linux/dotfiles?style=for-the-badge&color=teal" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/repo-size/artas-linux/dotfiles?style=for-the-badge&color=teal" alt="Repo Size"/>
 </div>
 
-> 💄 A comprehensive Linux desktop environment configuration optimized for productivity and aesthetics
+<div align="center">
+  <h2>💄 A comprehensive Linux desktop environment configuration<br>optimized for productivity and aesthetics</h2>
+</div>
 
 ## ✨ Features
 

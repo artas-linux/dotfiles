@@ -1,29 +1,48 @@
 site_name: Artas Linux Dotfiles
 site_description: Comprehensive dotfiles setup with Hyprland, Neovim, and more
 site_author: Artas Linux
-site_url: https://dotfiles-docs.vercel.app/
+site_url: https://artas-linux.github.io/dotfiles/
+repo_url: https://github.com/artas-linux/dotfiles
+repo_name: artas-linux/dotfiles
+copyright: Copyright &copy; 2025 Artas Linux
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/artas-linux
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/artaslinux
+  generator: false
 
 theme:
   name: material
+  custom_dir: docs/assets
+  logo: assets/logo.svg
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
+      scheme: catppuccin-latte
       primary: teal
       accent: teal
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: catppuccin-mocha
       primary: teal
       accent: teal
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+  font:
+    text: JetBrains Mono
+    code: JetBrains Mono
+  favicon: assets/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
   features:
     - announce.dismiss
     - content.action.edit
