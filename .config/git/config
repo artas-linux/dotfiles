@@ -53,7 +53,12 @@
 
 [commit]
   template = ~/.config/git/gitmessage
-  # gpgsign = true  # Disabled until GPG key is set up
+  gpgsign = true
+
+[user]
+  name = artas
+  email = artas-linux@gmail.com
+  signingkey = 6E423B8D2E4C6CCE41DFD911C49014A6E77840E4
 
 [gpg]
   program = /sbin/gpg
