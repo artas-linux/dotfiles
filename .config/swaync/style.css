@@ -1,0 +1,290 @@
+/* SwayNC - Catppuccin Macchiato Theme */
+
+@define-color base   #24273a;
+@define-color mantle #1e2030;
+@define-color surface0 #363a4f;
+@define-color surface1 #494d64;
+@define-color surface2 #5b6078;
+@define-color text #cad3f5;
+@define-color subtext0 #a5adcb;
+@define-color subtext1 #b8c0e0;
+@define-color blue #8aadf4;
+@define-color green #a6da95;
+@define-color red #ed8796;
+@define-color yellow #eed49f;
+@define-color lavender #b7bdf8;
+
+/* Global */
+* {
+  font-family: "Maple Mono NF", monospace;
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+/* Notification Window */
+.notification-window {
+  background: alpha(@base, 0.95);
+  border: 2px solid @surface0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Notification */
+.notification {
+  background: @mantle;
+  border: 1px solid @surface0;
+  border-radius: 12px;
+  margin: 8px;
+  padding: 0;
+}
+
+.notification-unfocused {
+  background: alpha(@mantle, 0.8);
+}
+
+.notification-critical {
+  border-color: @red;
+}
+
+.notification-low {
+  border-color: @blue;
+}
+
+/* Notification Header */
+.notification-header {
+  color: @text;
+  font-weight: bold;
+  padding: 8px 12px;
+  background: @surface0;
+  border-radius: 8px 8px 0 0;
+}
+
+.notification-header-unfocused {
+  background: alpha(@surface0, 0.8);
+}
+
+/* Notification Body */
+.notification-body {
+  color: @subtext1;
+  padding: 8px 12px;
+  background: @mantle;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Notification Actions */
+.notification-action {
+  background: @surface1;
+  color: @text;
+  border: 1px solid @surface0;
+  border-radius: 8px;
+  margin: 4px;
+  padding: 4px 8px;
+  transition: all 200ms ease;
+}
+
+.notification-action:hover {
+  background: @blue;
+  color: @base;
+}
+
+.notification-action:active {
+  background: alpha(@blue, 0.8);
+}
+
+/* Control Center */
+.control-center {
+  background: alpha(@base, 0.95);
+  border: 2px solid @surface0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 8px;
+  padding: 8px;
+}
+
+/* Control Center Notifications */
+.control-center-notification {
+  background: @mantle;
+  border: 1px solid @surface0;
+  border-radius: 12px;
+  margin: 4px 0;
+  padding: 8px;
+}
+
+.control-center-notification:hover {
+  background: @surface0;
+}
+
+/* Control Center Clear Button */
+.control-center-clear-all {
+  background: @red;
+  color: @base;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: all 200ms ease;
+}
+
+.control-center-clear-all:hover {
+  background: alpha(@red, 0.8);
+}
+
+/* Widgets */
+.widget-volume,
+.widget-backlight {
+  background: @surface0;
+  border: 1px solid @surface1;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.widget-mpris {
+  background: @surface0;
+  border: 1px solid @surface1;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.widget-buttons-grid {
+  background: @surface0;
+  border: 1px solid @surface1;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+/* Buttons Grid */
+.widget-buttons-grid button {
+  background: @surface1;
+  color: @text;
+  border: 1px solid @surface2;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 4px;
+  font-size: 16px;
+  transition: all 200ms ease;
+}
+
+.widget-buttons-grid button:hover {
+  background: @blue;
+  color: @base;
+  transform: scale(1.05);
+}
+
+/* Volume Widget */
+.widget-volume label {
+  color: @text;
+  font-weight: bold;
+}
+
+.widget-volume scale trough {
+  background: @surface2;
+  border-radius: 6px;
+  min-height: 8px;
+}
+
+.widget-volume scale trough highlight {
+  background: @green;
+  border-radius: 6px;
+}
+
+/* Backlight Widget */
+.widget-backlight label {
+  color: @text;
+  font-weight: bold;
+}
+
+.widget-backlight scale trough {
+  background: @surface2;
+  border-radius: 6px;
+  min-height: 8px;
+}
+
+.widget-backlight scale trough highlight {
+  background: @yellow;
+  border-radius: 6px;
+}
+
+/* MPRIS Widget */
+.widget-mpris album-art {
+  border-radius: 8px;
+}
+
+.widget-mpris title {
+  color: @text;
+  font-weight: bold;
+}
+
+.widget-mpris artist {
+  color: @subtext1;
+}
+
+.widget-mpris player {
+  color: @blue;
+}
+
+/* Notification Icons */
+.notification-icon {
+  border-radius: 8px;
+}
+
+/* Progress Bars */
+progressbar {
+  border-radius: 6px;
+}
+
+progressbar trough {
+  background: @surface2;
+  border-radius: 6px;
+  min-height: 6px;
+}
+
+progressbar trough progress {
+  background: @blue;
+  border-radius: 6px;
+}
+
+/* Close Button */
+.close-button {
+  background: alpha(@red, 0.8);
+  color: @base;
+  border: none;
+  border-radius: 50%;
+  padding: 4px;
+  margin: 4px;
+  font-size: 12px;
+  transition: all 200ms ease;
+}
+
+.close-button:hover {
+  background: @red;
+  transform: scale(1.1);
+}
+
+/* Scrollbar */
+scrollbar {
+  background: @surface1;
+  border-radius: 6px;
+}
+
+scrollbar slider {
+  background: @surface2;
+  border-radius: 6px;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.notification {
+  animation: fade-in 200ms ease-out;
+}
+
+/* Hover Effects */
+.notification:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
