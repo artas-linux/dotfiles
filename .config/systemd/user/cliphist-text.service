@@ -1,0 +1,12 @@
+# /home/archbtw/dev/cliphist-text.service
+[Unit]
+Description=Cliphist text clipboard monitor
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/wl-paste --type text --watch cliphist store
+
+[Install]
+UpheldBy=graphical-session.target

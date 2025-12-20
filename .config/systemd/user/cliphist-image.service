@@ -1,0 +1,12 @@
+# /home/archbtw/dev/cliphist-image.service
+[Unit]
+Description=Cliphist image clipboard monitor
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/wl-paste --type image --watch cliphist store
+
+[Install]
+UpheldBy=graphical-session.target

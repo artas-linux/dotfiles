@@ -1,0 +1,9 @@
+# /home/archbtw/dev/cliphist.path
+[Unit]
+Description=Watch for clipboard changes to trigger cliphist
+
+[Path]
+PathChanged=/tmp/cliphist-trigger
+
+[Install]
+WantedBy=default.target
