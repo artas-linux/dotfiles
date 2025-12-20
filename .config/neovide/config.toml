@@ -1,0 +1,36 @@
+# Neovide Configuration
+# GUI frontend for Neovim with optimized settings
+
+# Rendering
+vsync = true          # Enable vertical sync for smooth rendering
+srgb = true           # Use sRGB color space for accurate colors
+no-multigrid = true   # Disable multigrid for better performance
+
+# Window
+maximized = false     # Don't start maximized (let window manager decide)
+frame = "full"        # Full window frame with title bar
+
+# Performance
+idle = false          # Don't suspend when idle for responsiveness
+
+# Neovim Integration
+neovim_bin = "~/.local/share/bob/nvim-bin/nvim"  # Use bob-managed neovim
+
+# Font Settings (uncomment and customize as needed)
+# font_normal = ["JetBrains Mono", "Symbols Nerd Font Mono"]
+# font_size = 14.0
+# font_hinting = "full"
+# font_edging = "subpixel"
+
+# Theme (uncomment to force light/dark mode)
+# theme = "auto"  # auto, light, dark
+
+# Cursor Settings
+# cursor_vfx_mode = "pixiedust"  # pixiedust, torpedo, ripple, wireframe
+# cursor_vfx_opacity = 200.0
+# cursor_vfx_particle_lifetime = 1.2
+# cursor_vfx_particle_density = 7.0
+
+# Animation Settings
+# refresh_rate = 60
+# no_idle = true
