@@ -1,6 +1,5 @@
 {
-  "pythonVersion": "3.9",
-  "buildCommand": "python -m pip install --upgrade pip && pip install -r requirements.txt && mkdocs build",
+  "buildCommand": "npm run build",
   "outputDirectory": "site",
   "framework": null
 }
