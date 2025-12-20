@@ -1,4 +1,7 @@
+source ~/.config/fish/user_variables.fish
 source ~/.config/fish/abbreviations.fish
+source ~/.config/fish/plugins/fzf.fish/conf.d/fzf.fish
+
 set -g USERNAME archbtw
 
 # opencode
