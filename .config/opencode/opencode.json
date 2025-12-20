@@ -1,0 +1,55 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "Sequential Thinking": {
+      "type": "local",
+      "command": [
+        "bunx",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "enabled": true,
+      "environment": {
+        "DISABLE_THOUGHT_LOGGING": "false",
+        "SEQUENTIAL_THINKING_MAX_TOKENS": "16000",
+        "SEQUENTIAL_THINKING_THOUGHTS_TO_KEEP": "10",
+        "SEQUENTIAL_THINKING_TIMEOUT": "15000"
+      }
+    },
+    "archon": {
+      "type": "local",
+      "command": [
+        "bunx",
+        "mcp-remote",
+        "http://localhost:8051/mcp",
+        "--allow-http"
+      ],
+      "enabled": true
+    },
+    "memory": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "environment": {
+        "MEMORY_FILE_PATH": "/home/archbtw/.qwen/memory.json"
+      }
+    },
+    "deepwiki_fetch": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "mcp-deepwiki@latest"
+      ],
+      "enabled": true,
+      "environment": {
+        "DEEPWIKI_MAX_CONCURRENCY": "5",
+        "DEEPWIKI_REQUEST_TIMEOUT": "30000",
+        "DEEPWIKI_MAX_RETRIES": "3",
+        "DEEPWIKI_RETRY_DELAY": "250"
+      }
+    }
+  }
+}
