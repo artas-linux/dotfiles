@@ -69,6 +69,65 @@ Gemfile.lock
 .config/firefox/*/storage.sqlite
 .config/firefox/*/xulstore.json
 
+# Chromium (Arch Linux) runtime files
+.config/chromium/*/Cache/
+.config/chromium/*/GPUCache/
+.config/chromium/*/ShaderCache/
+.config/chromium/*/GrShaderCache/
+.config/chromium/*/GraphiteDawnCache/
+.config/chromium/*/DawnGraphiteCache/
+.config/chromium/*/DawnWebGPUCache/
+.config/chromium/*/Cookies
+.config/chromium/*/Cookies-journal
+.config/chromium/*/History
+.config/chromium/*/History-journal
+.config/chromium/*/Web Data
+.config/chromium/*/Web Data-journal
+.config/chromium/*/Login Data
+.config/chromium/*/Login Data-journal
+.config/chromium/*/Preferences
+.config/chromium/*/Local State
+.config/chromium/*/LOG
+.config/chromium/*/LOG.old
+.config/chromium/*/Sessions/
+.config/chromium/*/Session Storage/
+.config/chromium/*/Safe Browsing/
+.config/chromium/*/Segmentation Platform/
+.config/chromium/*/Sync Data/
+.config/chromium/*/Extension State/
+.config/chromium/*/IndexedDB/
+.config/chromium/*/Local Storage/
+.config/chromium/*/Site Characteristics Database/
+.config/chromium/*/Network Action Predictor
+.config/chromium/*/Reporting and NEL
+.config/chromium/*/TransportSecurity
+.config/chromium/*/Trusted Vault/
+.config/chromium/*/BudgetDatabase/
+.config/chromium/*/DIPS
+.config/chromium/*/commerce_subscription_db/
+.config/chromium/*/shared_proto_db/
+.config/chromium/*/optimization_guide_hint_cache_store/
+.config/chromium/*/parcel_tracking_db/
+.config/chromium/*/quota_manager/
+.config/chromium/*/heavy_ad_intervention_opt_out.db
+.config/chromium/*/first_party_sets.db
+.config/chromium/*/segmentation_platform/
+.config/chromium/*/AutofillAiModelCache/
+.config/chromium/*/AutofillStrikeDatabase/
+.config/chromium/*/Feature Engagement Tracker/
+.config/chromium/*/GCM Store/
+.config/chromium/*/PersistentOriginTrials/
+.config/chromium/*/VideoDecodeStats/
+.config/chromium/*/chrome_cart_db/
+.config/chromium/*/discount_infos_db/
+.config/chromium/*/discounts_db/
+.config/chromium/*/WebStorage/
+.config/chromium/*/QuotaManager
+.config/chromium/*/SharedStorage/
+.config/chromium/*/MediaDeviceSalts/
+.config/chromium/*/component_crx_cache/
+.config/chromium/*/extensions_crx_cache/
+
 # System and user history files
 .bash_history
 .zsh_history
