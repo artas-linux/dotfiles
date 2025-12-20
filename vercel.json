@@ -1,11 +1,6 @@
 {
-  "buildCommand": "pip install -r requirements.txt && mkdocs build",
+  "pythonVersion": "3.9",
+  "buildCommand": "python -m pip install --upgrade pip && pip install -r requirements.txt && mkdocs build",
   "outputDirectory": "site",
-  "framework": null,
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/$1"
-    }
-  ]
+  "framework": null
 }
