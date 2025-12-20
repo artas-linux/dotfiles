@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Wallpaper engine
+(sleep 1 && swww-daemon --format argb) &
+
+# Automounter for removable media
+(sleep 1 && udiskie) &
+
+# Pyprland Daemon (delayed to reduce startup time)
+# (sleep 5 && pypr --debug /tmp/pypr.log) &
+
+# Bar
+(sleep 2 && waybar) &
+
+# Notification Daemon
+(sleep 2 && swaync) &
+
+# OSD Window
+(sleep 2 && swayosd-server) &
+
+# Idle daemon to screen lock
+(sleep 1 && hypridle) &
+
+# Clipboard
+(sleep 1 && wl-paste --watch cliphist store) &
+
+# Polkit authentication
+(sleep 1 && /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1) &
+
+# Audio
+# easyeffects --gapplication-service &  # Not installed
+
+# Random Wallpaper (delayed)
+(sleep 3 && "$HOME"/.config/hypr/scripts/random_wallpaper) &
+
+# Screen sharing and portals
+(sleep 2 && "$HOME"/.config/hypr/scripts/portal) &
+# xwaylandvideobridge & # Off when using Vesktop instead of Discord

@@ -1,0 +1,26 @@
+[pyprland]
+plugins = ["scratchpads", "magnify"]
+
+[scratchpads.volume]
+command = "kitty --class=com.kitty-volume -e wiremix"
+position = "1% 8%"
+unfocus = "hide"
+lazy = true
+
+[scratchpads.bluetooth]
+command = "kitty --class=com.kitty-bluetooth -e bluetui"
+position = "1% 8%"
+unfocus = "hide"
+lazy = true
+
+[scratchpads.wifi]
+command = "iwgtk"
+animation = "fromRight"
+margin = 20
+lazy = true
+
+[scratchpads.network]
+command = "nm-connection-editor"
+animation = "fromRight"
+margin = 20
+lazy = true

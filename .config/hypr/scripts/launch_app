@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+  exit 1
+fi
+
+program="$1"
+
+if ! command -v "$program" >/dev/null 2>&1; then
+  notify-send "Program not found" "Make sure you have installed $program"
+  exit 1
+else
+  # Special handling for Chromium-based browsers to enable portal support
+  case "$program" in
+    chromium|chromium-browser|google-chrome|microsoft-edge)
+      exec env GTK_USE_PORTAL=1 $program --enable-features=UseOzonePlatform --ozone-platform=wayland
+      ;;
+    *)
+      exec $program
+      ;;
+  esac
+fi
