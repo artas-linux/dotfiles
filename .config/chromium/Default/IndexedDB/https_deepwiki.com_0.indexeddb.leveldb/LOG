@@ -1,0 +1,13 @@
+2025/12/20-05:53:50.602 8a4f Reusing MANIFEST /home/archbtw/.config/chromium/Default/IndexedDB/https_deepwiki.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/12/20-05:53:50.603 8a4f Recovering log #6
+2025/12/20-05:53:50.603 8a4f Reusing old log /home/archbtw/.config/chromium/Default/IndexedDB/https_deepwiki.com_0.indexeddb.leveldb/000006.log 
+2025/12/20-05:53:50.656 8a4f Level-0 table #10: started
+2025/12/20-05:53:50.658 8a4f Level-0 table #10: 513 bytes OK
+2025/12/20-05:53:50.660 8a4f Delete type=0 #6
+2025/12/20-05:53:50.661 8a4f Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at '\x00\x04\x00\x00\x05' @ 128 : 1
+2025/12/20-05:53:50.661 8a4f Compacting 1@0 + 1@1 files
+2025/12/20-05:53:50.663 8a4f Generated table #11@0: 13 keys, 483 bytes
+2025/12/20-05:53:50.663 8a4f Compacted 1@0 + 1@1 files => 483 bytes
+2025/12/20-05:53:50.665 8a4f compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/12/20-05:53:50.665 8a4f Delete type=2 #10
+2025/12/20-05:53:50.666 8a4f Manual compaction at level-0 from '\x00\x04\x00\x00\x05' @ 128 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
