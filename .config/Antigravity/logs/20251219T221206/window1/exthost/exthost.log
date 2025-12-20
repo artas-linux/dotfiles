@@ -1,7 +1,0 @@
-2025-12-19 22:12:12.716 [info] Extension host with pid 8289 started
-2025-12-19 22:12:12.717 [info] Skipping acquiring lock for /home/archbtw/.config/Antigravity/User/workspaceStorage/499c294a6b7b1c9f36b17ac035c3a7d7.
-2025-12-19 22:12:13.965 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
-2025-12-19 22:12:14.024 [info] ExtensionService#_doActivateExtension kilocode.kilo-code, startup: false, activationEvent: 'onLanguage'
-2025-12-19 22:12:20.602 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: google.antigravity
-2025-12-19 22:12:20.863 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
-2025-12-19 22:12:21.096 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: google.antigravity

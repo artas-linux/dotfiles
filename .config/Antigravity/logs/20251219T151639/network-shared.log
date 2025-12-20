@@ -1,2 +1,0 @@
-2025-12-19 15:21:10.501 [error] #22: https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream - error POST net::ERR_NETWORK_CHANGED
-2025-12-19 15:22:16.495 [error] #39: https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream - error POST net::ERR_NETWORK_CHANGED

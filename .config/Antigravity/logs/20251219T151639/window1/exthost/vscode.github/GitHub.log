@@ -1,3 +1,0 @@
-2025-12-19 15:16:52.324 [info] Log level: Info
-2025-12-19 15:16:54.060 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
-2025-12-19 15:19:58.327 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for coleam00/archon: Error: No GitHub authentication session available.

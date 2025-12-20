@@ -1,4 +1,0 @@
-2025-12-19 15:09:33.911 [info] Extension host with pid 70918 started
-2025-12-19 15:09:33.912 [info] Skipping acquiring lock for /home/archbtw/.config/Antigravity/User/workspaceStorage/8ad2f8b6dc83614cbd8204b9cc845911.
-2025-12-19 15:09:34.692 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
-2025-12-19 15:09:34.730 [info] ExtensionService#_doActivateExtension kilocode.kilo-code, startup: false, activationEvent: 'onLanguage'

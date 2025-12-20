@@ -1,2 +1,0 @@
-2025-12-19 15:09:35.208 [error] The terminal's pty host process exited, the connection to all terminal processes was lost []
-2025-12-19 15:09:35.304 [warning] Exception occurred during terminal shutdown [{"name":"Canceled"}]
