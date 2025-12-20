@@ -1,0 +1,78 @@
+site_name: Artas Linux Dotfiles
+site_description: Comprehensive dotfiles setup with Hyprland, Neovim, and more
+site_author: Artas Linux
+site_url: https://dotfiles-docs.vercel.app/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/eye-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/eye
+        name: Switch to light mode
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.footnote.tooltips
+    - content.tabs.link
+    - content.tooltips
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - meta
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Setup:
+    - Installation: setup/installation.md
+    - Dependencies: setup/dependencies.md
+  - Desktop:
+    - Hyprland: desktop/hyprland.md
+    - Waybar: desktop/waybar.md
+    - Theming: desktop/theming.md
+  - Development:
+    - Neovim: dev/neovim.md
+    - Tmux: dev/tmux.md
+    - Git: dev/git.md
+  - Scripts: scripts/index.md
+  - FAQ: faq.md
