@@ -1,445 +1,240 @@
-# Yazi Configuration Guide
+# Yazi Configuration
+
+A comprehensive Yazi file manager configuration with Catppuccin Macchiato theme and multiple plugins.
 
 ## Overview
 
-Yazi is a modern terminal file manager written in Rust, featuring asynchronous I/O, extensive customization, and a user-friendly interface. This configuration provides a complete setup with multi-tool integration, plugin support, and desktop portal compatibility.
+Yazi is a terminal file manager written in Rust. This configuration provides a feature-rich setup with theming, plugins, and custom keybindings optimized for productivity.
+
+## Features
+
+- **Catppuccin Macchiato Theme**: Consistent with the system theme
+- **Plugin Support**: Full-border, git integration, search jumping, starship prompt
+- **Custom Keybindings**: Vim-style navigation with additional shortcuts
+- **Flavor Support**: Multiple theme flavors available
+- **Lua Scripting**: Custom functionality via init.lua
 
 ## File Structure
 
 ```
 ~/.config/yazi/
-├── yazi.toml      # Main configuration (managers, openers, tasks)
-├── keymap.toml    # Keybindings and shortcuts
-├── theme.toml     # Theme and flavor selection
-├── package.toml   # Plugin dependencies
-├── init.lua       # Plugin initialization (Lua)
-└── flavors/       # Theme flavor definitions
-    ├── catppuccin-macchiato.yazi/
-    └── solarized-*.yazi/
+├── yazi.toml          # Main configuration
+├── keymap.toml        # Keybindings
+├── init.lua           # Lua initialization script
+├── package.toml       # Plugin definitions
+├── theme.toml         # Symlink to active flavor
+├── flavors/           # Available themes
+│   ├── catppuccin-macchiato.yazi/
+│   ├── dracula.yazi/
+│   ├── solarized-dark.yazi/
+│   └── solarized-light.yazi/
+└── plugins/           # Installed plugins
+    ├── full-border.yazi/
+    ├── git.yazi/
+    ├── searchjump.yazi/
+    └── starship.yazi/
 ```
 
-## Core Configuration (yazi.toml)
+## Configuration Files
 
-### Manager Settings
+### yazi.toml
+Main configuration file containing:
+- Manager settings (ratio, sorting, etc.)
+- Preview settings
+- Plugin configurations
+- UI preferences
 
-```toml
-[mgr]
-ratio = [1, 4, 3]          # Pane ratios: [parent, current, preview]
-sort_by = "natural"         # Sort method: natural, name, size, mtime
-sort_dir_first = true       # Show directories before files
-show_hidden = true          # Display hidden files
-show_symlink = true         # Show symlink indicators
-scrolloff = 5               # Lines to keep visible around cursor
-mouse_events = ["click", "scroll"]  # Mouse interaction
-title_format = "Yazi: {cwd}" # Window title format
-```
+### keymap.toml
+Custom keybindings including:
+- Vim-style navigation (h,j,k,l)
+- Quick access shortcuts
+- Plugin-specific bindings
+- Custom commands
 
-### Opener System
+### init.lua
+Lua script for advanced customization:
+- Catppuccin Macchiato color palette
+- Plugin setups and hooks
+- Custom functions and UI modifications
 
-Yazi supports categorized openers for different file types:
+### package.toml
+Plugin dependency management:
+- Lists all required plugins with versions
+- Used by `ya pack` for installation
 
-#### Directory Openers
-```toml
-[opener]
-folder = [
-  { run = 'hyprctl dispatch exec "[float; size 60% 60%; center 1] nemo" "$1"', orphan = true, desc = "nemo", for = "linux" },
-  { run = '''fish -c "nvim "$1""''', block = true, desc = "neovim", for = "linux" },
-  { run = 'kitty --detach nvim "$@"', orphan = true, desc = "neovim (detached)", for = "linux" },
-  { run = '''fish -c "lazygit -p "$1""''', block = true, desc = "lazygit", for = "linux" },
-  { run = 'codium  "$@"', orphan = true, desc = "vscodium", for = "linux" },
-  { run = 'kitty "$@"', orphan = true, desc = "kitty", for = "linux" },
-  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
-]
-```
+## Plugins
 
-#### Text File Openers
-```toml
-text = [
-  { run = '$EDITOR "$@"', block = true, desc = "$EDITOR", for = "linux" },
-  { run = 'nvim "$@"', block = true, desc = "neovim", for = "linux" },
-  { run = 'kitty --detach nvim "$@"', block = true, desc = "neovim (detached)", for = "linux" },
-  { run = 'codium  "$@"', orphan = true, desc = "vscodium", for = "linux" },
-  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
-]
-```
+### full-border.yazi
+Adds full borders to the file manager interface for better visual separation.
 
-#### Media Openers
-```toml
-image = [
-  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
-  { run = 'qimgv "$@"', orphan = true, desc = "qimgv", for = "linux" },
-  { run = 'krita "$@"', orphan = true, desc = "krita", for = "linux" },
-  { run = 'satty --filename "$@"', orphan = true, desc = "satty", for = "linux" },
-]
+### git.yazi
+Provides git status indicators and git-related functionality:
+- File status (modified, staged, etc.)
+- Git operations integration
 
-video = [
-  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
-  { run = 'mpv "$@"', orphan = true, desc = "mpv", for = "linux" },
-  { run = 'vlc "$@"', orphan = true, desc = "vlc", for = "linux" },
-]
+### searchjump.yazi
+Enhanced search and jumping capabilities:
+- Smart search with fuzzy matching
+- Quick navigation to files/directories
 
-audio = [
-  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
-  { run = 'mpv "$@"', orphan = true, desc = "mpv", for = "linux" },
-  { run = 'vlc "$@"', orphan = true, desc = "vlc", for = "linux" },
-]
-```
+### starship.yazi
+Integrates Starship prompt for enhanced shell prompts:
+- Cross-shell compatible
+- Rich customization options
 
-#### Document Openers
-```toml
-document = [
-  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
-  { run = 'zathura "$@"', orphan = true, desc = "zathura", for = "linux" },
-  { run = 'libreoffice "$@"', orphan = true, desc = "libreoffice", for = "linux" },
-]
-```
+## Keybindings
 
-#### Fallback Opener
-```toml
-fallback = [
-  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
-]
-```
-
-### Open Rules
-
-Define which opener to use for different file types:
-
-```toml
-[open]
-rules = [
-  # Directories use folder openers
-  { name = "*/", use = "folder" },
-
-  # MIME type based rules
-  { mime = "text/*", use = "text" },
-  { mime = "image/*", use = "image" },
-  { mime = "video/*", use = "video" },
-  { mime = "application/octet-stream", use = "video" },
-  { mime = "audio/*", use = "audio" },
-  { mime = "inode/x-empty", use = "text" },
-  { mime = "application/json", use = "text" },
-
-  # Archive files
-  { mime = "application/zip", use = "archive" },
-  { mime = "application/gzip", use = "archive" },
-  { mime = "application/x-tar", use = "archive" },
-  { mime = "application/x-bzip", use = "archive" },
-  { mime = "application/x-bzip2", use = "archive" },
-  { mime = "application/x-7z-compressed", use = "archive" },
-  { mime = "application/x-rar", use = "archive" },
-  { mime = "application/x-xz", use = "archive" },
-
-  # Documents
-  { mime = "application/pdf", use = "document" },
-  { mime = "application/epub+zip", use = "document" },
-  { mime = "application/x-mobipocket-ebook", use = "document" },
-
-  # Fallback for everything else
-  { mime = "*", use = "fallback" },
-]
-```
-
-### Task System
-
-Configure asynchronous task processing:
-
-```toml
-[tasks]
-micro_workers = 10      # Quick operations (file ops, metadata)
-macro_workers = 5       # Heavy operations (image processing)
-bizarre_retry = 3       # Retry failed tasks
-image_alloc = 536870912 # 512MB for image processing
-image_bound = [0, 0]    # Unlimited image dimensions
-suppress_preload = false # Enable preloaders
-```
-
-### Plugin Configuration
-
-```toml
-[plugin]
-# Git status fetchers
-prepend_fetchers = [
-  { id = "git", name = "*", run = "git" },
-  { id = "git", name = "*/", run = "git" },
-]
-
-# Preview and preloader settings
-previewers = [
-  { name = "*/", run = "folder", sync = true },
-  { mime = "text/*", run = "code" },
-  { mime = "image/*", run = "image" },
-  { mime = "video/*", run = "video" },
-  { mime = "application/pdf", run = "pdf" },
-  { mime = "application/zip", run = "archive" },
-  { name = "*", run = "file" },
-]
-
-preloaders = [
-  { name = "*/", run = "folder", prio = "low" },
-  { mime = "image/*", run = "image" },
-  { mime = "video/*", run = "video" },
-]
-```
-
-## Keybindings (keymap.toml)
-
-### Manager Keybindings
-
-```toml
-[mgr]
-prepend_keymap = [
-  # Shell access
-  { on = "!", run = 'shell "$SHELL" --block', desc = "Open shell here" },
-
-  # Archive operations
-  { on = ["c", "a"], run = "plugin compress", desc = "Archive selected files" },
-
-  # Preview navigation
-  { on = "<C-u>", run = "seek -5", desc = "Seek up 5 units in the preview" },
-  { on = "<C-d>", run = "seek 5", desc = "Seek down 5 units in the preview" },
-
-  # Page scrolling
-  { on = "K", run = "arrow -50%", desc = "Move cursor up half page" },
-  { on = "J", run = "arrow 50%", desc = "Move cursor down half page" },
-  { on = "<A-k>", run = "arrow -5", desc = "Move cursor up 5 lines" },
-  { on = "<A-j>", run = "arrow 5", desc = "Move cursor down 5 lines" },
-
-  # Search functionality
-  { on = "s", run = "plugin searchjump --autocd", desc = "Flash jump to character" },
-  { on = "S", run = "search --via=fd", desc = "Search files by name using fd" },
-
-  # System clipboard
-  { on = ["<C-y>"], run = 'shell -- for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list', desc = "Copy to clipboard" },
-
-  # File operations
-  { on = "A", run = "create --dir", desc = "Create a directory" },
-
-  # Git integration
-  { on = ["g", "r"], run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"', desc = "Go to Git repository root" },
-
-  # Tab management
-  { on = "H", run = "tab_switch -1 --relative", desc = "Switch to previous tab" },
-  { on = "L", run = "tab_switch 1 --relative", desc = "Switch to next tab" },
-  { on = "<", run = "tab_swap -1", desc = "Swap current tab with previous" },
-  { on = ">", run = "tab_swap 1", desc = "Swap current tab with next" },
-]
-
-append_keymap = [
-  { on = "e", run = "open", desc = "Open the selected files" },
-  { on = "E", run = "open --interactive", desc = "Open with interactive picker" },
-]
-```
-
-### Completion Keybindings
-
-```toml
-[completion]
-prepend_keymap = [
-  { on = "<C-k>", run = "arrow -1", desc = "Move cursor up" },
-  { on = "<C-j>", run = "arrow 1", desc = "Move cursor down" },
-]
-```
-
-## Theme Configuration (theme.toml)
-
-```toml
-[flavor]
-dark = "catppuccin-macchiato"
-# light = "solarized-light"  # Uncomment for light mode
-```
-
-## Plugin Dependencies (package.toml)
-
-```toml
-[[plugin.deps]]
-use = "yazi-rs/plugins:full-border"
-rev = "d7588f6"
-hash = "3996fc74044bc44144b323686f887e1"
-
-[[plugin.deps]]
-use = "yazi-rs/plugins:git"
-rev = "d7588f6"
-hash = "63b6c222bf2103b3023389dde5e2ecfe"
-
-[[plugin.deps]]
-use = "DreamMaoMao/searchjump"
-rev = "7fafec3"
-hash = "5337bf545993d8c4dec2c229031f49d"
-
-[[plugin.deps]]
-use = "Rolv-Apneseth/starship"
-rev = "a63550b"
-hash = "c2021386289a0cbb3e152a052f67c177"
-
-[flavor]
-deps = []
-```
-
-## Plugin Initialization (init.lua)
-
-```lua
-local catppuccin_palette = {
-  rosewater = "#f4dbd6",
-  flamingo = "#f0c6c6",
-  pink = "#f5bde6",
-  mauve = "#c6a0f6",
-  red = "#ed8796",
-  maroon = "#ee99a0",
-  peach = "#f5a97f",
-  yellow = "#eed49f",
-  green = "#a6da95",
-  teal = "#8bd5ca",
-  sky = "#91d7e3",
-  sapphire = "#7dc4e4",
-  blue = "#8aadf4",
-  lavender = "#b7bdf8",
-  text = "#cad3f5",
-  subtext1 = "#b8c0e0",
-  subtext0 = "#a5adcb",
-  overlay2 = "#939ab7",
-  overlay1 = "#8087a2",
-  overlay0 = "#6e738d",
-  surface2 = "#5b6078",
-  surface1 = "#494d64",
-  surface0 = "#363a4f",
-  base = "#24273a",
-  mantle = "#1e2030",
-  crust = "#181926",
-}
-
--- Plugin configurations
-require("full-border"):setup({
-  type = ui.Border.ROUNDED,
-})
-
-require("searchjump"):setup({
-  unmatch_fg = catppuccin_palette.overlay0,
-  match_str_fg = catppuccin_palette.green,
-  match_str_bg = catppuccin_palette.base,
-  first_match_str_fg = catppuccin_palette.lavender,
-  first_match_str_bg = catppuccin_palette.base,
-  lable_fg = catppuccin_palette.lavender,
-  lable_bg = catppuccin_palette.base,
-  only_current = false,
-  show_search_in_statusbar = true,
-  auto_exit_when_unmatch = false,
-  enable_capital_lable = true,
-})
-
-require("git"):setup()
-require("starship"):setup()
-```
-
-## Terminal Integration
-
-### xdg-desktop-portal-termfilechooser
-
-Yazi integrates with the terminal file chooser portal for GTK applications:
-
-```bash
-# Configuration in ~/.config/xdg-desktop-portal-termfilechooser/config
-[filechooser]
-cmd=/home/archbtw/.local/bin/yazi-wrapper-improved.sh
-default_dir=$HOME
-open_mode=suggested
-save_mode=suggested
-create_help_file=0
-env=TERMCMD=kitty --title 'File Chooser'
-```
-
-### Portal Preferences
-
-```bash
-# ~/.config/xdg-desktop-portal-termfilechooser/portals.conf
-[preferred]
-default=gtk
-org.freedesktop.impl.portal.FileChooser=termfilechooser
-```
-
-## Usage Examples
-
-### Basic Navigation
-- `h/j/k/l` or arrow keys: Navigate
-- `K/J`: Half-page scrolling
-- `Enter`: Open file/directory
-- `q`: Quit
+### Navigation
+- `h/j/k/l`: Vim-style movement
+- `gg`: Go to top
+- `G`: Go to bottom
+- `H/M/L`: High/Middle/Low of screen
 
 ### File Operations
+- `Enter`: Open file/directory
+- `o`: Open with...
 - `y`: Yank (copy)
 - `x`: Cut
 - `p`: Paste
 - `d`: Delete
 - `r`: Rename
 
-### Search & Jump
-- `s`: Searchjump (flash to character)
-- `S`: Search files with fd
-- `!`: Open shell in current directory
-- `gr`: Go to Git repository root
+### View Controls
+- `Tab`: Toggle preview pane
+- `i`: Toggle hidden files
+- `:`: Command mode
+- `/`: Search mode
 
-### Tab Management
-- `t`: New tab
-- `H/L`: Switch tabs
-- `< >`: Swap tabs
+### Custom Shortcuts
+- ` `: Toggle selection
+- `z`: Change view mode
+- `t`: Create new file/directory
+- `s`: Sort options
 
-### Plugin Features
-- Git status indicators in directories
-- Starship prompt integration
-- Full border UI enhancement
-- Search and jump functionality
+## Theming
 
-## Customization Tips
+### Catppuccin Macchiato
+- **Base**: #24273a
+- **Surface**: #363a4f
+- **Text**: #cad3f5
+- **Accent**: #f4dbd6
+- **Red**: #ed8796
+- **Green**: #a6da95
+- **Blue**: #8aadf4
+- **Yellow**: #eed49f
 
-### Adding New Openers
-```toml
-[opener]
-custom = [
-  { run = 'my-custom-command "$@"', orphan = true, desc = "Custom tool", for = "linux" },
-]
+### Available Flavors
+- **catppuccin-macchiato**: Current active theme
+- **dracula**: Dark theme alternative
+- **solarized-dark**: Solarized dark
+- **solarized-light**: Solarized light
+
+## Installation
+
+1. **Install Yazi**:
+   ```bash
+   sudo pacman -S yazi
+   ```
+
+2. **Copy configuration**:
+   ```bash
+   cp -r /path/to/dotfiles/yazi/* ~/.config/yazi/
+   ```
+
+3. **Install plugins**:
+   ```bash
+   ya pack -i
+   ```
+
+4. **Set flavor** (optional):
+   ```bash
+   ya pack -a catppuccin-macchiato.yazi
+   ```
+
+## Usage
+
+### Basic Navigation
+```bash
+yazi                    # Launch Yazi
+yazi /path/to/directory # Start in specific directory
 ```
 
-### Custom Keybindings
+### With Plugins
+- Git status is automatically shown
+- Full borders enhance the interface
+- Search jumping provides quick navigation
+- Starship integration for shell prompts
+
+## Customization
+
+### Adding Plugins
+1. Add to `package.toml`:
+   ```toml
+   [[plugin.deps]]
+   use = "author/plugin-name"
+   rev = "commit-hash"
+   ```
+
+2. Install: `ya pack -i`
+
+### Modifying Keybindings
+Edit `keymap.toml` to add or change bindings:
 ```toml
-[mgr]
-prepend_keymap = [
-  { on = "X", run = "custom_command", desc = "My custom action" },
-]
+[[manager]]
+key = "custom-key"
+exec = "command"
 ```
 
 ### Theme Customization
-```toml
-# Create custom flavors in ~/.config/yazi/flavors/
-[flavor]
-dark = "my-custom-theme"
-```
+Modify `init.lua` color palette or create new flavor in `flavors/`.
 
 ## Troubleshooting
 
-### Configuration Issues
-```bash
-# Validate TOML syntax
-python3 -c "import tomllib; tomllib.load(open('yazi.toml', 'rb'))"
+### Plugins not loading
+1. Check `ya pack -l` for installed plugins
+2. Verify `package.toml` syntax
+3. Restart Yazi
 
-# Check for yazi errors
-yazi --help
+### Theme not applying
+1. Check active flavor: `ls -la ~/.config/yazi/theme.toml`
+2. Verify flavor files exist
+3. Reload configuration
+
+### Performance issues
+1. Disable heavy plugins temporarily
+2. Check Lua script efficiency
+3. Monitor system resources
+
+## Dependencies
+
+- `yazi`: File manager
+- `ya`: Yazi package manager (included)
+- `git`: For plugin management
+- `lua`: For scripting (optional)
+
+## Integration
+
+### With Hyprland
+Keybindings in Hyprland can launch Yazi:
+```bash
+bind = $mainMod, E, exec, $scripts/launch_app $file-manager
 ```
 
-### Plugin Issues
-```bash
-# Reinstall plugins
-ya pack -u
-
-# Check plugin status
-ya pack -l
+### With Shell
+Add to shell aliases:
+```fish
+alias fm='yazi'
 ```
 
-### Performance Tuning
-- Adjust `micro_workers` and `macro_workers` based on system resources
-- Toggle `suppress_preload` for performance vs responsiveness
-- Monitor task activity in the status bar
+## Contributing
 
-## Resources
+When modifying:
+1. Test changes thoroughly
+2. Update this README
+3. Ensure compatibility with Catppuccin theme
+4. Document new plugins or features
+
+## References
 
 - [Yazi GitHub](https://github.com/sxyazi/yazi)
 - [Yazi Documentation](https://yazi-rs.github.io/docs/)
@@ -448,4 +243,4 @@ ya pack -l
 
 ---
 
-*This configuration provides a complete, production-ready yazi setup with extensive customization options and desktop integration.*
+*Yazi configuration optimized for Hyprland + Catppuccin Macchiato setup*
