@@ -1,0 +1,6 @@
+* {
+    font: "Maple Mono NF 10";
+}
+
+/* Include base theme */
+@import "~/.config/rofi/style.rasi"

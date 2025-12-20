@@ -6,6 +6,6 @@ if ! command -v cliphist >/dev/null 2>&1; then
 else
   set -e
 
-  selection="$(cliphist list | rofi -dmenu -i)"
+   selection="$(cliphist list | rofi -dmenu -i -theme ~/.config/rofi/clipboard/style.rasi)"
   cliphist decode <<<"$selection" | wl-copy
 fi
