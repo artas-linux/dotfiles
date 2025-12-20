@@ -6,29 +6,43 @@ site_url: https://dotfiles-docs.vercel.app/
 theme:
   name: material
   palette:
-    - scheme: default
-      primary: teal
-      accent: teal
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/eye-outline
-        name: Switch to dark mode
-    - scheme: slate
-      primary: teal
-      accent: teal
-      toggle:
-        icon: material/eye
+        icon: material/brightness-auto
         name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
   features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.code.select
     - content.footnote.tooltips
     - content.tabs.link
     - content.tooltips
+    - content.underline
+    - header.autohide
     - navigation.expand
     - navigation.footer
     - navigation.indexes
     - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
@@ -63,16 +77,12 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Setup:
-    - Installation: setup/installation.md
-    - Dependencies: setup/dependencies.md
   - Desktop:
-    - Hyprland: desktop/hyprland.md
-    - Waybar: desktop/waybar.md
-    - Theming: desktop/theming.md
+    - Hyprland: '#'
+    - Waybar: '#'
+    - Theming: '#'
   - Development:
-    - Neovim: dev/neovim.md
-    - Tmux: dev/tmux.md
-    - Git: dev/git.md
-  - Scripts: scripts/index.md
-  - FAQ: faq.md
+    - Neovim: '#'
+    - Tmux: '#'
+    - Git: '#'
+  - Scripts: '#'
