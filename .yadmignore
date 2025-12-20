@@ -13,3 +13,5 @@
 .config/Antigravity/TransportSecurity
 .config/Antigravity/Network Persistent State
 .config/Antigravity/
+Documents/
+.qwen/
