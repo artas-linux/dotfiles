@@ -1,0 +1,35 @@
+theme = Catppuccin Macchiato
+background-blur-radius = 20
+
+font-family = Maple Mono NF
+font-feature = +ss02
+font-feature = +ss03
+font-feature = +ss05
+font-feature = +ss07
+
+font-size = 12
+adjust-cell-height = 28%
+cursor-style = block
+cursor-style-blink = true
+cursor-invert-fg-bg = false
+
+gtk-single-instance = true
+window-theme = system
+gtk-titlebar = false
+gtk-wide-tabs = false
+
+macos-titlebar-style = hidden
+macos-option-as-alt = true
+mouse-hide-while-typing = true
+
+confirm-close-surface = false
+window-padding-x = 4,5
+window-padding-y = 4,5
+window-padding-balance = true
+
+auto-update = check
+auto-update-channel = stable
+
+# extras
+shell-integration-features = no-cursor
+copy-on-select = clipboard
