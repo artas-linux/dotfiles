@@ -1,0 +1,13 @@
+2025-12-19 21:56:40.521 [info] Using Cloud Code URL: https://daily-cloudcode-pa.sandbox.googleapis.com
+2025-12-19 21:56:40.521 [info] [BrowserOnboardingClientMainService] Starting browser onboarding server
+2025-12-19 21:56:40.521 [info] [BrowserOnboardingClientServer] Browser onboarding server started on http://localhost:39597
+2025-12-19 21:56:40.521 [info] [CascadeMonitoringServer] Monitoring server started on http://localhost:9102/antigravity
+2025-12-19 21:56:40.521 [info] update#setState idle
+2025-12-19 21:56:40.521 [info] update#ctor - manual checks only; automatic updates are disabled by user preference
+2025-12-19 21:56:42.002 [info] AntigravityAuthMainService initialized
+2025-12-19 21:56:55.909 [info] Pruning 13 of 26 trajectory summaries
+2025-12-19 21:57:05.500 [info] [AgentClientServer] Cascade initializing for worksapce file:///home/archbtw/.gemini/antigravity/playground/aphelion-nadir
+2025-12-19 21:57:05.502 [info] [AgentClientServer] Starting server
+2025-12-19 21:57:05.523 [info] [AgentClientServer] Read HTML file, length: 127
+2025-12-19 21:57:05.526 [info] [AgentClientServer] Cascade server started on http://localhost:9092
+2025-12-19 21:57:05.526 [info] [AgentClientServer] Cascade server started on port 9092

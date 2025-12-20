@@ -1,0 +1,7 @@
+2025-12-19 21:56:16.618 [info] Using Cloud Code URL: https://daily-cloudcode-pa.sandbox.googleapis.com
+2025-12-19 21:56:16.626 [info] [BrowserOnboardingClientMainService] Starting browser onboarding server
+2025-12-19 21:56:16.630 [info] [BrowserOnboardingClientServer] Browser onboarding server started on http://localhost:36949
+2025-12-19 21:56:16.630 [info] [CascadeMonitoringServer] Monitoring server started on http://localhost:9101/antigravity
+2025-12-19 21:56:16.836 [info] update#setState idle
+2025-12-19 21:56:16.836 [info] update#ctor - manual checks only; automatic updates are disabled by user preference
+2025-12-19 21:56:21.603 [info] AntigravityAuthMainService initialized

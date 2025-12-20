@@ -1,0 +1,29 @@
+2025-12-19 22:07:14.505 [info] 2025/12/19 22:07:14 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+2025-12-19 22:07:14.505 [info] I1219 22:07:14.444322  3313 main.go:183] Setting GOMAXPROCS to 4
+2025-12-19 22:07:14.505 [info] I1219 22:07:14.447632  3313 main.go:294] Starting language server process with pid 3313
+2025-12-19 22:07:14.505 [info] I1219 22:07:14.447770  3313 server.go:228] Language server will attempt to listen on host 127.0.0.1
+2025-12-19 22:07:14.505 [info] I1219 22:07:14.448214  3313 server.go:235] Language server listening on random port at 44755 for HTTPS
+2025-12-19 22:07:14.505 [info] I1219 22:07:14.448309  3313 server.go:242] Language server listening on random port at 43605 for HTTP
+2025-12-19 22:07:15.533 [info] I1219 22:07:15.509256  3313 server.go:326] Created extension server client at port 35107
+2025-12-19 22:07:15.533 [info] W1219 22:07:15.519776  3313 log_context.go:106] Cache(userInfo): Singleflight refresh failed: You are not logged into Antigravity.
+2025-12-19 22:07:15.552 [info] I1219 22:07:15.538710  3313 server.go:343] initialized server successfully
+2025-12-19 22:07:15.552 [info] W1219 22:07:15.546157  3313 log_context.go:106] Cache(userInfo): Singleflight refresh failed: You are not logged into Antigravity.
+2025-12-19 22:07:15.604 [info] (Antigravity) 2025-12-19 22:07:15.602 [INFO]: Language server started
+2025-12-19 22:07:16.131 [info] (Antigravity) 2025-12-19 22:07:16.131 [INFO]: LS lspClient started successfully
+2025-12-19 22:08:30.621 [info] E1219 22:08:30.619699  3313 log.go:354] encountered conflicting override on experiment: cascade-knowledge-config
+2025-12-19 22:08:30.844 [info] I1219 22:08:30.843475  3313 planner_generator.go:272] Requesting planner with 2 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 22:08:34.077 [info] I1219 22:08:34.076974  3313 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xad8f9b314d0ddd4b
+2025-12-19 22:08:34.928 [info] I1219 22:08:34.927376  3313 planner_generator.go:272] Requesting planner with 4 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 22:08:36.863 [info] I1219 22:08:36.863148  3313 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x5be24b00e78c0b98
+2025-12-19 22:08:37.291 [info] I1219 22:08:37.291058  3313 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xa5ba1c132f6de5e7
+2025-12-19 22:08:54.375 [info] (Antigravity) 2025-12-19 22:08:54.374 [INFO]: [Terminal] Command completed: c fish exit code 0
+2025-12-19 22:08:55.314 [info] (Antigravity) 2025-12-19 22:08:55.314 [INFO]: [Terminal] Command completed: u exit code 1
+2025-12-19 22:09:16.932 [info] E1219 22:09:16.932390  3313 log.go:354] document not found in cache
+2025-12-19 22:09:33.239 [info] E1219 22:09:33.239387  3313 log.go:354] document not found in cache
+2025-12-19 22:10:46.115 [info] (Antigravity) 2025-12-19 22:10:46.114 [INFO]: [SupercompleteProvider] No supercomplete response
+2025-12-19 22:10:49.035 [info] E1219 22:10:49.034484  3313 log.go:362] failed to update code tracker for Codeium internal file
+2025-12-19 22:10:50.702 [info] E1219 22:10:50.701100  3313 log.go:362] failed to update code tracker for Codeium internal file
+2025-12-19 22:10:52.850 [info] E1219 22:10:52.849847  3313 log.go:362] failed to update code tracker for Codeium internal file
+2025-12-19 22:10:53.744 [info] E1219 22:10:53.744012  3313 log.go:362] failed to update code tracker for Codeium internal file
+2025-12-19 22:10:58.719 [info] E1219 22:10:58.718913  3313 log.go:362] failed to update code tracker for Codeium internal file
+2025-12-19 22:11:35.307 [info] (Antigravity) 2025-12-19 22:11:35.306 [INFO]: [Terminal] Command completed: y exit code 0

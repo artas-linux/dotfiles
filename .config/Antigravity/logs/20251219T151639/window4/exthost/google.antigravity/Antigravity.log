@@ -1,0 +1,18 @@
+2025-12-19 15:20:40.361 [info] 2025/12/19 15:20:40 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+2025-12-19 15:20:40.361 [info] I1219 15:20:40.325671 80594 main.go:183] Setting GOMAXPROCS to 4
+2025-12-19 15:20:40.361 [info] I1219 15:20:40.326513 80594 main.go:294] Starting language server process with pid 80594
+2025-12-19 15:20:40.361 [info] I1219 15:20:40.326556 80594 server.go:228] Language server will attempt to listen on host 127.0.0.1
+2025-12-19 15:20:40.361 [info] I1219 15:20:40.326771 80594 server.go:235] Language server listening on random port at 42609 for HTTPS
+2025-12-19 15:20:40.361 [info] I1219 15:20:40.326817 80594 server.go:242] Language server listening on random port at 46353 for HTTP
+2025-12-19 15:20:42.582 [info] I1219 15:20:42.581752 80594 server.go:326] Created extension server client at port 44185
+2025-12-19 15:20:42.590 [info] W1219 15:20:42.589523 80594 log_context.go:106] Cache(userInfo): Singleflight refresh failed: You are not logged into Antigravity.
+2025-12-19 15:20:42.605 [info] I1219 15:20:42.604905 80594 server.go:343] initialized server successfully
+2025-12-19 15:20:42.610 [info] W1219 15:20:42.608130 80594 log_context.go:106] Cache(userInfo): Singleflight refresh failed: You are not logged into Antigravity.
+2025-12-19 15:20:42.647 [info] (Antigravity) 2025-12-19 15:20:42.644 [INFO]: Language server started
+2025-12-19 15:20:42.741 [info] 2025/12/19 15:20:42 http: TLS handshake error from 127.0.0.1:52318: EOF
+2025-12-19 15:20:43.439 [info] (Antigravity) 2025-12-19 15:20:43.439 [INFO]: LS lspClient started successfully
+2025-12-19 15:20:43.443 [info] E1219 15:20:42.750697 80594 log.go:354] failed to get merge base with default branch: could not identify default branch
+2025-12-19 15:20:43.443 [info] E1219 15:20:42.751316 80594 log.go:354] failed to check if repository is publicly accessible: failed to convert Git URL to HTTPS: unsupported Git URL format: 
+2025-12-19 15:21:13.271 [info] E1219 15:21:13.271106 80594 interceptor.go:74] /exa.language_server_pb.LanguageServerService/RegisterGdmUser (unknown): Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:loadCodeAssist": dial tcp 172.253.144.81:443: connect: no route to host
+2025-12-19 15:21:13.940 [info] I1219 15:21:13.940038 80594 secure_credentials.go:67] Credentials set successfully
+2025-12-19 15:21:14.543 [info] W1219 15:21:14.542800 80594 browser_page.go:196] failed to get favicon URL: favicon not found

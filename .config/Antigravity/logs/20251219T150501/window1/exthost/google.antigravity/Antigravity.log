@@ -1,0 +1,31 @@
+2025-12-19 15:05:16.410 [info] 2025/12/19 15:05:16 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+2025-12-19 15:05:16.496 [info] I1219 15:05:16.474275 65875 main.go:183] Setting GOMAXPROCS to 4
+2025-12-19 15:05:16.496 [info] I1219 15:05:16.475704 65875 main.go:294] Starting language server process with pid 65875
+2025-12-19 15:05:16.496 [info] I1219 15:05:16.475759 65875 server.go:228] Language server will attempt to listen on host 127.0.0.1
+2025-12-19 15:05:16.496 [info] I1219 15:05:16.476048 65875 server.go:235] Language server listening on random port at 45009 for HTTPS
+2025-12-19 15:05:16.496 [info] I1219 15:05:16.476089 65875 server.go:242] Language server listening on random port at 38595 for HTTP
+2025-12-19 15:05:19.477 [info] I1219 15:05:19.476750 65875 server.go:326] Created extension server client at port 37807
+2025-12-19 15:05:19.485 [info] W1219 15:05:19.484409 65875 log_context.go:106] Cache(userInfo): Singleflight refresh failed: You are not logged into Antigravity.
+2025-12-19 15:05:19.507 [info] I1219 15:05:19.507417 65875 server.go:343] initialized server successfully
+2025-12-19 15:05:19.510 [info] W1219 15:05:19.509149 65875 log_context.go:106] Cache(userInfo): Singleflight refresh failed: You are not logged into Antigravity.
+2025-12-19 15:05:19.560 [info] (Antigravity) 2025-12-19 15:05:19.558 [INFO]: Language server started
+2025-12-19 15:05:21.566 [info] (Antigravity) 2025-12-19 15:05:21.566 [INFO]: LS lspClient started successfully
+2025-12-19 15:05:22.217 [info] E1219 15:05:21.895412 65875 log.go:354] deadline_exceeded: context deadline exceeded
+2025-12-19 15:05:37.478 [info] W1219 15:05:37.478083 65875 log_context.go:106] Cache(peopleInfo): Singleflight refresh failed: failed to get profile picture: Get "https://lh3.googleusercontent.com/a/ACg8ocKnN676YCn89NeGdOIPxq-rwOAds3u7Kwa4AU_v0LZK80GzAA=s96-c": net/http: TLS handshake timeout
+2025-12-19 15:05:37.478 [info] W1219 15:05:37.478135 65875 log_context.go:106] Failed to refresh cache in background: failed to get profile picture: Get "https://lh3.googleusercontent.com/a/ACg8ocKnN676YCn89NeGdOIPxq-rwOAds3u7Kwa4AU_v0LZK80GzAA=s96-c": net/http: TLS handshake timeout
+2025-12-19 15:05:37.478 [info] E1219 15:05:37.478247 65875 interceptor.go:74] /exa.language_server_pb.LanguageServerService/GetUserStatus (unknown): failed to get profile picture: Get "https://lh3.googleusercontent.com/a/ACg8ocKnN676YCn89NeGdOIPxq-rwOAds3u7Kwa4AU_v0LZK80GzAA=s96-c": net/http: TLS handshake timeout
+2025-12-19 15:05:51.041 [info] I1219 15:05:51.030357 65875 secure_credentials.go:67] Credentials set successfully
+2025-12-19 15:05:51.209 [info] E1219 15:05:51.044414 65875 log.go:354] queryText was truncated because it was longer than the allowed byte length 1500
+2025-12-19 15:05:51.414 [info] W1219 15:05:51.414546 65875 log_context.go:106] Cache(availableModels): Singleflight refresh failed: Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:fetchAvailableModels": EOF
+2025-12-19 15:05:51.415 [info] W1219 15:05:51.414608 65875 log_context.go:106] Failed to refresh cache in background: Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:fetchAvailableModels": EOF
+2025-12-19 15:05:56.995 [info] W1219 15:05:56.995030 65875 browser_page.go:196] failed to get favicon URL: favicon not found
+2025-12-19 15:08:01.001 [info] E1219 15:08:01.001299 65875 log.go:354] encountered conflicting override on experiment: cascade-include-ephemeral-message
+2025-12-19 15:08:01.002 [info] E1219 15:08:01.002260 65875 log.go:354] encountered conflicting override on experiment: cascade-knowledge-config
+2025-12-19 15:08:01.139 [info] I1219 15:08:01.138667 65875 planner_generator.go:272] Requesting planner with 2 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 15:08:10.958 [info] E1219 15:08:10.958404 65875 log.go:354] failed to check if repository is publicly accessible: failed to send HTTP request: Head "https://github.com/coleam00/archon": context deadline exceeded
+2025-12-19 15:08:33.697 [info] E1219 15:08:33.697345 65875 log.go:354] encountered conflicting override on experiment: cascade-include-ephemeral-message
+2025-12-19 15:08:33.699 [info] E1219 15:08:33.698940 65875 log.go:354] encountered conflicting override on experiment: cascade-knowledge-config
+2025-12-19 15:08:33.808 [info] I1219 15:08:33.807700 65875 planner_generator.go:272] Requesting planner with 4 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 15:08:39.546 [info] I1219 15:08:39.546225 65875 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xfb0d7e356ce3bfbc
+2025-12-19 15:08:42.225 [info] I1219 15:08:42.225125 65875 planner_generator.go:272] Requesting planner with 6 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 15:08:45.603 [info] I1219 15:08:45.603394 65875 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x5cfae7b5488f8bc8

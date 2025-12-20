@@ -1,0 +1,5 @@
+2025-12-19 16:47:43.944 [error] #33: https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream - error POST net::ERR_NETWORK_CHANGED
+2025-12-19 17:04:56.263 [error] #52: https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream - error POST net::ERR_ADDRESS_UNREACHABLE
+2025-12-19 17:04:56.264 [error] #53: https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream - error POST net::ERR_ADDRESS_UNREACHABLE
+2025-12-19 17:04:59.299 [error] #54: https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream - error POST net::ERR_ADDRESS_UNREACHABLE
+2025-12-19 17:05:41.281 [error] #57: https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream - error POST net::ERR_NETWORK_CHANGED

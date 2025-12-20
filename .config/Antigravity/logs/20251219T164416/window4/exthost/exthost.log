@@ -1,0 +1,32 @@
+2025-12-19 16:44:35.600 [info] Extension host with pid 147960 started
+2025-12-19 16:44:35.600 [info] Skipping acquiring lock for /home/archbtw/.config/Antigravity/User/workspaceStorage/8ad2f8b6dc83614cbd8204b9cc845911.
+2025-12-19 16:44:36.300 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: google.antigravity
+2025-12-19 16:44:36.775 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: google.antigravity
+2025-12-19 16:44:36.885 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-12-19 16:44:37.328 [info] ExtensionService#_doActivateExtension google.antigravity, startup: true, activationEvent: '*'
+2025-12-19 16:44:38.322 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-12-19 16:44:38.366 [info] ExtensionService#_doActivateExtension kilocode.kilo-code, startup: false, activationEvent: 'onLanguage'
+2025-12-19 16:44:41.287 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2025-12-19 16:44:42.406 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-12-19 16:44:46.394 [info] ExtensionService#_doActivateExtension google.antigravity-browser-launcher, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 16:44:46.428 [info] ExtensionService#_doActivateExtension Google LLC.antigravity-dev-containers, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 16:44:46.446 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 16:44:46.452 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 16:44:46.514 [info] ExtensionService#_doActivateExtension Catppuccin.catppuccin-vsc, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 16:44:46.533 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 16:44:50.303 [error] Error: ENOENT: no such file or directory, open '/home/archbtw/.config/Antigravity/User/globalStorage/vscodevim.vim/.registers'
+2025-12-19 16:45:07.881 [info] Eager extensions activated
+2025-12-19 16:46:07.388 [info] Extension host terminating: renderer closed the MessagePort
+2025-12-19 16:46:07.420 [error] Error: ENOENT: no such file or directory, open '/home/archbtw/.config/Antigravity/User/globalStorage/vscodevim.vim/.registers'
+2025-12-19 16:46:07.421 [error] Canceled: Canceled
+	at new tz (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:30:117507)
+	at JO.U (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:30:122118)
+	at r.<computed>.s.charCodeAt.r.<computed> (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:30:119612)
+	at t6.setValue (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:113:14979)
+	at file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:113:15603
+	at mr.a (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:113:15721)
+	at mr.h (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:28:75885)
+	at mr.g (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:28:75869)
+	at listOnTimeout (node:internal/timers:588:17)
+	at process.processTimers (node:internal/timers:523:7)
+2025-12-19 16:46:07.421 [info] Extension host with pid 147960 exiting with code 0

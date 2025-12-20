@@ -1,0 +1,21 @@
+2025-12-19 16:44:23.629 [info] Extension host with pid 147382 started
+2025-12-19 16:44:23.630 [info] Skipping acquiring lock for /home/archbtw/.config/Antigravity/User/workspaceStorage/499c294a6b7b1c9f36b17ac035c3a7d7.
+2025-12-19 16:44:23.892 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: google.antigravity
+2025-12-19 16:44:24.117 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: google.antigravity
+2025-12-19 16:44:24.285 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-12-19 16:44:24.519 [info] ExtensionService#_doActivateExtension google.antigravity, startup: true, activationEvent: '*'
+2025-12-19 16:44:26.138 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2025-12-19 16:44:29.461 [info] ExtensionService#_doActivateExtension google.antigravity-browser-launcher, startup: false, activationEvent: 'onCommand:browserLauncher.launchBrowser'
+2025-12-19 16:44:33.862 [info] ExtensionService#_doActivateExtension Google LLC.antigravity-dev-containers, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 16:44:33.873 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 16:44:33.878 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 16:44:33.927 [info] ExtensionService#_doActivateExtension Catppuccin.catppuccin-vsc, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 16:44:33.941 [info] ExtensionService#_doActivateExtension kilocode.kilo-code, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 16:44:37.557 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 16:44:39.142 [error] Error: ENOENT: no such file or directory, open '/home/archbtw/.config/Antigravity/User/globalStorage/vscodevim.vim/.registers'
+2025-12-19 16:44:43.000 [info] Eager extensions activated
+2025-12-19 17:00:08.358 [error] Error: ENOENT: no such file or directory, rename '/home/archbtw/.gemini/antigravity/user_settings.pb.tmp' -> '/home/archbtw/.gemini/antigravity/user_settings.pb'
+	at async Object.rename (node:internal/original-fs/promises:784:10)
+	at async qhe (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:5308)
+	at async Qhe.setAntigravitySettings (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:6158)
+	at async m.updateUserSettings (/home/archbtw/Downloads/Antigravity/resources/app/extensions/antigravity/dist/extension.js:2:750522)

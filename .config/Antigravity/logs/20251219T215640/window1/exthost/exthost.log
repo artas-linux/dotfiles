@@ -1,0 +1,17 @@
+2025-12-19 21:56:47.636 [info] Extension host with pid 104846 started
+2025-12-19 21:56:47.636 [info] Skipping acquiring lock for /home/archbtw/.config/Antigravity/User/workspaceStorage/499c294a6b7b1c9f36b17ac035c3a7d7.
+2025-12-19 21:56:47.953 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: google.antigravity
+2025-12-19 21:56:48.199 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: google.antigravity
+2025-12-19 21:56:48.401 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-12-19 21:56:48.730 [info] ExtensionService#_doActivateExtension google.antigravity, startup: true, activationEvent: '*'
+2025-12-19 21:56:51.756 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2025-12-19 21:56:57.736 [info] ExtensionService#_doActivateExtension google.antigravity-browser-launcher, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 21:56:57.746 [info] ExtensionService#_doActivateExtension Google LLC.antigravity-dev-containers, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 21:56:57.763 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 21:56:57.771 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 21:56:57.841 [info] ExtensionService#_doActivateExtension Catppuccin.catppuccin-vsc, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 21:56:57.865 [info] ExtensionService#_doActivateExtension kilocode.kilo-code, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 21:57:02.499 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-12-19 21:57:03.996 [error] Error: ENOENT: no such file or directory, open '/home/archbtw/.config/Antigravity/User/globalStorage/vscodevim.vim/.registers'
+2025-12-19 21:57:05.026 [info] Eager extensions activated
+2025-12-19 22:04:29.982 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'

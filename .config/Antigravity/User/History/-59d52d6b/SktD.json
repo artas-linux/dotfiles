@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "test-server": {
+      "command": "node",
+      "args": [
+        "/home/archbtw/.local/share/Kilo-Code/MCP/test-server.js"
+      ],
+      "disabled": false,
+      "alwaysAllow": [],
+      "disabledTools": []
+    }
+  }
+}

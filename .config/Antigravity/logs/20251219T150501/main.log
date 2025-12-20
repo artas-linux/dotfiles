@@ -1,0 +1,15 @@
+2025-12-19 15:05:01.477 [info] Using Cloud Code URL: https://daily-cloudcode-pa.sandbox.googleapis.com
+2025-12-19 15:05:01.477 [info] [BrowserOnboardingClientMainService] Starting browser onboarding server
+2025-12-19 15:05:01.477 [info] [BrowserOnboardingClientServer] Browser onboarding server started on http://localhost:37639
+2025-12-19 15:05:01.477 [info] [CascadeMonitoringServer] Monitoring server started on http://localhost:9105/antigravity
+2025-12-19 15:05:01.477 [info] update#setState idle
+2025-12-19 15:05:01.477 [info] update#ctor - manual checks only; automatic updates are disabled by user preference
+2025-12-19 15:05:06.242 [info] AntigravityAuthMainService initialized
+2025-12-19 15:05:22.382 [info] Pruning 13 of 22 trajectory summaries
+2025-12-19 15:05:55.571 [info] [AgentClientServer] Cascade initializing for worksapce file:///home/archbtw/dev/archon
+2025-12-19 15:05:55.571 [info] [AgentClientServer] Starting server
+2025-12-19 15:05:55.581 [info] [AgentClientServer] Read HTML file, length: 127
+2025-12-19 15:05:55.585 [info] [AgentClientServer] Cascade server started on http://localhost:9095
+2025-12-19 15:05:55.585 [info] [AgentClientServer] Cascade server started on port 9095
+2025-12-19 15:08:50.305 [info] Extension host with pid 65370 exited with code: 0, signal: unknown.
+2025-12-19 15:08:51.338 [error] Extension host with pid 65370 still exists, forcefully killing it...

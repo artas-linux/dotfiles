@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "node mcp-server.js",
+    "dev": "node --watch mcp-server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.24.3",
+    "zod": "^4.1.13"
+  }
+}

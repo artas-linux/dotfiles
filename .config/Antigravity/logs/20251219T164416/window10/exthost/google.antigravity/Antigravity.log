@@ -1,0 +1,27 @@
+2025-12-19 17:04:05.163 [info] 2025/12/19 17:04:05 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+2025-12-19 17:04:05.322 [info] I1219 17:04:05.321363 174234 main.go:183] Setting GOMAXPROCS to 4
+2025-12-19 17:04:05.323 [info] I1219 17:04:05.323394 174234 main.go:294] Starting language server process with pid 174234
+2025-12-19 17:04:05.323 [info] I1219 17:04:05.323487 174234 server.go:228] Language server will attempt to listen on host 127.0.0.1
+2025-12-19 17:04:05.324 [info] I1219 17:04:05.323854 174234 server.go:235] Language server listening on random port at 44503 for HTTPS
+2025-12-19 17:04:05.324 [info] I1219 17:04:05.323940 174234 server.go:242] Language server listening on random port at 42887 for HTTP
+2025-12-19 17:04:23.770 [info] I1219 17:04:23.766145 174234 server.go:326] Created extension server client at port 45199
+2025-12-19 17:04:23.778 [info] W1219 17:04:23.774619 174234 log_context.go:106] Cache(userInfo): Singleflight refresh failed: You are not logged into Antigravity.
+2025-12-19 17:04:23.803 [info] I1219 17:04:23.801291 174234 server.go:343] initialized server successfully
+2025-12-19 17:04:23.809 [info] W1219 17:04:23.803624 174234 log_context.go:106] Cache(userInfo): Singleflight refresh failed: You are not logged into Antigravity.
+2025-12-19 17:04:23.847 [info] (Antigravity) 2025-12-19 17:04:23.845 [INFO]: Language server started
+2025-12-19 17:04:24.010 [info] 2025/12/19 17:04:23 http: TLS handshake error from 127.0.0.1:47122: EOF
+2025-12-19 17:04:24.592 [info] (Antigravity) 2025-12-19 17:04:24.592 [INFO]: LS lspClient started successfully
+2025-12-19 17:04:40.482 [info] W1219 17:04:40.481732 174234 log_context.go:106] Cache(userInfo): Singleflight refresh failed: Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:fetchUserInfo": EOF
+2025-12-19 17:04:40.482 [info] W1219 17:04:40.481904 174234 log_context.go:106] Failed to refresh cache in background: Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:fetchUserInfo": EOF
+2025-12-19 17:04:40.483 [info] E1219 17:04:40.482105 174234 interceptor.go:74] /exa.language_server_pb.LanguageServerService/GetUserStatus (unknown): Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:fetchUserInfo": EOF
+2025-12-19 17:04:40.483 [info] E1219 17:04:40.482115 174234 interceptor.go:74] /exa.language_server_pb.LanguageServerService/GetUserStatus (unknown): Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:fetchUserInfo": EOF
+2025-12-19 17:04:40.483 [info] E1219 17:04:40.482110 174234 interceptor.go:74] /exa.language_server_pb.LanguageServerService/GetUserStatus (unknown): Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:fetchUserInfo": EOF
+2025-12-19 17:04:41.317 [info] I1219 17:04:41.317468 174234 secure_credentials.go:67] Credentials set successfully
+2025-12-19 17:04:56.394 [info] E1219 17:04:56.393617 174234 interceptor.go:74] /exa.language_server_pb.LanguageServerService/RegisterGdmUser (unknown): Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:loadCodeAssist": dial tcp 172.253.144.81:443: connect: no route to host
+2025-12-19 17:05:35.038 [info] W1219 17:05:35.037925 174234 log_context.go:106] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:loadCodeAssist": EOF
+2025-12-19 17:05:35.038 [info] W1219 17:05:35.037984 174234 log_context.go:106] Failed to refresh cache in background: failed to get load code assist response: Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:loadCodeAssist": EOF
+2025-12-19 17:05:35.038 [info] E1219 17:05:35.038058 174234 interceptor.go:74] /exa.language_server_pb.LanguageServerService/GetUserStatus (unknown): failed to get load code assist response: Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:loadCodeAssist": EOF
+2025-12-19 17:05:35.038 [info] E1219 17:05:35.038213 174234 interceptor.go:74] /exa.language_server_pb.LanguageServerService/GetUserStatus (unknown): failed to get load code assist response: Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:loadCodeAssist": EOF
+2025-12-19 17:05:36.282 [info] W1219 17:05:36.282618 174234 browser_page.go:196] failed to get favicon URL: favicon not found
+2025-12-19 17:05:41.290 [info] W1219 17:05:41.287277 174234 log_context.go:106] Cache(availableModels): Singleflight refresh failed: Post "https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:fetchAvailableModels": context canceled
+2025-12-19 17:14:18.581 [info] E1219 17:14:18.580249 174234 log.go:354] Get "https://antigravity-unleash.goog/api/client/features": dial tcp: lookup antigravity-unleash.goog: Temporary failure in name resolution: Get "https://antigravity-unleash.goog/api/client/features": dial tcp: lookup antigravity-unleash.goog: Temporary failure in name resolution

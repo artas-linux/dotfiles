@@ -1,0 +1,21 @@
+kilo-code extension activated - {"publisher":"kilocode","name":"kilo-code","version":"4.140.0","outputChannel":"Kilo-Code"}
+[Default Commands Migration] Migration already completed, skipping
+Skipping migration of cline_custom_modes.json to custom_modes.json: old file not found
+Skipping migration of cline_mcp_settings.json to mcp_settings.json: old file not found
+No custom_modes.json found, skipping YAML migration
+CloudService not ready, deferring cloud profile sync
+[auth] Using WebAuthService
+Auto-purge scheduler initialized
+[auth] changeState: initializing -> logged-out
+SessionManager not initialized: No authentication token available
+[AutoImport] No auto-import settings path specified, skipping auto-import
+[SettingsSyncService] Registered 10 keys for synchronization: kilo-code.allowedCommands, kilo-code.deniedCommands, kilo-code.autoApprovalEnabled, kilo-code.fuzzyMatchThreshold, kilo-code.diffEnabled, kilo-code.directoryContextAddedContext, kilo-code.language, kilo-code.customModes, kilo-code.firstInstallCompleted, kilo-code.telemetrySetting
+[SettingsSync] VS Code Settings Sync integration initialized
+Kilo Code commit message generator activated
+Kilo: Commit message provider registered
+[AgentManager] Could not get git URL for workspace: Failed to get remote URL: Error while getting remote URL. Exited with error code: 1
+[AgentManager] Trying login shell lookup: /usr/bin/fish -l -c 'which kilocode' 2>/dev/null
+[AgentManager] Login shell lookup failed (this is normal if CLI not installed via version manager): Error: Command failed: /usr/bin/fish -l -c 'which kilocode' 2>/dev/null
+[AgentManager] kilocode not found in direct PATH lookup
+[AgentManager] Falling back to scanning common installation paths...
+[AgentManager] kilocode CLI not found

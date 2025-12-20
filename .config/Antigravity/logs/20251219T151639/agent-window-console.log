@@ -1,0 +1,41 @@
+2025-12-19 15:20:34.455 [info] [Manager] Uncaught (in promise) Error: Window not found (undefined) (/home/archbtw/Downloads/Antigravity/resources/app/out/vs/code/electron-browser/workbench/workbench-jetski-agent.html:0)
+2025-12-19 15:20:34.465 [info] [Manager] Uncaught (in promise) Error: Window not found (undefined) (/home/archbtw/Downloads/Antigravity/resources/app/out/vs/code/electron-browser/workbench/workbench-jetski-agent.html:0)
+2025-12-19 15:20:34.608 [info] [Manager] Overwriting grammar scope name to file mapping for scope source.java.
+Old grammar file: file:///home/archbtw/Downloads/Antigravity/resources/app/extensions/java/syntaxes/java.tmLanguage.json.
+New grammar file: file:///home/archbtw/.antigravity/extensions/redhat.java-1.50.0-linux-x64/language-support/java/java.tmLanguage.json (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2798)
+2025-12-19 15:20:34.608 [info] [Manager] Overwriting grammar scope name to file mapping for scope source.ruby.
+Old grammar file: file:///home/archbtw/Downloads/Antigravity/resources/app/extensions/ruby/syntaxes/ruby.tmLanguage.json.
+New grammar file: file:///home/archbtw/.antigravity/extensions/shopify.ruby-lsp-0.9.32-universal/grammars/ruby.cson.json (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2798)
+2025-12-19 15:20:34.608 [info] [Manager] Overwriting grammar scope name to file mapping for scope source.groovy.
+Old grammar file: file:///home/archbtw/Downloads/Antigravity/resources/app/extensions/groovy/syntaxes/groovy.tmLanguage.json.
+New grammar file: file:///home/archbtw/.antigravity/extensions/vscjava.vscode-gradle-3.17.1-universal/syntaxes/groovy.tmLanguage.json (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2798)
+2025-12-19 15:20:36.416 [info] [Manager] Overwriting grammar scope name to file mapping for scope source.java.
+Old grammar file: file:///home/archbtw/Downloads/Antigravity/resources/app/extensions/java/syntaxes/java.tmLanguage.json.
+New grammar file: file:///home/archbtw/.antigravity/extensions/redhat.java-1.50.0-linux-x64/language-support/java/java.tmLanguage.json (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2798)
+2025-12-19 15:20:36.416 [info] [Manager] Overwriting grammar scope name to file mapping for scope source.ruby.
+Old grammar file: file:///home/archbtw/Downloads/Antigravity/resources/app/extensions/ruby/syntaxes/ruby.tmLanguage.json.
+New grammar file: file:///home/archbtw/.antigravity/extensions/shopify.ruby-lsp-0.9.32-universal/grammars/ruby.cson.json (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2798)
+2025-12-19 15:20:36.416 [info] [Manager] Overwriting grammar scope name to file mapping for scope source.groovy.
+Old grammar file: file:///home/archbtw/Downloads/Antigravity/resources/app/extensions/groovy/syntaxes/groovy.tmLanguage.json.
+New grammar file: file:///home/archbtw/.antigravity/extensions/vscjava.vscode-gradle-3.17.1-universal/syntaxes/groovy.tmLanguage.json (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2798)
+2025-12-19 15:21:16.969 [info] [Manager] Overwriting grammar scope name to file mapping for scope source.java.
+Old grammar file: file:///home/archbtw/Downloads/Antigravity/resources/app/extensions/java/syntaxes/java.tmLanguage.json.
+New grammar file: file:///home/archbtw/.antigravity/extensions/redhat.java-1.50.0-linux-x64/language-support/java/java.tmLanguage.json (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2798)
+2025-12-19 15:21:16.970 [info] [Manager] Overwriting grammar scope name to file mapping for scope source.ruby.
+Old grammar file: file:///home/archbtw/Downloads/Antigravity/resources/app/extensions/ruby/syntaxes/ruby.tmLanguage.json.
+New grammar file: file:///home/archbtw/.antigravity/extensions/shopify.ruby-lsp-0.9.32-universal/grammars/ruby.cson.json (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2798)
+2025-12-19 15:21:16.970 [info] [Manager] Overwriting grammar scope name to file mapping for scope source.groovy.
+Old grammar file: file:///home/archbtw/Downloads/Antigravity/resources/app/extensions/groovy/syntaxes/groovy.tmLanguage.json.
+New grammar file: file:///home/archbtw/.antigravity/extensions/vscjava.vscode-gradle-3.17.1-universal/syntaxes/groovy.tmLanguage.json (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2798)
+2025-12-19 15:21:28.245 [info] [Manager] Overwriting grammar scope name to file mapping for scope source.java.
+Old grammar file: file:///home/archbtw/Downloads/Antigravity/resources/app/extensions/java/syntaxes/java.tmLanguage.json.
+New grammar file: file:///home/archbtw/.antigravity/extensions/redhat.java-1.50.0-linux-x64/language-support/java/java.tmLanguage.json (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2798)
+2025-12-19 15:21:28.246 [info] [Manager] Overwriting grammar scope name to file mapping for scope source.ruby.
+Old grammar file: file:///home/archbtw/Downloads/Antigravity/resources/app/extensions/ruby/syntaxes/ruby.tmLanguage.json.
+New grammar file: file:///home/archbtw/.antigravity/extensions/shopify.ruby-lsp-0.9.32-universal/grammars/ruby.cson.json (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2798)
+2025-12-19 15:21:28.246 [info] [Manager] Overwriting grammar scope name to file mapping for scope source.groovy.
+Old grammar file: file:///home/archbtw/Downloads/Antigravity/resources/app/extensions/groovy/syntaxes/groovy.tmLanguage.json.
+New grammar file: file:///home/archbtw/.antigravity/extensions/vscjava.vscode-gradle-3.17.1-universal/syntaxes/groovy.tmLanguage.json (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2798)
+2025-12-19 15:21:37.087 [info] [Manager] Failed to send message ConnectError: [unknown] unknown model key MODEL_PLACEHOLDER_M18: model not found (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2898)
+2025-12-19 15:22:05.307 [info] [Manager] got retryable useReactiveState RPC error on attempt [1 / Infinity]:  ConnectError: [unknown] network error (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2892)
+2025-12-19 15:22:12.902 [info] [Manager] got retryable useReactiveState RPC error on attempt [1 / Infinity]:  ConnectError: [unknown] network error (/home/archbtw/Downloads/Antigravity/resources/app/out/jetskiAgent/main.js:2892)

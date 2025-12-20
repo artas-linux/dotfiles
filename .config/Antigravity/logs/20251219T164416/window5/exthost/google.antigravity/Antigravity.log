@@ -1,0 +1,106 @@
+2025-12-19 16:46:23.696 [info] 2025/12/19 16:46:23 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+2025-12-19 16:46:23.868 [info] I1219 16:46:23.865828 151320 main.go:183] Setting GOMAXPROCS to 4
+2025-12-19 16:46:23.873 [info] I1219 16:46:23.872040 151320 main.go:294] Starting language server process with pid 151320
+2025-12-19 16:46:23.873 [info] I1219 16:46:23.872210 151320 server.go:228] Language server will attempt to listen on host 127.0.0.1
+2025-12-19 16:46:23.873 [info] I1219 16:46:23.872884 151320 server.go:235] Language server listening on random port at 36129 for HTTPS
+2025-12-19 16:46:23.873 [info] I1219 16:46:23.873073 151320 server.go:242] Language server listening on random port at 44491 for HTTP
+2025-12-19 16:46:25.585 [info] I1219 16:46:25.584647 151320 server.go:326] Created extension server client at port 45555
+2025-12-19 16:46:25.614 [info] W1219 16:46:25.600013 151320 log_context.go:106] Cache(userInfo): Singleflight refresh failed: You are not logged into Antigravity.
+2025-12-19 16:46:25.632 [info] I1219 16:46:25.630834 151320 server.go:343] initialized server successfully
+2025-12-19 16:46:25.637 [info] W1219 16:46:25.633821 151320 log_context.go:106] Cache(userInfo): Singleflight refresh failed: You are not logged into Antigravity.
+2025-12-19 16:46:25.705 [info] (Antigravity) 2025-12-19 16:46:25.700 [INFO]: Language server started
+2025-12-19 16:46:26.069 [info] (Antigravity) 2025-12-19 16:46:26.068 [INFO]: LS lspClient started successfully
+2025-12-19 16:46:40.834 [info] I1219 16:46:40.833813 151320 planner_generator.go:272] Requesting planner with 2 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:46:42.025 [info] W1219 16:46:42.025115 151320 log_context.go:106] Cache(peopleInfo): Singleflight refresh failed: failed to get profile picture: Get "https://lh3.googleusercontent.com/a/ACg8ocKnN676YCn89NeGdOIPxq-rwOAds3u7Kwa4AU_v0LZK80GzAA=s96-c": net/http: TLS handshake timeout
+2025-12-19 16:46:42.025 [info] W1219 16:46:42.025176 151320 log_context.go:106] Failed to refresh cache in background: failed to get profile picture: Get "https://lh3.googleusercontent.com/a/ACg8ocKnN676YCn89NeGdOIPxq-rwOAds3u7Kwa4AU_v0LZK80GzAA=s96-c": net/http: TLS handshake timeout
+2025-12-19 16:46:42.025 [info] E1219 16:46:42.025277 151320 interceptor.go:74] /exa.language_server_pb.LanguageServerService/GetUserStatus (unknown): failed to get profile picture: Get "https://lh3.googleusercontent.com/a/ACg8ocKnN676YCn89NeGdOIPxq-rwOAds3u7Kwa4AU_v0LZK80GzAA=s96-c": net/http: TLS handshake timeout
+2025-12-19 16:46:54.516 [info] I1219 16:46:54.515411 151320 secure_credentials.go:67] Credentials set successfully
+2025-12-19 16:46:54.833 [info] I1219 16:46:54.832068 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xf79f97c95e437e90
+2025-12-19 16:46:58.968 [info] (Antigravity) 2025-12-19 16:46:58.964 [INFO]: [Terminal] Command completed: ls -R ~/.qwen exit code 0
+2025-12-19 16:47:01.969 [info] (Antigravity) 2025-12-19 16:47:01.968 [INFO]: [Terminal] Command force exited: ls -R ~/.qwen, with exit code 0
+2025-12-19 16:47:06.098 [info] I1219 16:47:06.097233 151320 planner_generator.go:272] Requesting planner with 4 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:47:10.478 [info] W1219 16:47:10.477940 151320 browser_page.go:196] failed to get favicon URL: favicon not found
+2025-12-19 16:47:10.833 [info] E1219 16:47:10.832718 151320 log.go:354] request failed: &{429 Too Many Requests 429 HTTP/1.1 1 1 map[Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Content-Length:[420] Content-Type:[text/event-stream] Date:[Fri, 19 Dec 2025 16:47:10 GMT] Server:[ESF] Server-Timing:[gfet4t7; dur=3137] Vary:[Origin X-Origin Referer] X-Cloudaicompanion-Trace-Id:[5a25bee50adc0fda] X-Content-Type-Options:[nosniff] X-Frame-Options:[SAMEORIGIN] X-Xss-Protection:[0]] 0x21ea3bf9e380 420 [] false false map[] 0x21ea2efef900 0x21ea391298c0}
+2025-12-19 16:47:10.835 [info] E1219 16:47:10.834715 151320 log.go:362] error executing cascade step: CORTEX_STEP_TYPE_CHECKPOINT: request failed: &{429 Too Many Requests 429 HTTP/1.1 1 1 map[Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Content-Length:[420] Content-Type:[text/event-stream] Date:[Fri, 19 Dec 2025 16:47:10 GMT] Server:[ESF] Server-Timing:[gfet4t7; dur=3137] Vary:[Origin X-Origin Referer] X-Cloudaicompanion-Trace-Id:[5a25bee50adc0fda] X-Content-Type-Options:[nosniff] X-Frame-Options:[SAMEORIGIN] X-Xss-Protection:[0]] 0x21ea3bf9e380 420 [] false false map[] 0x21ea2efef900 0x21ea391298c0}
+2025-12-19 16:47:11.700 [info] I1219 16:47:11.692907 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x64e2fa2886761d92
+2025-12-19 16:47:11.826 [info] I1219 16:47:11.816155 151320 planner_generator.go:272] Requesting planner with 6 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:47:18.890 [info] I1219 16:47:18.889592 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x20f389e78c8bd35b
+2025-12-19 16:47:37.294 [info] I1219 16:47:37.294056 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x1763f72ed4a51a6
+2025-12-19 16:47:37.806 [info] I1219 16:47:37.789872 151320 planner_generator.go:272] Requesting planner with 8 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:48:00.683 [info] I1219 16:48:00.683168 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x1e3558041ab7c53
+2025-12-19 16:48:02.445 [info] (Antigravity) 2025-12-19 16:48:02.445 [INFO]: [Terminal] Command completed: ls -a ~ | grep antigravity exit code 0
+2025-12-19 16:48:02.830 [info] I1219 16:48:02.829649 151320 planner_generator.go:272] Requesting planner with 10 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:48:05.448 [info] (Antigravity) 2025-12-19 16:48:05.447 [INFO]: [Terminal] Command force exited: ls -a ~ | grep antigravity, with exit code 0
+2025-12-19 16:48:09.820 [info] I1219 16:48:09.817032 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x247b0cd0c0237ccd
+2025-12-19 16:48:09.930 [info] I1219 16:48:09.929317 151320 planner_generator.go:272] Requesting planner with 12 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:48:14.504 [info] I1219 16:48:14.503806 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x2887ec9b231f7492
+2025-12-19 16:48:15.229 [info] I1219 16:48:15.157435 151320 planner_generator.go:272] Requesting planner with 14 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:48:15.672 [info] (Antigravity) 2025-12-19 16:48:15.664 [INFO]: [Terminal] Command completed: ls -a ~/.config | grep antigravity exit code 1
+2025-12-19 16:48:18.678 [info] (Antigravity) 2025-12-19 16:48:18.678 [INFO]: [Terminal] Command force exited: ls -a ~/.config | grep antigravity, with exit code 1
+2025-12-19 16:48:19.718 [info] I1219 16:48:19.717436 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xd9d0733c96458fa4
+2025-12-19 16:48:19.879 [info] I1219 16:48:19.878581 151320 planner_generator.go:272] Requesting planner with 16 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:48:25.544 [info] I1219 16:48:25.543474 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x8243e745f1543169
+2025-12-19 16:48:26.835 [info] (Antigravity) 2025-12-19 16:48:26.834 [INFO]: [Terminal] Command completed: find ~ -maxdepth 3 -name "*antigravity*" exit code 0
+2025-12-19 16:48:27.148 [info] I1219 16:48:27.146096 151320 planner_generator.go:272] Requesting planner with 18 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:48:29.837 [info] (Antigravity) 2025-12-19 16:48:29.837 [INFO]: [Terminal] Command force exited: find ~ -maxdepth 3 -name "*antigravity*", with exit code 0
+2025-12-19 16:48:30.945 [info] I1219 16:48:30.944741 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xffbea24901e24da2
+2025-12-19 16:48:31.002 [info] I1219 16:48:31.001764 151320 planner_generator.go:272] Requesting planner with 20 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:48:35.551 [info] I1219 16:48:35.550591 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x56f67e2a297f638b
+2025-12-19 16:48:36.450 [info] (Antigravity) 2025-12-19 16:48:36.448 [INFO]: [Terminal] Command completed: ls -ld ~/.antigravity exit code 0
+2025-12-19 16:48:36.803 [info] I1219 16:48:36.803351 151320 planner_generator.go:272] Requesting planner with 22 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:48:39.450 [info] (Antigravity) 2025-12-19 16:48:39.450 [INFO]: [Terminal] Command force exited: ls -ld ~/.antigravity, with exit code 0
+2025-12-19 16:48:40.893 [info] I1219 16:48:40.891628 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x5b569ce010fa0936
+2025-12-19 16:48:41.043 [info] I1219 16:48:41.042708 151320 planner_generator.go:272] Requesting planner with 24 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:48:46.284 [info] I1219 16:48:46.284006 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x4dfdc14efdc07b98
+2025-12-19 16:48:46.291 [info] E1219 16:48:46.290755 151320 log.go:362] path is not in a workspace which you have access to: either proceed without accessing that path, or ask the user if they are willing to turn off workspace validation
+2025-12-19 16:48:46.301 [info] I1219 16:48:46.301577 151320 planner_generator.go:272] Requesting planner with 26 chat messages at model retry attempt 2 and API retry attempt 1
+2025-12-19 16:48:50.883 [info] I1219 16:48:50.883202 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbfdcddb6fe456213
+2025-12-19 16:48:51.703 [info] I1219 16:48:51.702576 151320 planner_generator.go:272] Requesting planner with 28 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:48:57.697 [info] I1219 16:48:57.695941 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xfb3a428d64e0431f
+2025-12-19 16:48:58.450 [info] E1219 16:48:58.441451 151320 log.go:362] access to file is blocked by gitignore. proceed without viewing this file, or ask if the user is willing to turn off gitignore enforcement: Access to /home/archbtw/.gemini/antigravity/mcp_config.json is prohibited
+2025-12-19 16:48:58.482 [info] I1219 16:48:58.475571 151320 planner_generator.go:272] Requesting planner with 30 chat messages at model retry attempt 2 and API retry attempt 1
+2025-12-19 16:49:02.980 [info] I1219 16:49:02.979539 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xad56e5e34bbb40d2
+2025-12-19 16:49:04.138 [info] (Antigravity) 2025-12-19 16:49:04.137 [INFO]: [Terminal] Command completed: cat /home/archbtw/.gemini/antigravity/mcp_config.json exit code 0
+2025-12-19 16:49:04.482 [info] I1219 16:49:04.481222 151320 planner_generator.go:272] Requesting planner with 32 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:49:07.140 [info] (Antigravity) 2025-12-19 16:49:07.139 [INFO]: [Terminal] Command force exited: cat /home/archbtw/.gemini/antigravity/mcp_config.json, with exit code 0
+2025-12-19 16:49:11.675 [info] I1219 16:49:11.675099 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x43a4ef8ba6b450f3
+2025-12-19 16:49:11.752 [info] I1219 16:49:11.751845 151320 planner_generator.go:272] Requesting planner with 34 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:49:17.961 [info] I1219 16:49:17.960885 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x4bee8b42b022f9dc
+2025-12-19 16:49:19.001 [info] (Antigravity) 2025-12-19 16:49:19.001 [INFO]: [Terminal] Command completed: find ~/.qwen -maxdepth 2 exit code 0
+2025-12-19 16:49:19.468 [info] I1219 16:49:19.466259 151320 planner_generator.go:272] Requesting planner with 36 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:49:22.003 [info] (Antigravity) 2025-12-19 16:49:22.003 [INFO]: [Terminal] Command force exited: find ~/.qwen -maxdepth 2, with exit code 0
+2025-12-19 16:49:25.096 [info] I1219 16:49:25.096211 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x70a0098cdf2f32ef
+2025-12-19 16:49:25.353 [info] I1219 16:49:25.352782 151320 planner_generator.go:272] Requesting planner with 38 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:49:40.379 [info] I1219 16:49:40.379026 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x93d9dc5bc868693b
+2025-12-19 16:49:40.534 [info] (Antigravity) 2025-12-19 16:49:40.534 [INFO]: [Terminal] Command completed: ls -F ~/.qwen | head -n 20 exit code 0
+2025-12-19 16:49:40.951 [info] I1219 16:49:40.950764 151320 planner_generator.go:272] Requesting planner with 40 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:49:43.535 [info] (Antigravity) 2025-12-19 16:49:43.535 [INFO]: [Terminal] Command force exited: ls -F ~/.qwen | head -n 20, with exit code 0
+2025-12-19 16:49:48.299 [info] I1219 16:49:48.299228 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xb70b4f066d0e9595
+2025-12-19 16:49:48.423 [info] I1219 16:49:48.414646 151320 planner_generator.go:272] Requesting planner with 42 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:50:00.650 [info] I1219 16:50:00.649252 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xa873598815f3b2fe
+2025-12-19 16:50:01.042 [info] (Antigravity) 2025-12-19 16:50:01.041 [INFO]: [Terminal] Command completed: cat ~/.qwen/settings.json exit code 0
+2025-12-19 16:50:01.353 [info] I1219 16:50:01.341768 151320 planner_generator.go:272] Requesting planner with 44 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:50:04.045 [info] (Antigravity) 2025-12-19 16:50:04.045 [INFO]: [Terminal] Command force exited: cat ~/.qwen/settings.json, with exit code 0
+2025-12-19 16:50:07.393 [info] I1219 16:50:07.393422 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x274bc3770112da98
+2025-12-19 16:50:07.573 [info] I1219 16:50:07.571687 151320 planner_generator.go:272] Requesting planner with 46 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:50:13.445 [info] I1219 16:50:13.444844 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbcde46e6d93b88c1
+2025-12-19 16:50:13.762 [info] (Antigravity) 2025-12-19 16:50:13.761 [INFO]: [Terminal] Command completed: head -n 50 ~/.qwen/settings.json exit code 0
+2025-12-19 16:50:14.137 [info] I1219 16:50:14.097844 151320 planner_generator.go:272] Requesting planner with 48 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:50:16.764 [info] (Antigravity) 2025-12-19 16:50:16.764 [INFO]: [Terminal] Command force exited: head -n 50 ~/.qwen/settings.json, with exit code 0
+2025-12-19 16:50:20.201 [info] I1219 16:50:20.200750 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x2deca224b61d0205
+2025-12-19 16:50:20.394 [info] I1219 16:50:20.380209 151320 planner_generator.go:272] Requesting planner with 50 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:50:25.540 [info] I1219 16:50:25.537537 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x2f32a652fb803c92
+2025-12-19 16:50:27.768 [info] (Antigravity) 2025-12-19 16:50:27.764 [INFO]: [Terminal] Command completed: grep -i "qwen-coder" ~/.qwen/settings.json exit code 1
+2025-12-19 16:50:28.292 [info] I1219 16:50:28.222877 151320 planner_generator.go:272] Requesting planner with 52 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:50:30.772 [info] (Antigravity) 2025-12-19 16:50:30.771 [INFO]: [Terminal] Command force exited: grep -i "qwen-coder" ~/.qwen/settings.json, with exit code 1
+2025-12-19 16:50:35.663 [info] I1219 16:50:35.662919 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x2cef6448510992ad
+2025-12-19 16:50:36.058 [info] I1219 16:50:36.054019 151320 planner_generator.go:272] Requesting planner with 54 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:50:43.814 [info] I1219 16:50:43.813604 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x39ee28457b5071b9
+2025-12-19 16:50:45.765 [info] I1219 16:50:45.664454 151320 planner_generator.go:272] Requesting planner with 56 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:50:46.311 [info] (Antigravity) 2025-12-19 16:50:46.310 [INFO]: [Terminal] Command completed: cat ~/.qwen/QWEN.md exit code 0
+2025-12-19 16:50:49.322 [info] (Antigravity) 2025-12-19 16:50:49.322 [INFO]: [Terminal] Command force exited: cat ~/.qwen/QWEN.md, with exit code 0
+2025-12-19 16:50:51.679 [info] I1219 16:50:51.675938 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x61352acf597906a1
+2025-12-19 16:50:52.401 [info] I1219 16:50:52.400493 151320 planner_generator.go:272] Requesting planner with 58 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 16:50:56.427 [info] E1219 16:50:56.425985 151320 log.go:362] agent executor error: request failed: &{429 Too Many Requests 429 HTTP/1.1 1 1 map[Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Content-Length:[695] Content-Type:[text/event-stream] Date:[Fri, 19 Dec 2025 16:50:54 GMT] Server:[ESF] Server-Timing:[gfet4t7; dur=1511] Vary:[Origin X-Origin Referer] X-Cloudaicompanion-Trace-Id:[7f7693afa0706c50] X-Content-Type-Options:[nosniff] X-Frame-Options:[SAMEORIGIN] X-Xss-Protection:[0]] 0x21ea361b6e80 695 [] false false map[] 0x21ea3ca5c3c0 0x21ea38c77e00}: request failed: &{429 Too Many Requests 429 HTTP/1.1 1 1 map[Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Content-Length:[695] Content-Type:[text/event-stream] Date:[Fri, 19 Dec 2025 16:50:54 GMT] Server:[ESF] Server-Timing:[gfet4t7; dur=1511] Vary:[Origin X-Origin Referer] X-Cloudaicompanion-Trace-Id:[7f7693afa0706c50] X-Content-Type-Options:[nosniff] X-Frame-Options:[SAMEORIGIN] X-Xss-Protection:[0]] 0x21ea361b6e80 695 [] false false map[] 0x21ea3ca5c3c0 0x21ea38c77e00}
+2025-12-19 17:00:13.602 [info] I1219 17:00:13.598568 151320 planner_generator.go:272] Requesting planner with 60 chat messages at model retry attempt 1 and API retry attempt 1
+2025-12-19 17:00:16.905 [info] I1219 17:00:16.905531 151320 http_helpers.go:125] URL: https://daily-cloudcode-pa.sandbox.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xdb3e621480d03d0e

@@ -1,0 +1,22 @@
+2025-12-19 15:05:23.626 [error] #2: https://open-vsx.org/vscode/gallery/vscode/devsense/composer-php-vscode/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.629 [error] #3: https://open-vsx.org/vscode/gallery/vscode/devsense/intelli-php-vscode/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.631 [error] #4: https://open-vsx.org/vscode/gallery/vscode/devsense/phptools-vscode/latest - error GET Canceled
+2025-12-19 15:05:23.634 [error] #5: https://open-vsx.org/vscode/gallery/vscode/devsense/profiler-php-vscode/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.636 [error] #6: https://open-vsx.org/vscode/gallery/vscode/golang/go/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.641 [error] #7: https://open-vsx.org/vscode/gallery/vscode/kilocode/kilo-code/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.643 [error] #8: https://open-vsx.org/vscode/gallery/vscode/llvm-vs-code-extensions/vscode-clangd/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.645 [error] #9: https://open-vsx.org/vscode/gallery/vscode/meta/pyrefly/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.647 [error] #10: https://open-vsx.org/vscode/gallery/vscode/ms-azuretools/vscode-containers/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.649 [error] #11: https://open-vsx.org/vscode/gallery/vscode/ms-azuretools/vscode-docker/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.651 [error] #12: https://open-vsx.org/vscode/gallery/vscode/ms-python/debugpy/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.652 [error] #13: https://open-vsx.org/vscode/gallery/vscode/ms-python/python/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.654 [error] #14: https://open-vsx.org/vscode/gallery/vscode/ms-python/vscode-python-envs/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.655 [error] #15: https://open-vsx.org/vscode/gallery/vscode/redhat/java/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.656 [error] #16: https://open-vsx.org/vscode/gallery/vscode/shopify/ruby-lsp/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.658 [error] #17: https://open-vsx.org/vscode/gallery/vscode/vscjava/vscode-gradle/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.660 [error] #18: https://open-vsx.org/vscode/gallery/vscode/vscjava/vscode-java-debug/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.661 [error] #19: https://open-vsx.org/vscode/gallery/vscode/vscjava/vscode-java-dependency/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.664 [error] #20: https://open-vsx.org/vscode/gallery/vscode/vscjava/vscode-java-pack/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.665 [error] #21: https://open-vsx.org/vscode/gallery/vscode/vscjava/vscode-java-test/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.666 [error] #22: https://open-vsx.org/vscode/gallery/vscode/vscjava/vscode-maven/latest - error GET Fetch timeout: 10000ms
+2025-12-19 15:05:23.668 [error] #23: https://open-vsx.org/vscode/gallery/vscode/vscodevim/vim/latest - error GET Fetch timeout: 10000ms

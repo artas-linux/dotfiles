@@ -1,0 +1,13 @@
+2025-12-19 15:09:08.552 [info] Using Cloud Code URL: https://daily-cloudcode-pa.sandbox.googleapis.com
+2025-12-19 15:09:08.552 [info] [BrowserOnboardingClientMainService] Starting browser onboarding server
+2025-12-19 15:09:08.552 [info] [BrowserOnboardingClientServer] Browser onboarding server started on http://localhost:43117
+2025-12-19 15:09:08.552 [info] [CascadeMonitoringServer] Monitoring server started on http://localhost:9106/antigravity
+2025-12-19 15:09:08.552 [info] update#setState idle
+2025-12-19 15:09:08.552 [info] update#ctor - manual checks only; automatic updates are disabled by user preference
+2025-12-19 15:09:14.184 [info] AntigravityAuthMainService initialized
+2025-12-19 15:09:15.344 [info] Extension host with pid 70007 exited with code: 2, signal: unknown.
+2025-12-19 15:09:15.345 [error] [UtilityProcess id: 1, type: extensionHost, pid: 70007]: crashed with code 2 and reason 'killed'
+2025-12-19 15:09:15.351 [error] ptyHost terminated unexpectedly with code 2
+2025-12-19 15:09:15.353 [warning] [UtilityProcess type: ptyHost, pid: 69996]: unable to kill the process
+2025-12-19 15:09:15.369 [error] [File Watcher (universal)] restarting watcher after unexpected error: terminated by itself with code 0, signal: null (ETERM)
+2025-12-19 15:09:15.387 [error] [UtilityProcess type: shared-process, pid: 69966]: crashed with code 2 and reason 'killed'

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adams Shoe - Premium Customization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <nav>
+                <div class="logo">ADAMS<span>SHOE</span></div>
+                <div class="nav-links">
+                    <a href="#" class="active">Customize</a>
+                    <a href="#">Collection</a>
+                    <a href="#">About</a>
+                </div>
+                <button class="cart-btn">Cart (0)</button>
+            </nav>
+        </header>
+
+        <main>
+            <div class="customization-interface">
+                <div class="shoe-preview-container">
+                    <div class="shoe-stage">
+                        <!-- Detailed Sneaker SVG -->
+                        <svg class="shoe-svg" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+                                    <feGaussianBlur in="SourceAlpha" stdDeviation="15" />
+                                    <feOffset dx="0" dy="20" result="offsetblur" />
+                                    <feComponentTransfer>
+                                        <feFuncA type="linear" slope="0.3" />
+                                    </feComponentTransfer>
+                                    <feMerge>
+                                        <feMergeNode />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                            </defs>
+
+                            <!-- Shadow -->
+                            <ellipse cx="250" cy="310" rx="180" ry="25" fill="rgba(0,0,0,0.3)"
+                                filter="url(#dropShadow)" />
+
+                            <g id="shoe-group" transform="translate(20, 20)">
+                                <!-- Outsole (Bottom) -->
+                                <path id="shoeSole" class="shoe-part"
+                                    d="M40,230 Q40,260 80,260 L380,260 Q440,260 440,210 L435,190 L45,190 Q40,190 40,230 Z"
+                                    fill="#ffffff" />
+
+                                <!-- Midsole (White rubber part usually) -->
+                                <path id="shoeMidsole" class="shoe-part"
+                                    d="M45,190 L435,190 L430,160 Q430,140 380,140 L100,140 Q50,140 45,190 Z"
+                                    fill="#eeeeee" />
+
+                                <!-- Main Upper Body (Base) -->
+                                <path id="shoeBase" class="shoe-part"
+                                    d="M50,185 Q50,130 100,100 Q140,75 200,70 L300,70 Q380,70 420,120 L430,160 L50,160 Z"
+                                    fill="#333333" />
+
+                                <!-- Toe Box Cap -->
+                                <path id="shoeToe" class="shoe-part"
+                                    d="M50,160 Q50,130 90,120 L130,115 L130,160 L50,160 Z" fill="#222222" />
+
+                                <!-- Heel Counter (Back) -->
+                                <path id="shoeHeel" class="shoe-part"
+                                    d="M380,160 L430,160 L420,120 Q420,90 380,90 L350,90 L350,160 Z" fill="#222222" />
+
+                                <!-- Upper Panel / Swoosh Area -->
+                                <path id="shoeUpper" class="shoe-part"
+                                    d="M140,115 L340,115 L370,90 L200,90 Q160,90 140,115 Z" fill="#555555" />
+
+                                <!-- Tongue -->
+                                <path id="shoeTongue" class="shoe-part" d="M180,70 Q200,40 250,40 Q280,40 290,70 Z"
+                                    fill="#444444" />
+
+                                <!-- Laces Area -->
+                                <g id="laces">
+                                    <path d="M190,75 L210,110" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                                    <path d="M210,75 L230,110" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                                    <path d="M230,75 L250,110" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                                    <path d="M250,75 L270,110" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="controls-panel">
+                    <div class="panel-header">
+                        <h1>Design Your <br><span class="highlight">Signature Pair</span></h1>
+                        <p>Customize every detail to match your style.</p>
+                    </div>
+
+                    <div class="customization-options">
+                        <div class="option-group">
+                            <label>Base Color</label>
+                            <div class="color-swatches" id="baseSwatches">
+                                <button class="swatch active" data-color="#333333" style="background-color: #333333;"
+                                    aria-label="Black base"></button>
+                                <button class="swatch" data-color="#e74c3c" style="background-color: #e74c3c;"
+                                    aria-label="Red base"></button>
+                                <button class="swatch" data-color="#3498db" style="background-color: #3498db;"
+                                    aria-label="Blue base"></button>
+                                <button class="swatch" data-color="#2ecc71" style="background-color: #2ecc71;"
+                                    aria-label="Green base"></button>
+                                <button class="swatch" data-color="#f1c40f" style="background-color: #f1c40f;"
+                                    aria-label="Yellow base"></button>
+                                <button class="swatch" data-color="#9b59b6" style="background-color: #9b59b6;"
+                                    aria-label="Purple base"></button>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <label>Upper Accent</label>
+                            <div class="color-swatches" id="upperSwatches">
+                                <button class="swatch active" data-color="#555555" style="background-color: #555555;"
+                                    aria-label="Gray upper"></button>
+                                <button class="swatch" data-color="#c0392b" style="background-color: #c0392b;"
+                                    aria-label="Dark red upper"></button>
+                                <button class="swatch" data-color="#2980b9" style="background-color: #2980b9;"
+                                    aria-label="Blue upper"></button>
+                                <button class="swatch" data-color="#27ae60" style="background-color: #27ae60;"
+                                    aria-label="Green upper"></button>
+                                <button class="swatch" data-color="#f39c12" style="background-color: #f39c12;"
+                                    aria-label="Orange upper"></button>
+                                <button class="swatch" data-color="#e67e22" style="background-color: #e67e22;"
+                                    aria-label="Brown upper"></button>
+                            </div>
+
+                            <div class="option-group">
+                                <label>Sole Color</label>
+                                <div class="color-swatches" id="soleSwatches">
+                                    <button class="swatch active" data-color="#ffffff"
+                                        style="background-color: #ffffff; border: 1px solid #ccc;"
+                                        aria-label="White sole"></button>
+                                    <button class="swatch" data-color="#000000" style="background-color: #000000;"
+                                        aria-label="Black sole"></button>
+                                    <button class="swatch" data-color="#e74c3c" style="background-color: #e74c3c;"
+                                        aria-label="Red sole"></button>
+                                    <button class="swatch" data-color="#3498db" style="background-color: #3498db;"
+                                        aria-label="Blue sole"></button>
+                                    <button class="swatch" data-color="#2ecc71" style="background-color: #2ecc71;"
+                                        aria-label="Green sole"></button>
+                                    <button class="swatch" data-color="#f1c40f" style="background-color: #f1c40f;"
+                                        aria-label="Yellow sole"></button>
+                                </div>
+
+                                <div class="option-group">
+                                    <label>Lace Color</label>
+                                    <div class="color-swatches" id="laceSwatches">
+                                        <button class="swatch active" data-color="#ffffff"
+                                            style="background-color: #ffffff; border: 1px solid #ccc;"
+                                            aria-label="White laces"></button>
+                                        <button class="swatch" data-color="#000000" style="background-color: #000000;"
+                                            aria-label="Black laces"></button>
+                                        <button class="swatch" data-color="#e74c3c" style="background-color: #e74c3c;"
+                                            aria-label="Red laces"></button>
+                                        <button class="swatch" data-color="#3498db" style="background-color: #3498db;"
+                                            aria-label="Blue laces"></button>
+                                        <button class="swatch" data-color="#2ecc71" style="background-color: #2ecc71;"
+                                            aria-label="Green laces"></button>
+                                        <button class="swatch" data-color="#f1c40f" style="background-color: #f1c40f;"
+                                            aria-label="Yellow laces"></button>
+                                    </div>
+                                </div>
+
+                                <div class="option-group">
+                                    <label>Material Finish</label>
+                                    <div class="finish-options">
+                                        <button class="finish-option active" data-finish="matte"
+                                            aria-label="Matte finish">Matte</button>
+                                        <button class="finish-option" data-finish="glossy"
+                                            aria-label="Glossy finish">Glossy</button>
+                                        <button class="finish-option" data-finish="metallic"
+                                            aria-label="Metallic finish">Metallic</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="action-area">
+                                <div class="price-tag">$129.00</div>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+        </main>
+
+        <section class="gallery-section">
+            <h2>Inspiration Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/shoe1.jpg" alt="Custom Shoe Design 1">
+                    <div class="overlay">
+                        <span>Urban Runner</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/shoe2.jpg" alt="Custom Shoe Design 2">
+                    <div class="overlay">
+                        <span>Neon Night</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/shoe3.jpg" alt="Custom Shoe Design 3">
+                    <div class="overlay">
+                        <span>Classic Remix</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

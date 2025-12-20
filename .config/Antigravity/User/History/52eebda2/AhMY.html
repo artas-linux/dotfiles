@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adams Shoe - Premium Customization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <nav>
+                <div class="logo">ADAMS<span>SHOE</span></div>
+                <div class="nav-links">
+                    <a href="#" class="active">Customize</a>
+                    <a href="#">Collection</a>
+                    <a href="#">About</a>
+                </div>
+                <button class="cart-btn">Cart (0)</button>
+            </nav>
+        </header>
+
+        <main>
+            <div class="customization-interface">
+                <div class="shoe-preview-container">
+                    <div class="shoe-stage">
+                        <!-- High Quality Hero Image -->
+                        <img src="assets/images/hero.png" alt="Adams Future Tech Sneaker" class="hero-shoe-image">
+                    </div>
+                </div>
+
+                <div class="controls-panel">
+                    <div class="panel-header">
+                        <h1>Design Your <br><span class="highlight">Future Step</span></h1>
+                        <p>Experience the next generation of footwear.</p>
+                    </div>
+
+                    <div class="customization-options">
+                        <!-- Options kept for layout, functionality temporarily disabled for static image -->
+                        <div class="option-group">
+                            <label>Select Style</label>
+                            <div class="color-swatches" id="baseSwatches">
+                                <button class="swatch active" data-color="#333333" style="background-color: #333333;"
+                                    aria-label="Stealth Black"></button>
+                                <button class="swatch" data-color="#e74c3c" style="background-color: #e74c3c;"
+                                    aria-label="Crimson Red"></button>
+                                <button class="swatch" data-color="#3498db" style="background-color: #3498db;"
+                                    aria-label="Cyber Blue"></button>
+                            </div>
+                        </div>
+
+                        <div class="action-area">
+                            <div class="price-tag">PKR 8,000</div>
+                            <button class="add-to-cart-btn">Pre-Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="gallery-section">
+            <h2>Collection Drop</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/gallery1.png" alt="Urban Heat">
+                    <div class="overlay">
+                        <span>Urban Heat</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery2.png" alt="Neon Drift">
+                    <div class="overlay">
+                        <span>Neon Drift</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/hero.png" alt="Future Tech">
+                    <div class="overlay">
+                        <span>Future Tech</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

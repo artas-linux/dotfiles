@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "SynthWave84",
+    "kilo-code.allowedCommands": [
+        "git log",
+        "git diff",
+        "git show"
+    ],
+    "kilo-code.deniedCommands": []
+}

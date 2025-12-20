@@ -1,0 +1,353 @@
+:root {
+    --bg-color: #0f0f11;
+    --text-color: #ffffff;
+    --accent-color: #ff3e3e;
+    --panel-bg: rgba(255, 255, 255, 0.05);
+    --font-main: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Header */
+header {
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: white;
+}
+
+.cart-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-main);
+}
+
+.cart-btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Main Layout */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.customization-interface {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    min-height: 80vh;
+    padding: 0 4rem;
+    gap: 4rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Shoe Preview Area */
+.shoe-preview-container {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.shoe-stage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.5));
+    animation: float 6s ease-in-out infinite;
+}
+
+.shoe-svg {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.shoe-svg:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.shoe-part {
+    transition: fill 0.4s ease;
+}
+
+/* Controls Panel */
+.controls-panel {
+    flex: 1;
+    background: var(--panel-bg);
+    backdrop-filter: blur(20px);
+    border-radius: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.panel-header h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.panel-header .highlight {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    opacity: 0.8;
+}
+
+.panel-header p {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+/* Options */
+.option-group {
+    margin-bottom: 2.5rem;
+}
+
+.option-group label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 1rem;
+}
+
+.color-swatches {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.swatch {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.swatch:hover {
+    transform: scale(1.1);
+}
+
+.swatch.active {
+    border-color: white;
+    transform: scale(1.1);
+}
+
+.finish-options {
+    display: flex;
+    gap: 1rem;
+}
+
+.finish-option {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.finish-option.active,
+.finish-option:hover {
+    background: white;
+    color: black;
+}
+
+/* Action Area */
+.action-area {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price-tag {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.add-to-cart-btn {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 1.2rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(255, 62, 62, 0.3);
+}
+
+.add-to-cart-btn:hover {
+    background: #ff5252;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(255, 62, 62, 0.4);
+}
+
+/* Animations */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .customization-interface {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .shoe-preview-container {
+        height: 400px;
+    }
+
+    .panel-header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 6rem 4rem;
+    background: linear-gradient(to bottom, var(--bg-color), #1a1a1e);
+}
+
+.gallery-section h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    height: 400px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: flex-end;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery-item .overlay span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+}

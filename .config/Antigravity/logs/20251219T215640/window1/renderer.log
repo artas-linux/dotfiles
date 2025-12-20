@@ -1,0 +1,167 @@
+2025-12-19 21:56:44.276 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.vscode-selfhost-test-provider' wants API proposal 'attributableCoverage' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.319 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vsliveshare.vsliveshare' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.320 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.320 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.vscode-pull-request-github' wants API proposal 'fileComments' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.321 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'chatVariableResolver' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.322 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.323 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.gather' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.323 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-pylance' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.324 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.debugpy' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.324 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-toolsai.jupyter' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.325 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'dbaeumer.vscode-eslint' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.326 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-azuretools.vscode-azure-github-copilot' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.326 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.cpptools' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.327 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'redhat.java' wants API proposal 'documentPaste' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:44.327 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'vscjava.vscode-java-pack' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:45.455 [info] Started local extension host with pid 104846.
+2025-12-19 21:56:46.418 [error] Extension 'google.antigravity' wants API proposal 'cloudCodeUrl' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-19 21:56:46.419 [error] Extension 'ms-azuretools.vscode-containers CANNOT USE these API proposals 'authenticationChallenges'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-12-19 21:56:46.419 [error] Extension 'ms-python.python' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): contribEditorContentMenu, quickPickSortByLabel, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, codeActionAI, notebookReplDocument, notebookVariableProvider
+product.json (WINS): contribEditorContentMenu, quickPickSortByLabel, portsAttributes, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, notebookReplDocument
+2025-12-19 21:56:46.420 [error] Extension 'ms-python.vscode-python-envs CANNOT USE these API proposals 'terminalShellEnv'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-12-19 21:56:46.474 [error] [vscode.git]: property `title` is mandatory and must be of type `string` or `object`
+2025-12-19 21:56:46.475 [error] [vscode.git]: property `title` is mandatory and must be of type `string` or `object`
+2025-12-19 21:56:46.485 [error] [google.antigravity]: Menu item references a command `antigravity.importAntigravitySettings` which is not defined in the 'commands' section.
+2025-12-19 21:56:46.486 [error] [google.antigravity]: Menu item references a command `antigravity.importAntigravityExtensions` which is not defined in the 'commands' section.
+2025-12-19 21:56:46.578 [error] Ignoring clangd.onConfigChanged.forceEnable as clangd.onConfigChanged is "prompt"
+2025-12-19 21:56:46.942 [error] Ignoring clangd.onConfigChanged.forceEnable as clangd.onConfigChanged is "prompt"
+2025-12-19 21:56:50.025 [error] [Extension Host] Failed to update user status Error: LanguageServerClient must be initialized first!
+	at B.getInstance (/home/archbtw/Downloads/Antigravity/resources/app/extensions/antigravity/dist/extension.js:2:214140)
+	at a.updateUserStatus (/home/archbtw/Downloads/Antigravity/resources/app/extensions/antigravity/dist/extension.js:2:1236010)
+	at a.restartUpdateLoop (/home/archbtw/Downloads/Antigravity/resources/app/extensions/antigravity/dist/extension.js:2:1236501)
+	at t.activate (/home/archbtw/Downloads/Antigravity/resources/app/extensions/antigravity/dist/extension.js:2:163659)
+	at async qT.n (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:113:14106)
+	at async qT.m (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:113:14069)
+	at async qT.l (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:113:13525)
+2025-12-19 21:56:50.795 [info] [perf] Render performance baseline is 73ms
+2025-12-19 21:57:02.496 [error] [Extension Host] (node:104846) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-12-19 21:57:03.903 [error] [Extension Host] which: no kilocode in (/home/archbtw/.local/share/pnpm:/home/archbtw/.local/share/nvim/mason/bin:/home/archbtw/.local/share/bob/nvim-bin:/home/archbtw/.local/share/cargo/bin:/home/archbtw/.local/bin/color-scripts:/home/archbtw/.local/bin:/home/matt/.local/share/pnpm:/home/matt/.local/share/nvim/mason/bin:/home/matt/.yarn/bin:/home/matt/.local/share/npm/bin:/home/matt/.local/share/bob/nvim-bin:/home/matt/.local/share/bun/bin:/usr/lib/go/bin:/usr/lib/rustup/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/home/matt/.local/share/cargo/bin:/home/matt/.local/share/go/bin:/home/matt/.local/bin/color-scripts:/home/matt/.local/bin:/home/archbtw/.atuin/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/rocm/bin)
+2025-12-19 21:57:04.001 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-19 21:57:08.138 [error] [Extension Host] Server "sequentialthinking" stderr: Sequential Thinking MCP Server running on stdio
+
+2025-12-19 21:57:21.900 [error] [Extension Host] Server "filesystem" stderr: Secure MCP Filesystem Server running on stdio
+
+2025-12-19 21:57:21.922 [error] [Extension Host] Server "filesystem" stderr: Client does not support MCP Roots, using allowed directories set from server args: [ '/home/archbtw' ]
+
+2025-12-19 21:57:26.317 [error] [Extension Host] Transport error for "git": SyntaxError: Unexpected token 'S', "Starting M"... is not valid JSON
+	at JSON.parse (<anonymous>)
+	at S4s (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:830:157621)
+	at tze.readMessage (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:131)
+	at rze.processReadBuffer (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2576)
+	at Socket.<anonymous> (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2028)
+	at Socket.emit (node:events:518:28)
+	at Socket.emit (node:domain:489:12)
+	at addChunk (node:internal/streams/readable:561:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+	at Readable.push (node:internal/streams/readable:392:5)
+	at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+2025-12-19 21:57:27.369 [error] [Extension Host] Transport error for "git": SyntaxError: Unexpected token '⚙', "⚙️ Proxy s"... is not valid JSON
+	at JSON.parse (<anonymous>)
+	at S4s (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:830:157621)
+	at tze.readMessage (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:131)
+	at rze.processReadBuffer (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2576)
+	at Socket.<anonymous> (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2028)
+	at Socket.emit (node:events:518:28)
+	at Socket.emit (node:domain:489:12)
+	at addChunk (node:internal/streams/readable:561:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+	at Readable.push (node:internal/streams/readable:392:5)
+	at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+2025-12-19 21:57:27.370 [error] [Extension Host] Transport error for "git": SyntaxError: Unexpected token '�', "🔑 Session"... is not valid JSON
+	at JSON.parse (<anonymous>)
+	at S4s (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:830:157621)
+	at tze.readMessage (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:131)
+	at rze.processReadBuffer (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2576)
+	at Socket.<anonymous> (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2028)
+	at Socket.emit (node:events:518:28)
+	at Socket.emit (node:domain:489:12)
+	at addChunk (node:internal/streams/readable:561:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+	at Readable.push (node:internal/streams/readable:392:5)
+	at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+2025-12-19 21:57:27.371 [error] [Extension Host] Transport error for "git": SyntaxError: Unexpected token 'U', "   Use this t"... is not valid JSON
+	at JSON.parse (<anonymous>)
+	at S4s (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:830:157621)
+	at tze.readMessage (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:131)
+	at rze.processReadBuffer (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2576)
+	at Socket.<anonymous> (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2028)
+	at Socket.emit (node:events:518:28)
+	at Socket.emit (node:domain:489:12)
+	at addChunk (node:internal/streams/readable:561:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+	at Readable.push (node:internal/streams/readable:392:5)
+	at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+2025-12-19 21:57:28.605 [error] [Extension Host] Transport error for "git": SyntaxError: Unexpected end of JSON input
+	at JSON.parse (<anonymous>)
+	at S4s (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:830:157621)
+	at tze.readMessage (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:131)
+	at rze.processReadBuffer (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2576)
+	at Socket.<anonymous> (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2028)
+	at Socket.emit (node:events:518:28)
+	at Socket.emit (node:domain:489:12)
+	at addChunk (node:internal/streams/readable:561:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+	at Readable.push (node:internal/streams/readable:392:5)
+	at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+2025-12-19 21:57:28.606 [error] [Extension Host] Transport error for "git": SyntaxError: Unexpected token '�', "🚀 MCP Ins"... is not valid JSON
+	at JSON.parse (<anonymous>)
+	at S4s (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:830:157621)
+	at tze.readMessage (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:131)
+	at rze.processReadBuffer (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2576)
+	at Socket.<anonymous> (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2028)
+	at Socket.emit (node:events:518:28)
+	at Socket.emit (node:domain:489:12)
+	at addChunk (node:internal/streams/readable:561:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+	at Readable.push (node:internal/streams/readable:392:5)
+	at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+2025-12-19 21:57:28.607 [error] [Extension Host] Transport error for "git": SyntaxError: Unexpected token 'h', "   http://loc"... is not valid JSON
+	at JSON.parse (<anonymous>)
+	at S4s (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:830:157621)
+	at tze.readMessage (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:131)
+	at rze.processReadBuffer (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2576)
+	at Socket.<anonymous> (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2028)
+	at Socket.emit (node:events:518:28)
+	at Socket.emit (node:domain:489:12)
+	at addChunk (node:internal/streams/readable:561:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+	at Readable.push (node:internal/streams/readable:392:5)
+	at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+2025-12-19 21:57:28.608 [error] [Extension Host] Transport error for "git": SyntaxError: Unexpected end of JSON input
+	at JSON.parse (<anonymous>)
+	at S4s (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:830:157621)
+	at tze.readMessage (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:131)
+	at rze.processReadBuffer (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2576)
+	at Socket.<anonymous> (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2028)
+	at Socket.emit (node:events:518:28)
+	at Socket.emit (node:domain:489:12)
+	at addChunk (node:internal/streams/readable:561:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+	at Readable.push (node:internal/streams/readable:392:5)
+	at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+2025-12-19 21:57:28.609 [error] [Extension Host] Transport error for "git": SyntaxError: Unexpected token '�', "🌐 Opening"... is not valid JSON
+	at JSON.parse (<anonymous>)
+	at S4s (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:830:157621)
+	at tze.readMessage (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:131)
+	at rze.processReadBuffer (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2576)
+	at Socket.<anonymous> (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2028)
+	at Socket.emit (node:events:518:28)
+	at Socket.emit (node:domain:489:12)
+	at addChunk (node:internal/streams/readable:561:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+	at Readable.push (node:internal/streams/readable:392:5)
+	at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+2025-12-19 21:58:21.961 [error] [Extension Host] Failed to connect to new MCP server git: McpError: MCP error -32001: Request timed out
+	at Timeout.E (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:830:20220)
+	at listOnTimeout (node:internal/timers:588:17)
+	at process.processTimers (node:internal/timers:523:7)
+2025-12-19 21:58:24.824 [error] [Extension Host] Server "memory" stderr: Knowledge Graph MCP Server running on stdio
+
+2025-12-19 22:00:31.198 [error] [Extension Host] [onDidStartTerminalShellExecution] Shell execution started, but not from a Kilo Code-registered terminal: {"terminal":{"name":"fish","processId":{},"creationOptions":{},"state":{"isInteractedWith":true,"shell":"fish"},"shellIntegration":{"cwd":{"$mid":1,"path":"/home/archbtw/.gemini/antigravity/playground/aphelion-nadir","scheme":"file"}},"dimensions":{"columns":44,"rows":16}},"shellIntegration":"[Circular]","execution":{"commandLine":{"value":"cp ~/.config/fish/config.fish /home/archbtw/.gemini/antigravity/playground/aphelion-nadir/","confidence":1},"cwd":{"$mid":1,"path":"/home/archbtw/.gemini/antigravity/playground/aphelion-nadir","scheme":"file"}}}
+2025-12-19 22:00:31.274 [error] [Extension Host] [onDidEndTerminalShellExecution] Shell execution ended, but not from a Kilo Code-registered terminal: {"terminal":{"name":"fish","processId":{},"creationOptions":{},"state":{"isInteractedWith":true,"shell":"fish"},"shellIntegration":{"cwd":{"$mid":1,"path":"/home/archbtw/.gemini/antigravity/playground/aphelion-nadir","scheme":"file"}},"dimensions":{"columns":44,"rows":16}},"shellIntegration":"[Circular]","execution":{"commandLine":{"value":"cp ~/.config/fish/config.fish /home/archbtw/.gemini/antigravity/playground/aphelion-nadir/","confidence":2,"isTrusted":false},"cwd":{"$mid":1,"fsPath":"/home/archbtw/.gemini/antigravity/playground/aphelion-nadir","path":"/home/archbtw/.gemini/antigravity/playground/aphelion-nadir","scheme":"file"}},"exitCode":0}
+2025-12-19 22:03:55.891 [error] [Extension Host] [onDidStartTerminalShellExecution] Shell execution started, but not from a Kilo Code-registered terminal: {"terminal":{"name":"fish","processId":{},"creationOptions":{},"state":{"isInteractedWith":true,"shell":"fish"},"shellIntegration":{"cwd":{"$mid":1,"path":"/home/archbtw/.gemini/antigravity/playground/aphelion-nadir","scheme":"file"}},"dimensions":{"columns":44,"rows":16}},"shellIntegration":"[Circular]","execution":{"commandLine":{"value":"cp -r /home/archbtw/dotfiles/fish /home/archbtw/.gemini/antigravity/playground/aphelion-nadir/","confidence":1},"cwd":{"$mid":1,"path":"/home/archbtw/.gemini/antigravity/playground/aphelion-nadir","scheme":"file"}}}
+2025-12-19 22:03:55.952 [error] [Extension Host] [onDidEndTerminalShellExecution] Shell execution ended, but not from a Kilo Code-registered terminal: {"terminal":{"name":"fish","processId":{},"creationOptions":{},"state":{"isInteractedWith":true,"shell":"fish"},"shellIntegration":{"cwd":{"$mid":1,"path":"/home/archbtw/.gemini/antigravity/playground/aphelion-nadir","scheme":"file"}},"dimensions":{"columns":44,"rows":16}},"shellIntegration":"[Circular]","execution":{"commandLine":{"value":"cp -r /home/archbtw/dotfiles/fish /home/archbtw/.gemini/antigravity/playground/aphelion-nadir/","confidence":2,"isTrusted":false},"cwd":{"$mid":1,"fsPath":"/home/archbtw/.gemini/antigravity/playground/aphelion-nadir","path":"/home/archbtw/.gemini/antigravity/playground/aphelion-nadir","scheme":"file"}},"exitCode":0}
+2025-12-19 22:04:34.931 [error] [Extension Host] [onDidStartTerminalShellExecution] Shell execution started, but not from a Kilo Code-registered terminal: {"terminal":{"name":"Antigravity Agent","processId":{},"creationOptions":{"name":"Antigravity Agent","hideFromUser":true,"forCascadeUi":true,"env":{"PAGER":"cat","ANTIGRAVITY_AGENT":"1"},"color":{"id":"terminal.ansiCyan"}},"state":{"isInteractedWith":true,"shell":"fish"},"shellIntegration":{"cwd":{"$mid":1,"path":"/home/archbtw/.gemini/antigravity/playground/aphelion-nadir","scheme":"file"}},"dimensions":{"columns":107,"rows":30}},"shellIntegration":"[Circular]","execution":{"commandLine":{"value":"","confidence":2,"isTrusted":true}}}
+2025-12-19 22:04:34.959 [error] [Extension Host] [onDidEndTerminalShellExecution] Shell execution ended, but not from a Kilo Code-registered terminal: {"terminal":{"name":"Antigravity Agent","processId":{},"creationOptions":{"name":"Antigravity Agent","hideFromUser":true,"forCascadeUi":true,"env":{"PAGER":"cat","ANTIGRAVITY_AGENT":"1"},"color":{"id":"terminal.ansiCyan"}},"state":{"isInteractedWith":true,"shell":"fish"},"shellIntegration":{"cwd":{"$mid":1,"external":"file:///home/archbtw/.gemini/antigravity/playground/aphelion-nadir/fish","path":"/home/archbtw/.gemini/antigravity/playground/aphelion-nadir/fish","scheme":"file"}},"dimensions":{"columns":107,"rows":30}},"shellIntegration":"[Circular]","execution":{"commandLine":{"value":"cd /home/archbtw/.gemini/antigravity/playground/aphelion-nadir/fish","confidence":2,"isTrusted":false}},"exitCode":0}

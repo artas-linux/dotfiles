@@ -1,0 +1,116 @@
+2025-12-20 05:28:36.461 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.vscode-selfhost-test-provider' wants API proposal 'attributableCoverage' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.511 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vsliveshare.vsliveshare' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.515 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.516 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.vscode-pull-request-github' wants API proposal 'fileComments' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.517 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'chatVariableResolver' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.518 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.519 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.gather' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.520 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-pylance' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.521 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.debugpy' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.522 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-toolsai.jupyter' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.523 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'dbaeumer.vscode-eslint' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.524 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-azuretools.vscode-azure-github-copilot' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.525 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.cpptools' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.526 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'redhat.java' wants API proposal 'documentPaste' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:36.526 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'vscjava.vscode-java-pack' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:37.609 [info] Started local extension host with pid 8084.
+2025-12-20 05:28:39.486 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.vscode-selfhost-test-provider' wants API proposal 'attributableCoverage' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.487 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vsliveshare.vsliveshare' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.488 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.489 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.vscode-pull-request-github' wants API proposal 'fileComments' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.489 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'chatVariableResolver' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.491 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.492 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.gather' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.493 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-pylance' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.494 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.debugpy' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.495 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-toolsai.jupyter' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.495 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'dbaeumer.vscode-eslint' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.498 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-azuretools.vscode-azure-github-copilot' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.499 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.cpptools' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.500 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'redhat.java' wants API proposal 'documentPaste' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:39.501 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'vscjava.vscode-java-pack' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:40.197 [info] Started local extension host with pid 8139.
+2025-12-20 05:28:40.335 [error] Extension 'google.antigravity' wants API proposal 'cloudCodeUrl' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-12-20 05:28:40.338 [error] Extension 'ms-azuretools.vscode-containers CANNOT USE these API proposals 'authenticationChallenges'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-12-20 05:28:40.339 [error] Extension 'ms-python.python' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): contribEditorContentMenu, quickPickSortByLabel, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, codeActionAI, notebookReplDocument, notebookVariableProvider
+product.json (WINS): contribEditorContentMenu, quickPickSortByLabel, portsAttributes, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, notebookReplDocument
+2025-12-20 05:28:40.340 [error] Extension 'ms-python.vscode-python-envs CANNOT USE these API proposals 'terminalShellEnv'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-12-20 05:28:40.388 [error] [vscode.git]: property `title` is mandatory and must be of type `string` or `object`
+2025-12-20 05:28:40.391 [error] [vscode.git]: property `title` is mandatory and must be of type `string` or `object`
+2025-12-20 05:28:40.400 [error] [google.antigravity]: Menu item references a command `antigravity.importAntigravitySettings` which is not defined in the 'commands' section.
+2025-12-20 05:28:40.402 [error] [google.antigravity]: Menu item references a command `antigravity.importAntigravityExtensions` which is not defined in the 'commands' section.
+2025-12-20 05:28:40.487 [error] Ignoring clangd.onConfigChanged.forceEnable as clangd.onConfigChanged is "prompt"
+2025-12-20 05:28:40.872 [error] Ignoring clangd.onConfigChanged.forceEnable as clangd.onConfigChanged is "prompt"
+2025-12-20 05:28:44.513 [error] [Extension Host] Failed to update user status Error: LanguageServerClient must be initialized first!
+	at B.getInstance (/home/archbtw/Downloads/Antigravity/resources/app/extensions/antigravity/dist/extension.js:2:214140)
+	at a.updateUserStatus (/home/archbtw/Downloads/Antigravity/resources/app/extensions/antigravity/dist/extension.js:2:1236010)
+	at a.restartUpdateLoop (/home/archbtw/Downloads/Antigravity/resources/app/extensions/antigravity/dist/extension.js:2:1236501)
+	at t.activate (/home/archbtw/Downloads/Antigravity/resources/app/extensions/antigravity/dist/extension.js:2:163659)
+	at async qT.n (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:113:14106)
+	at async qT.m (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:113:14069)
+	at async qT.l (file:///home/archbtw/Downloads/Antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:113:13525)
+2025-12-20 05:28:50.167 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-12-20 05:28:55.894 [info] Extension host (LocalProcess pid: 8139) is unresponsive.
+2025-12-20 05:28:57.300 [error] [Extension Host] (node:8139) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-12-20 05:28:57.690 [info] Extension host (LocalProcess pid: 8139) is responsive.
+2025-12-20 05:28:58.519 [error] [Extension Host] which: no kilocode in (/home/archbtw/.local/share/pnpm:/home/archbtw/.local/share/nvim/mason/bin:/home/archbtw/.local/share/bob/nvim-bin:/home/archbtw/.local/share/cargo/bin:/home/archbtw/.local/bin/color-scripts:/home/archbtw/.local/bin:/home/matt/.local/share/pnpm:/home/matt/.local/share/nvim/mason/bin:/home/matt/.yarn/bin:/home/matt/.local/share/npm/bin:/home/matt/.local/share/bob/nvim-bin:/home/matt/.local/share/bun/bin:/usr/lib/go/bin:/usr/lib/rustup/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/home/matt/.local/share/cargo/bin:/home/matt/.local/share/go/bin:/home/matt/.local/bin/color-scripts:/home/matt/.local/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/rocm/bin)
+2025-12-20 05:28:58.754 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-20 05:29:02.540 [error] [Extension Host] Server "sequentialthinking" stderr: Sequential Thinking MCP Server running on stdio
+
+2025-12-20 05:29:04.548 [error] [Extension Host] Error parsing Chutes models: {
+  "_errors": [],
+  "data": {
+    "57": {
+      "_errors": [],
+      "id": {
+        "_errors": [
+          "Required"
+        ]
+      },
+      "max_model_len": {
+        "_errors": [
+          "Required"
+        ]
+      }
+    },
+    "_errors": []
+  }
+}
+2025-12-20 05:29:12.879 [info] [perf] Render performance baseline is 73ms
+2025-12-20 05:29:47.783 [error] [Extension Host] Server "filesystem" stderr: Secure MCP Filesystem Server running on stdio
+
+2025-12-20 05:29:47.807 [error] [Extension Host] Server "filesystem" stderr: Client does not support MCP Roots, using allowed directories set from server args: [ '/home/archbtw' ]
+
+2025-12-20 05:29:50.242 [error] [Extension Host] Transport error for "git": SyntaxError: Unexpected token 'S', "Starting M"... is not valid JSON
+	at JSON.parse (<anonymous>)
+	at S4s (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:830:157621)
+	at tze.readMessage (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:131)
+	at rze.processReadBuffer (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2576)
+	at Socket.<anonymous> (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:2028)
+	at Socket.emit (node:events:518:28)
+	at Socket.emit (node:domain:489:12)
+	at addChunk (node:internal/streams/readable:561:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+	at Readable.push (node:internal/streams/readable:392:5)
+	at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+2025-12-20 05:29:51.169 [error] [Extension Host] Server "git" stderr: ❌  Proxy Server PORT IS IN USE at port 6277 ❌ 
+
+2025-12-20 05:29:51.255 [error] [Extension Host] Failed to connect to new MCP server git: McpError: MCP error -32000: Connection closed
+	at q6e._onclose (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:830:16349)
+	at _transport.onclose (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:830:15733)
+	at ChildProcess.<anonymous> (/home/archbtw/.antigravity/extensions/kilocode.kilo-code-4.140.0-universal/dist/extension.js:832:1801)
+	at ChildProcess.emit (node:events:518:28)
+	at ChildProcess.emit (node:domain:489:12)
+	at maybeClose (node:internal/child_process:1101:16)
+	at Socket.<anonymous> (node:internal/child_process:456:11)
+	at Socket.emit (node:events:518:28)
+	at Socket.emit (node:domain:489:12)
+	at Pipe.<anonymous> (node:net:346:12)
+2025-12-20 05:29:53.583 [error] [Extension Host] Server "memory" stderr: Knowledge Graph MCP Server running on stdio
+
+2025-12-20 05:31:18.069 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-20 05:31:19.334 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-20 05:39:08.095 [error] [Extension Host] [onDidStartTerminalShellExecution] Shell execution started, but not from a Kilo Code-registered terminal: {"terminal":{"name":"Antigravity Agent","processId":{},"creationOptions":{"name":"Antigravity Agent","hideFromUser":true,"forCascadeUi":true,"env":{"PAGER":"cat","ANTIGRAVITY_AGENT":"1"},"color":{"id":"terminal.ansiCyan"}},"state":{"isInteractedWith":true,"shell":"fish"},"shellIntegration":{"cwd":{"$mid":1,"path":"/home/archbtw/.gemini/antigravity/playground/spectral-blazar","scheme":"file"}},"dimensions":{"columns":167,"rows":30}},"shellIntegration":"[Circular]","execution":{"commandLine":{"value":"","confidence":2,"isTrusted":true}}}
+2025-12-20 05:39:08.135 [error] [Extension Host] [onDidEndTerminalShellExecution] Shell execution ended, but not from a Kilo Code-registered terminal: {"terminal":{"name":"Antigravity Agent","processId":{},"creationOptions":{"name":"Antigravity Agent","hideFromUser":true,"forCascadeUi":true,"env":{"PAGER":"cat","ANTIGRAVITY_AGENT":"1"},"color":{"id":"terminal.ansiCyan"}},"state":{"isInteractedWith":true,"shell":"fish"},"shellIntegration":{"cwd":{"$mid":1,"external":"file:///home/archbtw","path":"/home/archbtw","scheme":"file"}},"dimensions":{"columns":167,"rows":30}},"shellIntegration":"[Circular]","execution":{"commandLine":{"value":"cd /home/archbtw","confidence":2,"isTrusted":false}},"exitCode":0}

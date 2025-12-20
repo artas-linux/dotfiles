@@ -1,0 +1,17 @@
+2025-12-19 16:44:42.075 [info] 2025/12/19 16:44:41 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+2025-12-19 16:44:42.075 [info] I1219 16:44:41.925334 148635 main.go:183] Setting GOMAXPROCS to 4
+2025-12-19 16:44:42.075 [info] I1219 16:44:41.931181 148635 main.go:294] Starting language server process with pid 148635
+2025-12-19 16:44:42.075 [info] I1219 16:44:41.931358 148635 server.go:228] Language server will attempt to listen on host 127.0.0.1
+2025-12-19 16:44:42.075 [info] I1219 16:44:41.932043 148635 server.go:235] Language server listening on random port at 40561 for HTTPS
+2025-12-19 16:44:42.075 [info] I1219 16:44:41.932219 148635 server.go:242] Language server listening on random port at 45541 for HTTP
+2025-12-19 16:44:45.704 [info] I1219 16:44:44.968802 148635 server.go:326] Created extension server client at port 43683
+2025-12-19 16:44:45.704 [info] W1219 16:44:45.131704 148635 log_context.go:106] Cache(userInfo): Singleflight refresh failed: You are not logged into Antigravity.
+2025-12-19 16:44:45.704 [info] I1219 16:44:45.263423 148635 server.go:343] initialized server successfully
+2025-12-19 16:44:45.704 [info] W1219 16:44:45.280322 148635 log_context.go:106] Cache(userInfo): Singleflight refresh failed: You are not logged into Antigravity.
+2025-12-19 16:44:45.813 [info] (Antigravity) 2025-12-19 16:44:45.808 [INFO]: Language server started
+2025-12-19 16:44:48.413 [info] 2025/12/19 16:44:48 http: TLS handshake error from 127.0.0.1:48162: EOF
+2025-12-19 16:44:48.414 [info] 2025/12/19 16:44:48 http: TLS handshake error from 127.0.0.1:48152: EOF
+2025-12-19 16:44:50.294 [info] (Antigravity) 2025-12-19 16:44:50.291 [INFO]: LS lspClient started successfully
+2025-12-19 16:44:50.340 [info] E1219 16:44:49.463526 148635 log.go:354] deadline_exceeded: context deadline exceeded
+2025-12-19 16:45:08.615 [info] I1219 16:45:08.615011 148635 secure_credentials.go:67] Credentials set successfully
+2025-12-19 16:45:09.399 [info] W1219 16:45:09.399125 148635 browser_page.go:196] failed to get favicon URL: favicon not found

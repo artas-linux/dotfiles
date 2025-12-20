@@ -1,0 +1,80 @@
+2025-12-19 17:03:21.060 [info] [main] Log level: Info
+2025-12-19 17:03:21.060 [info] [main] Validating found git in: "git"
+2025-12-19 17:03:21.060 [info] [main] Using git "2.52.0" from "git"
+2025-12-19 17:03:21.060 [info] [Model][doInitialScan] Initial repository scan started
+2025-12-19 17:03:21.060 [info] > git rev-parse --show-toplevel [576ms]
+2025-12-19 17:03:21.060 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-12-19 17:03:21.060 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-12-19 17:03:21.115 [info] > git rev-parse --show-toplevel [4ms]
+2025-12-19 17:03:21.115 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-12-19 17:03:23.492 [info] > git rev-parse --show-toplevel [224ms]
+2025-12-19 17:03:23.492 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-12-19 17:03:27.686 [info] > git rev-parse --show-toplevel [3ms]
+2025-12-19 17:03:27.686 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-12-19 17:03:28.002 [info] > git rev-parse --show-toplevel [3ms]
+2025-12-19 17:03:28.002 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-12-19 17:03:46.620 [info] > git rev-parse --show-toplevel [5ms]
+2025-12-19 17:03:46.620 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-12-19 17:03:49.618 [info] > git rev-parse --show-toplevel [24ms]
+2025-12-19 17:03:49.618 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-12-19 17:03:55.856 [info] > git rev-parse --show-toplevel [11ms]
+2025-12-19 17:03:55.856 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-12-19 18:32:50.646 [info] > git rev-parse --show-toplevel [5ms]
+2025-12-19 18:32:50.683 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [9ms]
+2025-12-19 18:32:50.727 [info] [Model][openRepository] Opened repository (path): /home/archbtw/.gemini/antigravity/playground/cosmic-orbit
+2025-12-19 18:32:50.727 [info] [Model][openRepository] Opened repository (real path): /home/archbtw/.gemini/antigravity/playground/cosmic-orbit
+2025-12-19 18:32:50.727 [info] [Model][openRepository] Opened repository (kind): repository
+2025-12-19 18:32:50.779 [info] > git config --get commit.template [18ms]
+2025-12-19 18:32:50.944 [warning] [Git][getHEAD] Failed to parse HEAD file: Repository is using reftable format.
+2025-12-19 18:32:50.956 [info] > git symbolic-ref --short HEAD [11ms]
+2025-12-19 18:32:50.956 [info] fatal: No such ref: HEAD
+2025-12-19 18:32:50.985 [info] > git rev-parse HEAD [5ms]
+2025-12-19 18:32:50.985 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-12-19 18:32:51.041 [info] > git status -z -uall [29ms]
+2025-12-19 18:32:51.044 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-12-19 18:32:51.110 [info] > git config --get commit.template [4ms]
+2025-12-19 18:32:51.110 [info] > git symbolic-ref --short HEAD [30ms]
+2025-12-19 18:32:51.111 [info] fatal: No such ref: HEAD
+2025-12-19 18:32:51.237 [info] > git rev-parse HEAD [102ms]
+2025-12-19 18:32:51.237 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-12-19 18:32:51.369 [info] > git status -z -uall [33ms]
+2025-12-19 18:32:51.374 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-12-19 18:34:59.031 [info] > git check-ignore -v -z --stdin [29ms]
+2025-12-19 18:34:59.604 [info] > git check-ignore -v -z --stdin [5ms]
+2025-12-19 18:34:59.696 [info] > git symbolic-ref --short HEAD [25ms]
+2025-12-19 18:34:59.719 [info] > git config --get commit.template [24ms]
+2025-12-19 18:34:59.723 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2025-12-19 18:34:59.747 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/archbtw/.gemini/antigravity/playground/cosmic-orbit/.git/refs/remotes/origin/main'
+2025-12-19 18:34:59.752 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2025-12-19 18:34:59.815 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [10ms]
+2025-12-19 18:35:00.268 [info] > git status -z -uall [490ms]
+2025-12-19 18:35:00.313 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2025-12-19 18:35:00.345 [info] > git config --get --local branch.main.vscode-merge-base [4ms]
+2025-12-19 18:35:00.345 [warning] [Git][config] git config failed: Failed to execute git
+2025-12-19 18:35:00.377 [info] > git reflog main --grep-reflog=branch: Created from *. [10ms]
+2025-12-19 18:35:00.404 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [4ms]
+2025-12-19 18:35:00.429 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [4ms]
+2025-12-19 18:35:00.456 [info] > git config --add --local branch.main.vscode-merge-base origin/main [5ms]
+2025-12-19 18:35:00.501 [info] > git symbolic-ref --short HEAD [23ms]
+2025-12-19 18:35:00.525 [info] > git config --get commit.template [25ms]
+2025-12-19 18:35:00.529 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2025-12-19 18:35:00.552 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/archbtw/.gemini/antigravity/playground/cosmic-orbit/.git/refs/remotes/origin/main'
+2025-12-19 18:35:00.556 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2025-12-19 18:35:00.616 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [13ms]
+2025-12-19 18:35:01.050 [info] > git status -z -uall [471ms]
+2025-12-19 18:35:01.108 [info] > git merge-base refs/heads/main refs/remotes/origin/main [28ms]
+2025-12-19 18:35:01.140 [info] > git merge-base refs/heads/main refs/remotes/origin/main [34ms]
+2025-12-19 18:35:01.163 [info] > git diff --name-status -z --diff-filter=ADMR 93f41140c1a0cbf5c628cf5da942e10e598d7fd5...refs/remotes/origin/main [32ms]
+2025-12-19 18:35:01.168 [info] > git diff --name-status -z --diff-filter=ADMR 93f41140c1a0cbf5c628cf5da942e10e598d7fd5...refs/remotes/origin/main [6ms]
