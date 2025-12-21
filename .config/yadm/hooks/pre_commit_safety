@@ -9,10 +9,10 @@ from pathlib import Path
 
 # Patterns to block dangerous operations (for yadm hook environment)
 BLOCKED_PATTERNS = [
-    (r"\bcommit\b.*--amend\b", "❌ git/yadm commit --amend is blocked (use new commits for shared dotfiles)"),
-    (r"\bpush\b.*--force\b", "❌ git/yadm push --force is blocked (dangerous for shared repos)"),
-    (r"\bpush\b.*-f\b", "❌ git/yadm push -f is blocked (dangerous for shared repos)"),
-    (r"\bpush\b.*--force-with-lease\b", "❌ git/yadm push --force-with-lease is blocked (dangerous for shared repos)"),
+    (r"\bcommit\b.*\s--amend(\s|$)", "❌ git/yadm commit --amend is blocked (use new commits for shared dotfiles)"),
+    (r"\bpush\b.*\s--force(\s|$)", "❌ git/yadm push --force is blocked (dangerous for shared repos)"),
+    (r"\bpush\b.*\s-f(\s|$)", "❌ git/yadm push -f is blocked (dangerous for shared repos)"),
+    (r"\bpush\b.*\s--force-with-lease(\s|$)", "❌ git/yadm push --force-with-lease is blocked (dangerous for shared repos)"),
 ]
 
 PROTECTED_BRANCHES = {"main", "master"}
