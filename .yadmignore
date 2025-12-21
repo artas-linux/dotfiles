@@ -44,3 +44,112 @@ oauth_creds.json
 .config/yazi/*.backup
 .config/yazi/*-176*.toml
 .config/chromium/component_crx_cache/
+
+# Cache and temporary files
+*.cache
+*.tmp
+*.temp
+.cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Browser data (additional patterns)
+.config/google-chrome/
+.cache/google-chrome/
+.cache/mozilla/
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.stackdump
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn
+
+# Python additional patterns
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Package managers
+.yay/
+.pacman/
+
+# System directories
+/proc/
+/sys/
+/dev/
+/run/
+/var/
+
+# Backup files
+*.bak
+*.backup
+*.orig
+*.old
+
+# Secrets and sensitive data
+.env
+.env.local
+.env.*.local
+secrets/
+*password*
+*secret*
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Lock files (keep these ignored for dotfiles)
+package-lock.json
+yarn.lock
+Pipfile.lock
+
+# Screenshots and media
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.avi
+*.mov
+
+# Archives
+*.tar.gz
+*.zip
+*.rar
+*.7z
