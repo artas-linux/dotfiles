@@ -1,19 +1,7 @@
 {
-  "export-settings-ini": true,
-  "export-gtkrc-20": true,
-  "export-index-theme": true,
-  "export-xsettingsd": true,
-  "export-gtk4-symlinks": true,
-  "gtk-theme": "catppuccin-macchiato-lavender-standard+default",
-  "icon-theme": "Catppuccin-SE",
-  "cursor-theme": "catppuccin-macchiato-dark-cursors",
-  "cursor-size": 24,
-  "font": "Maple Mono NF 10",
-  "show-hidden": false,
-  "dark-theme": true,
-  "prefer-dark-theme": true,
-  "gtk3-theme": "catppuccin-macchiato-lavender-standard+default",
-  "gtk4-theme": "catppuccin-macchiato-lavender-standard+default",
-  "color-scheme": "prefer-dark",
-  "apply-globally": true
+ "export-settings-ini": true,
+ "export-gtkrc-20": false,
+ "export-index-theme": true,
+ "export-xsettingsd": true,
+ "export-gtk4-symlinks": false
 }

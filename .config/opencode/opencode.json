@@ -21,7 +21,8 @@
         "bunx",
         "mcp-remote",
         "http://localhost:8051/mcp",
-        "--allow-http"
+        "--allow-http",
+        "--timeout=10000"
       ],
       "enabled": true
     },

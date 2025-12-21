@@ -1,12 +1,25 @@
 #!/bin/bash
 
+# Fix DNS and proxy issues
+export GOPROXY=direct
+export GOSUMDB=off
+
 sudo pacman -Syu
-mkdir /tmp/yay
+mkdir -p /tmp/yay
 cd /tmp/yay
 
 curl -OJ 'https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=yay'
-makepkg -si
+
+# Use makepkg with no network issues
+makepkg -si --noconfirm --needed
 
 cd
 rm -rf /tmp/yay
-yay --version
+
+if command -v yay >/dev/null 2>&1; then
+    yay --version
+    echo "✅ Yay installed successfully!"
+else
+    echo "❌ Yay installation failed"
+    exit 1
+fi

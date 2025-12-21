@@ -1,5 +1,5 @@
 site_name: Artas Linux Dotfiles
-site_description: Comprehensive dotfiles setup with Hyprland, Neovim, and more
+site_description: Yet another Aesthetic Hyprland Config
 site_author: Artas Linux
 site_url: https://artas-linux.github.io/dotfiles/
 repo_url: https://github.com/artas-linux/dotfiles
@@ -17,6 +17,8 @@ extra:
 theme:
   name: material
   custom_dir: docs/assets
+  custom_css:
+    - assets/extra.css
   logo: assets/logo.svg
   palette:
     - media: "(prefers-color-scheme)"
@@ -44,34 +46,14 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
-    - announce.dismiss
-    - content.action.edit
-    - content.action.view
-    - content.code.annotate
-    - content.code.copy
-    - content.code.select
-    - content.footnote.tooltips
-    - content.tabs.link
-    - content.tooltips
-    - content.underline
-    - header.autohide
-    - navigation.expand
-    - navigation.footer
-    - navigation.indexes
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
-    - navigation.prune
-    - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
-    - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
-    - toc.follow
-    - toc.integrate
+    - content.code.copy
+    - content.code.annotate
 
 plugins:
   - search
@@ -80,17 +62,21 @@ markdown_extensions:
   - admonition
   - attr_list
   - footnotes
-  - meta
+  - md_in_html
+  - tables
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.keys
+  - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.details
   - pymdownx.tasklist:
       custom_checkbox: true
-  - tables
+  - pymdownx.emoji:
+      # emoji_index: !!python/name:mkdocs_material_extensions.emoji.twemoji
+      # emoji_generator: !!python/name:mkdocs_material_extensions.emoji.to_svg
   - toc:
       permalink: true
 
