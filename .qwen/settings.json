@@ -4,5 +4,75 @@
       "selectedType": "qwen-oauth"
     }
   },
-  "$version": 2
+  "$version": 2,
+  "telemetry": {
+    "enabled": true,
+    "target": "gcp",
+    "logPrompts": true
+  },
+  "privacy": {
+    "usageStatisticsEnabled": true
+  },
+  "chrome-devtools": {
+    "type": "local",
+    "command": [
+      "npx",
+      "-y",
+      "chrome-devtools-mcp@latest",
+      "--executablePath",
+      "/sbin/chromium"
+    ],
+    "enabled": true
+  },
+  "general": {
+    "checkpointing": {
+      "enabled": true
+    },
+    "theme": "Default",
+    "preferredEditor": "neovim",
+    "vimMode": {
+      "enabled": false
+    }
+  },
+  "contexts": {
+    "fileName": [
+      "QWEN.md"
+    ]
+  },
+  "autoAccept": false,
+  "disabledTools": [
+    "web_fetch"
+  ],
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "memory": {
+      "type": "local",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "environment": {
+        "MEMORY_FILE_PATH": "/home/archbtw/.qwen/memory.json"
+      }
+    },
+    "archon": {
+      "httpUrl": "http://localhost:8051/mcp"
+    },
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "${env:HOME}"
+      ]
+    }
+  }
 }

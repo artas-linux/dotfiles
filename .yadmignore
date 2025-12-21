@@ -14,5 +14,19 @@
 .config/Antigravity/Network Persistent State
 .config/Antigravity/
 Documents/
-.qwen/
 .local/bin/qwen
+
+# Auth files
+*.key
+*.token
+*.auth
+*.oauth
+oauth_creds.json
+*.pem
+*.crt
+*.cert
+
+# Temporary folders
+*/tmp/
+*/temp/
+/tmp/
