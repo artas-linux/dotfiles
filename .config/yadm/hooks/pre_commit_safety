@@ -57,27 +57,17 @@ def get_current_branch(git_dir: str | None = None) -> str | None:
 
 
 def check_push_to_protected_branch(command: str) -> str | None:
-    """Check if pushing to protected branches."""
+    """Check if pushing to protected branches inappropriately."""
     stripped = strip_quoted_strings(command)
 
-    # Check for explicit push to protected branch
+    # Check for explicit push to protected branch FROM OTHER BRANCHES
     for branch in PROTECTED_BRANCHES:
         if re.search(r"\bpush\b.*\b" + re.escape(branch) + r"\b", stripped, re.IGNORECASE):
-            return f"❌ Push to {branch} branch blocked - use PR or create feature branch"
-
-    # Check if currently on protected branch and pushing without explicit branch
-    push_match = re.search(r"\bpush\b(.*)$", stripped, re.IGNORECASE)
-    if push_match:
-        args = push_match.group(1).strip()
-        # Remove flags
-        args_without_flags = re.sub(r"\s*-[a-zA-Z]\b|\s*--[\w-]+", "", args).strip()
-        parts = args_without_flags.split()
-
-        # If 0 or 1 args (no explicit branch), check current branch
-        if len(parts) <= 1:
             current_branch = get_current_branch()
-            if current_branch in PROTECTED_BRANCHES:
-                return f"❌ Push from {current_branch} branch blocked - create feature branch first"
+            # Allow push to main/master if we're already on main/master (normal workflow)
+            # Only block if pushing TO main/master FROM a different branch
+            if current_branch not in PROTECTED_BRANCHES:
+                return f"❌ Push to {branch} branch blocked - use PR or create feature branch"
 
     return None
 
