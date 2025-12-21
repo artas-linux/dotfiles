@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
-# pre_commit hook: Validate and summarize changes before commit
+# pre_commit hook: Safety checks and validation before commit
 
 set -e
+
+# Run safety checks first
+HOOK_DIR="$(dirname "$0")"
+if [[ -x "$HOOK_DIR/pre_commit_safety" ]]; then
+    "$HOOK_DIR/pre_commit_safety" || exit 1
+fi
 
 echo "🔍 Pre-commit validation..."
 echo "──────────────────────────"

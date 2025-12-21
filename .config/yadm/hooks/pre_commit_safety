@@ -7,17 +7,12 @@ import subprocess
 import sys
 from pathlib import Path
 
-# Regex pattern for git/yadm commands
-_GIT_OPT = r"(?:-[a-zA-Z](?:\s+[^-\s]\S*)?|--[\w-]+(?:=\S+)?)"
-_GIT_OPTS = rf"(?:\s+{_GIT_OPT})*"
-_GIT_CMD = rf"\b(?:git|yadm)\b{_GIT_OPTS}\s+"
-
-# Patterns to block dangerous operations
+# Patterns to block dangerous operations (for yadm hook environment)
 BLOCKED_PATTERNS = [
-    (rf"{_GIT_CMD}commit\b.*--amend\b", "❌ git/yadm commit --amend is blocked (use new commits for shared dotfiles)"),
-    (rf"{_GIT_CMD}push\b.*--force\b", "❌ git/yadm push --force is blocked (dangerous for shared repos)"),
-    (rf"{_GIT_CMD}push\b.*-f\b", "❌ git/yadm push -f is blocked (dangerous for shared repos)"),
-    (rf"{_GIT_CMD}push\b.*--force-with-lease\b", "❌ git/yadm push --force-with-lease is blocked (dangerous for shared repos)"),
+    (r"\bcommit\b.*--amend\b", "❌ git/yadm commit --amend is blocked (use new commits for shared dotfiles)"),
+    (r"\bpush\b.*--force\b", "❌ git/yadm push --force is blocked (dangerous for shared repos)"),
+    (r"\bpush\b.*-f\b", "❌ git/yadm push -f is blocked (dangerous for shared repos)"),
+    (r"\bpush\b.*--force-with-lease\b", "❌ git/yadm push --force-with-lease is blocked (dangerous for shared repos)"),
 ]
 
 PROTECTED_BRANCHES = {"main", "master"}
@@ -67,11 +62,11 @@ def check_push_to_protected_branch(command: str) -> str | None:
 
     # Check for explicit push to protected branch
     for branch in PROTECTED_BRANCHES:
-        if re.search(rf"{_GIT_CMD}push\b.*\b{branch}\b", stripped, re.IGNORECASE):
+        if re.search(r"\bpush\b.*\b" + re.escape(branch) + r"\b", stripped, re.IGNORECASE):
             return f"❌ Push to {branch} branch blocked - use PR or create feature branch"
 
     # Check if currently on protected branch and pushing without explicit branch
-    push_match = re.search(rf"{_GIT_CMD}push\b(.*)$", stripped, re.IGNORECASE)
+    push_match = re.search(r"\bpush\b(.*)$", stripped, re.IGNORECASE)
     if push_match:
         args = push_match.group(1).strip()
         # Remove flags
@@ -80,8 +75,7 @@ def check_push_to_protected_branch(command: str) -> str | None:
 
         # If 0 or 1 args (no explicit branch), check current branch
         if len(parts) <= 1:
-            git_dir = extract_git_directory(command)
-            current_branch = get_current_branch(git_dir)
+            current_branch = get_current_branch()
             if current_branch in PROTECTED_BRANCHES:
                 return f"❌ Push from {current_branch} branch blocked - create feature branch first"
 
@@ -156,11 +150,7 @@ def main() -> None:
     # Get the command from yadm hook environment
     command = os.environ.get('YADM_HOOK_FULL_COMMAND', '')
 
-    # Debug: print what we received
-    print(f"DEBUG: Command received: '{command}'", file=sys.stderr)
-
     if not command:
-        print("DEBUG: No command context, allowing", file=sys.stderr)
         return  # Allow if no command context
 
     # Check for dangerous operations
@@ -174,7 +164,7 @@ def main() -> None:
         # Check if override is enabled
         try:
             result = subprocess.run(
-                ["git", "config", "--local", "yadm.safety-override"],
+                ["yadm", "config", "yadm.safety-override"],
                 capture_output=True,
                 text=True,
                 timeout=2,
