@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# post_commit hook: Automatically push changes after commit
+# Only push if we're not in a rebase or other special git state
+
+set -e
+
+# Check if this is a normal commit (not during rebase/amend/etc)
+if [[ -z "$GIT_REFLOG_ACTION" ]] || [[ "$GIT_REFLOG_ACTION" == "commit"* ]]; then
+    echo "🔄 Auto-pushing changes to remote..."
+    if git push --quiet 2>/dev/null; then
+        echo "✅ Changes pushed successfully"
+    else
+        echo "⚠️  Push failed (remote may need manual push)"
+    fi
+fi

@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# post_pull hook: Show what changed and offer to reload configs
+
+set -e
+
+echo "📥 Pull completed. Changes:"
+echo "────────────────────────────"
+
+# Show what files changed in the last pull
+git log --oneline --name-status HEAD@{1}..HEAD@{0} | head -20
+
+echo ""
+echo "💡 Consider reloading affected applications:"
+echo "   - Hyprland: hyprctl reload"
+echo "   - Waybar: killall -SIGUSR2 waybar"
+echo "   - Fish: source ~/.config/fish/config.fish"
+echo "   - Kitty: kill -SIGUSR1 \$(pgrep kitty)"
+
+# Check if any critical config files changed
+CHANGED_FILES=$(git diff --name-only HEAD@{1} HEAD@{0})
+if echo "$CHANGED_FILES" | grep -qE "\.(config|conf)$|hyprland|waybar|fish|kitty"; then
+    echo ""
+    echo "⚠️  Critical config files changed. You may want to restart affected applications."
+fi

@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# pre_commit hook: Validate and summarize changes before commit
+
+set -e
+
+echo "🔍 Pre-commit validation..."
+echo "──────────────────────────"
+
+# Show what will be committed
+echo "Files to be committed:"
+git status --porcelain | while read -r status file; do
+    case "$status" in
+        "M ") echo "  📝 Modified: $file" ;;
+        "A ") echo "  ➕ Added: $file" ;;
+        "D ") echo "  🗑️  Deleted: $file" ;;
+        "R ") echo "  📋 Renamed: $file" ;;
+        "??" ) echo "  ❓ Untracked: $file" ;;
+        *) echo "  $status $file" ;;
+    esac
+done
+
+echo ""
+echo "📊 Commit summary:"
+git diff --cached --stat
+
+# Check for sensitive files that shouldn't be committed
+SENSITIVE_FILES=$(git diff --cached --name-only | grep -E "\.(key|pem|token|secret|password)" || true)
+if [[ -n "$SENSITIVE_FILES" ]]; then
+    echo ""
+    echo "⚠️  WARNING: Potential sensitive files detected:"
+    echo "$SENSITIVE_FILES"
+    echo "Consider using 'yadm encrypt' for sensitive files."
+fi
+
+echo ""
+echo "✅ Pre-commit validation passed."
