@@ -1,0 +1,197 @@
+#!/usr/bin/env python3
+"""YADM pre-commit hook to block dangerous git operations for shared dotfiles."""
+
+import os
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+# Regex pattern for git/yadm commands
+_GIT_OPT = r"(?:-[a-zA-Z](?:\s+[^-\s]\S*)?|--[\w-]+(?:=\S+)?)"
+_GIT_OPTS = rf"(?:\s+{_GIT_OPT})*"
+_GIT_CMD = rf"\b(?:git|yadm)\b{_GIT_OPTS}\s+"
+
+# Patterns to block dangerous operations
+BLOCKED_PATTERNS = [
+    (rf"{_GIT_CMD}commit\b.*--amend\b", "❌ git/yadm commit --amend is blocked (use new commits for shared dotfiles)"),
+    (rf"{_GIT_CMD}push\b.*--force\b", "❌ git/yadm push --force is blocked (dangerous for shared repos)"),
+    (rf"{_GIT_CMD}push\b.*-f\b", "❌ git/yadm push -f is blocked (dangerous for shared repos)"),
+    (rf"{_GIT_CMD}push\b.*--force-with-lease\b", "❌ git/yadm push --force-with-lease is blocked (dangerous for shared repos)"),
+]
+
+PROTECTED_BRANCHES = {"main", "master"}
+
+
+def strip_quoted_strings(command: str) -> str:
+    """Remove quoted strings to avoid false positives in commit messages, etc."""
+    # Remove double-quoted strings (handling escaped quotes)
+    result = re.sub(r'"(?:[^"\\]|\\.)*"', " ", command)
+    # Remove single-quoted strings
+    result = re.sub(r"'[^']*'", " ", result)
+    return result
+
+
+def extract_git_directory(command: str) -> str | None:
+    """Extract directory from -C flag if present."""
+    match = re.search(
+        r"\b(?:git|yadm)\s+-C\s*(?:\"([^\"]+)\"|'([^']+)'|(\S+))",
+        command,
+    )
+    if match:
+        return match.group(1) or match.group(2) or match.group(3)
+    return None
+
+
+def get_current_branch(git_dir: str | None = None) -> str | None:
+    """Get current git branch name."""
+    try:
+        cmd = ["git"]
+        if git_dir:
+            cmd.extend(["-C", git_dir])
+        cmd.extend(["branch", "--show-current"])
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=5,
+        )
+        return result.stdout.strip() if result.returncode == 0 else None
+    except (subprocess.TimeoutExpired, FileNotFoundError):
+        return None
+
+
+def check_push_to_protected_branch(command: str) -> str | None:
+    """Check if pushing to protected branches."""
+    stripped = strip_quoted_strings(command)
+
+    # Check for explicit push to protected branch
+    for branch in PROTECTED_BRANCHES:
+        if re.search(rf"{_GIT_CMD}push\b.*\b{branch}\b", stripped, re.IGNORECASE):
+            return f"❌ Push to {branch} branch blocked - use PR or create feature branch"
+
+    # Check if currently on protected branch and pushing without explicit branch
+    push_match = re.search(rf"{_GIT_CMD}push\b(.*)$", stripped, re.IGNORECASE)
+    if push_match:
+        args = push_match.group(1).strip()
+        # Remove flags
+        args_without_flags = re.sub(r"\s*-[a-zA-Z]\b|\s*--[\w-]+", "", args).strip()
+        parts = args_without_flags.split()
+
+        # If 0 or 1 args (no explicit branch), check current branch
+        if len(parts) <= 1:
+            git_dir = extract_git_directory(command)
+            current_branch = get_current_branch(git_dir)
+            if current_branch in PROTECTED_BRANCHES:
+                return f"❌ Push from {current_branch} branch blocked - create feature branch first"
+
+    return None
+
+
+def check_sensitive_files() -> str | None:
+    """Check for potentially sensitive files in the commit."""
+    try:
+        # Get staged files
+        result = subprocess.run(
+            ["git", "diff", "--cached", "--name-only"],
+            capture_output=True,
+            text=True,
+            timeout=5,
+        )
+
+        if result.returncode != 0:
+            return None
+
+        staged_files = result.stdout.strip().split('\n')
+        sensitive_patterns = [
+            r'\.key$', r'\.pem$', r'\.token$', r'\.secret$', r'\.auth$',
+            r'password', r'secret', r'token', r'key', r'auth'
+        ]
+
+        sensitive_files = []
+        for file in staged_files:
+            if not file.strip():
+                continue
+            for pattern in sensitive_patterns:
+                if re.search(pattern, file, re.IGNORECASE):
+                    sensitive_files.append(file)
+                    break
+
+        if sensitive_files:
+            return f"⚠️  WARNING: Potential sensitive files detected: {', '.join(sensitive_files[:3])}{'...' if len(sensitive_files) > 3 else ''}\n   Consider using 'yadm encrypt' for sensitive files."
+
+    except (subprocess.TimeoutExpired, FileNotFoundError):
+        pass
+
+    return None
+
+
+def split_shell_commands(command: str) -> list[str]:
+    """Split shell command on separators."""
+    parts = re.split(r"\s*(?:&&|\|\||[;|])\s*", command)
+    return [p.strip() for p in parts if p.strip()]
+
+
+def check_command(command: str) -> str | None:
+    """Check command for dangerous operations."""
+    stripped = strip_quoted_strings(command)
+
+    # Check each command segment
+    for cmd in split_shell_commands(stripped):
+        # Check blocked patterns
+        for pattern, message in BLOCKED_PATTERNS:
+            if re.search(pattern, cmd, re.IGNORECASE):
+                return message
+
+        # Check protected branch pushes
+        error = check_push_to_protected_branch(cmd)
+        if error:
+            return error
+
+    return None
+
+
+def main() -> None:
+    """Main hook logic."""
+    # Get the command from yadm hook environment
+    command = os.environ.get('YADM_HOOK_FULL_COMMAND', '')
+
+    # Debug: print what we received
+    print(f"DEBUG: Command received: '{command}'", file=sys.stderr)
+
+    if not command:
+        print("DEBUG: No command context, allowing", file=sys.stderr)
+        return  # Allow if no command context
+
+    # Check for dangerous operations
+    error = check_command(command)
+    if error:
+        print(f"\n🛡️  YADM Safety Hook: {error}", file=sys.stderr)
+        print("\n💡 To bypass this check (if you really need to):", file=sys.stderr)
+        print("   Use: yadm config --local yadm.safety-override true", file=sys.stderr)
+        print("   Then run your command, then unset the override.", file=sys.stderr)
+
+        # Check if override is enabled
+        try:
+            result = subprocess.run(
+                ["git", "config", "--local", "yadm.safety-override"],
+                capture_output=True,
+                text=True,
+                timeout=2,
+            )
+            if result.returncode == 0 and result.stdout.strip() == "true":
+                print("\n✅ Safety override enabled - proceeding...", file=sys.stderr)
+                return
+        except (subprocess.TimeoutExpired, FileNotFoundError):
+            pass
+
+        sys.exit(1)  # Block the operation
+
+    # Check for sensitive files (warning only)
+    sensitive_warning = check_sensitive_files()
+    if sensitive_warning:
+        print(f"\n{sensitive_warning}", file=sys.stderr)
+
+
+if __name__ == "__main__":
+    main()
