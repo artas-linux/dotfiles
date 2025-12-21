@@ -43,3 +43,4 @@ oauth_creds.json
 # Yazi backup files
 .config/yazi/*.backup
 .config/yazi/*-176*.toml
+.config/chromium/component_crx_cache/
