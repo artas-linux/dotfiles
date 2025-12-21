@@ -1,135 +1,58 @@
-# 🖥️ Artas Linux Dotfiles
+# .dotfiles
 
-<div align="center">
-  <img src="https://img.shields.io/github/stars/artas-linux/dotfiles?style=for-the-badge&logo=github&color=teal" alt="GitHub Stars"/>
-  <img src="https://img.shields.io/github/last-commit/artas-linux/dotfiles?style=for-the-badge&color=teal" alt="Last Commit"/>
-  <img src="https://img.shields.io/github/repo-size/artas-linux/dotfiles?style=for-the-badge&color=teal" alt="Repo Size"/>
-</div>
+🌸 **BEAUTIFUL EYE-CANDY THEME** — Yet another aesthetic Hyprland config with **full XDG Base Directory Specification compliance** and a **modular design philosophy**.
 
-<div align="center">
-  <h2>💄 A comprehensive Linux desktop environment configuration<br>optimized for productivity and aesthetics</h2>
-</div>
-
-## ✨ Features
+## 🌟 Features
 
 <div class="grid cards" markdown>
 
-- **🎨 Beautiful Theming**
-  - Catppuccin Macchiato theme across all applications
-  - Consistent color scheme and icons
+-   ### 🎨 **Aesthetic Theming**
+    
+    Beautiful Catppuccin Macchiato theme with smooth animations and clean UI elements
 
-- **🖥️ Modern Desktop**
-  - Hyprland compositor with smooth animations
-  - Waybar status bar with system monitoring
-  - Rofi launcher with custom themes
+-   ### 🏢 **Hyprland Window Manager**
+    
+    Tiling window manager with modern Wayland features and extensive customization options
 
-- **✏️ Powerful Editor**
-  - Neovim with LazyVim and 50+ plugins
-  - Full LSP support and debugging
-  - Custom keymaps and workflows
+-   ### 🧩 **Modular Architecture**
+    
+    Clean, organized structure with easy-to-understand configuration files
 
-- **🐚 Smart Shell**
-  - Fish shell with fzf integration
-  - Custom abbreviations and functions
-  - Beautiful prompt with Starship
+-   ### 📁 **XDG Compliance**
+    
+    Full adherence to XDG Base Directory Specification for organized file management
 
-- **🔧 Development Tools**
-  - Git with delta and custom aliases
-  - Tmux with TPM and Catppuccin theme
-  - Language servers and debuggers
+-   ### 🎯 **Multiple Pickers**
+    
+    Integrated application launchers, color pickers, and file managers
 
-- **📊 System Monitoring**
-  - Btop with custom theme
-  - Fastfetch with system information
-  - Custom monitoring scripts
+-   ### 🌌 **Wallpaper Collection**
+    
+    Large collection of beautiful wallpapers for every taste
 
 </div>
 
-## 🚀 Quick Start
+## 🚀 Getting Started
 
-### Prerequisites
-- **OS**: Arch Linux
-- **WM**: Hyprland
-- **Shell**: Fish
-- **Editor**: Neovim
+To get started with this configuration, clone the repository and follow the installation instructions in the documentation.
 
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/artas-linux/dotfiles.git
-   cd dotfiles
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   # Core packages
-   sudo pacman -S hyprland waybar fish neovim tmux git
-
-   # Fonts
-   sudo pacman -S ttf-jetbrains-mono ttf-maple-mono-nf
-
-   # Tools
-   mise use python node go rust
-   ```
-
-3. **Apply dotfiles:**
-   ```bash
-   yadm clone https://github.com/artas-linux/dotfiles.git
-   yadm status  # Check what will be applied
-   ```
-
-## 🎯 Key Bindings
-
-### Hyprland
-| Key | Action |
-|-----|--------|
-| `Super + Q` | Kill window |
-| `Super + Space` | Toggle floating |
-| `Super + Enter` | Terminal |
-| `Super + D` | App launcher |
-| `Super + Tab` | Window switcher |
-
-### Neovim
-| Key | Action |
-|-----|--------|
-| `<C-a>` | Ask opencode |
-| `<C-x>` | Opencode actions |
-| `<leader>ff` | Find files |
-| `<leader>fg` | Live grep |
-| `<leader>ca` | Code actions |
-
-## 📁 Structure
-
+```bash
+git clone https://github.com/artas-linux/dotfiles.git ~/.dotfiles
 ```
-├── .config/          # Application configurations
-│   ├── hypr/         # Hyprland window manager
-│   ├── waybar/       # Status bar
-│   ├── fish/         # Shell configuration
-│   ├── nvim/         # Neovim editor
-│   └── ...
-├── .local/bin/       # Custom scripts
-├── docs/             # This documentation
-└── README.md         # Quick reference
-```
+
+## 📚 Documentation
+
+This documentation provides detailed information about:
+
+- Installation process
+- Configuration options
+- Customization guides
+- Troubleshooting tips
 
 ## 🤝 Contributing
 
-Found an issue or have suggestions?
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
-- 🐛 [Open an issue](https://github.com/artas-linux/dotfiles/issues)
-- 💡 [Start a discussion](https://github.com/artas-linux/dotfiles/discussions)
-- 📝 [Submit a PR](https://github.com/artas-linux/dotfiles/pulls)
+## 📄 License
 
-## 📜 License
-
-[![MIT License](https://img.shields.io/badge/License-MIT-teal.svg)](LICENSE)
-
----
-
-<div align="center">
-  <p>Made with ❤️ and lots of ☕</p>
-  <p>
-    <a href="#artas-linux-dotfiles">Back to top ↑</a>
-  </p>
-</div>
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
