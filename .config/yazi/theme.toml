@@ -1,1 +1,91 @@
-/home/archbtw/dev/willnapier-dotfiles/yazi/theme.toml
+[mgr]
+cwd = { fg = "cyan" }
+
+[status]
+separator_open = "┌─"
+separator_close = "└─"
+permissions = { fg = "blue" }
+permissions_taken = { fg = "green", bold = true }
+progress = { fg = "light_blue", bg = "reset" }
+progress_taken = { fg = "magenta", bg = "reset" }
+
+[select]
+border = { fg = "blue" }
+active = { fg = "magenta", bold = true }
+inactive = { fg = "white" }
+
+[tab]
+active = { fg = "yellow", bold = true }
+inactive = { fg = "blue" }
+
+[help]
+title = { fg = "blue" }
+key = { fg = "magenta" }
+desc = { fg = "white" }
+
+[highlight]
+border = { fg = "green" }
+
+[log]
+success = { fg = "green" }
+warning = { fg = "yellow" }
+error = { fg = "red" }
+
+[filetype]
+rules = [
+  { mime = "image/*", fg = "yellow" },
+  { mime = "video/*", fg = "magenta" },
+  { mime = "application/zip", fg = "red" },
+  { mime = "application/x-tar", fg = "red" },
+ { name = "*/.git/*", fg = "light_black" },
+  { name = "*.toml", fg = "blue" },
+  { name = "*.json", fg = "blue" },
+  { name = "*.js", fg = "yellow" },
+  { name = "*.py", fg = "green" },
+  { name = "*.rs", fg = "red" },
+  { name = "*.html", fg = "red" },
+  { name = "*.css", fg = "blue" },
+  { name = "*.md", fg = "blue" },
+  { name = "*", fg = "white" }
+]
+
+[icon]
+rules = [
+  { name = "*", text = "" },
+  { name = "*/", text = "" },
+  { mime = "image/*", text = "" },
+ { mime = "video/*", text = "" },
+ { mime = "audio/*", text = "" },
+  { name = "*.pdf", text = "" },
+  { name = "*.zip", text = "" },
+ { name = "*.tar", text = "" },
+  { name = "*.gz", text = "" },
+ { name = "*.rar", text = "" },
+  { name = "*.7z", text = "" },
+  { name = "*.json", text = "ﬧ" },
+  { name = "*.yml", text = "ﬧ" },
+  { name = "*.yaml", text = "ﬧ" },
+  { name = "*.toml", text = "ﬧ" },
+  { name = "*.js", text = "ﬧ" },
+  { name = "*.mjs", text = "ﬧ" },
+  { name = "*.cjs", text = "ﬧ" },
+  { name = "*.py", text = "ﬧ" },
+  { name = "*.rs", text = "ﬧ" },
+  { name = "*.go", text = "ﬧ" },
+  { name = "*.cpp", text = "ﬧ" },
+  { name = "*.cxx", text = "ﬧ" },
+  { name = "*.cc", text = "ﬧ" },
+  { name = "*.hpp", text = "ﬧ" },
+  { name = "*.hxx", text = "ﬧ" },
+  { name = "*.h", text = "ﬧ" },
+  { name = "*.md", text = "" },
+  { name = "*.txt", text = "" },
+  { name = "*.html", text = "" },
+ { name = "*.css", text = "" },
+  { name = "*.php", text = "" },
+  { name = "*.gitignore", text = "󰊢" },
+  { name = ".git", text = "󰊢" },
+  { name = "*.exe", text = "" },
+  { name = "*.deb", text = "" },
+ { name = "*.rpm", text = "" }
+]

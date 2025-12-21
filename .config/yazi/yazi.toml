@@ -1,1 +1,231 @@
-/home/archbtw/dev/willnapier-dotfiles/yazi/yazi.toml
+"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+
+# Manager Configuration
+[mgr]
+# Panel ratios for the layout [top, middle, bottom] or [left, middle, right]
+ratio = [1, 4, 3]
+
+# Sorting options
+sort_by = "natural"          # Options: "natural", "size", "time", "ext"
+sort_sensitive = false       # Case-sensitive sorting
+sort_reverse = false         # Reverse sort order
+sort_dir_first = true        # Show directories before files
+
+# Display options
+show_hidden = true           # Show hidden files
+show_symlink = true          # Show symbolic link indicators
+count_selected = true        # Show count of selected files
+scrolloff = 5                # Minimum number of lines to keep above/below cursor
+title_format = "Yazi: {cwd}" # Format for window title
+
+# Previews
+preview_mouse = true         # Allow mouse interaction in preview
+preview_shown_hook = "plugin folder-preview --sync"  # Hook when preview is shown
+preview_removed_hook = "plugin folder-preview --sync"  # Hook when preview is removed
+
+# File operations
+auto_delete = true           # Automatically delete files without copying to clipboard
+auto_symlink = false         # Automatically create symbolic links instead of copying
+move_on_copy = false         # Move files instead of copying when holding Alt
+
+# Tabs
+always_show_tab = false      # Always show tab bar even with only one tab
+duplicate_tab = "last"       # Behavior when creating duplicate tabs: "first", "last", "current", "disabled"
+
+# Peephole (hidden files)
+peephole = true              # Enable peephole functionality
+
+[manager]
+# Animation and appearance
+animate = true               # Enable animations
+animate_fps = 60            # Animation frames per second
+animate_step = 0.1          # Animation step size
+border = "all"              # Border style: "none", "all", "top", "right", "bottom", "left"
+border_title = true         # Show border titles
+border_separator = true     # Show border separators
+
+# Startup directory
+default_layout = "horizontal"  # Default layout: "horizontal", "vertical", "hizo", "yolo"
+default_sort = { order = "natural", sensitive = false, reverse = false, dir_first = true }
+
+[opener]
+# Folder opener
+folder = [
+  { run = 'hyprctl dispatch exec "[float; size 60% 60%; center 1] nemo" "$1"', orphan = true, desc = "nemo", for = "linux" },
+  { run = '''fish -c "nvim "$1""''', block = true, desc = "neovim", for = "linux" },
+  { run = 'kitty --detach nvim "$@"', orphan = true, desc = "neovim (detached)", for = "linux" },
+  { run = '''fish -c "lazygit -p "$1""''', block = true, desc = "lazygit", for = "linux" },
+  { run = 'codium  "$@"', orphan = true, desc = "vscodium", for = "linux" },
+  { run = 'kitty "$@"', orphan = true, desc = "kitty", for = "linux" },
+  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+]
+
+# Text editor opener
+text = [
+  { run = '$EDITOR "$@"', block = true, desc = "$EDITOR", for = "linux" },
+  { run = 'nvim "$@"', block = true, desc = "neovim", for = "linux" },
+  { run = 'kitty --detach nvim "$@"', block = true, desc = "neovim (detached)", for = "linux" },
+  { run = 'codium  "$@"', orphan = true, desc = "vscodium", for = "linux" },
+  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+]
+
+# Document opener
+document = [
+  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+  { run = 'zathura "$@"', orphan = true, desc = "zathura", for = "linux" },
+  { run = 'libreoffice "$@"', orphan = true, desc = "libreoffice", for = "linux" },
+  { run = 'evince "$@"', orphan = true, desc = "evince", for = "linux" },
+]
+
+# Image opener
+image = [
+  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+  { run = 'qimgv "$@"', orphan = true, desc = "qimgv", for = "linux" },
+  { run = 'krita "$@"', orphan = true, desc = "krita", for = "linux" },
+  { run = 'satty --filename "$@"', orphan = true, desc = "satty", for = "linux" },
+  { run = 'imv "$@"', orphan = true, desc = "imv", for = "linux" },
+]
+
+# Video opener
+video = [
+  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+  { run = 'mpv "$@"', orphan = true, desc = "mpv", for = "linux" },
+  { run = 'vlc "$@"', orphan = true, desc = "vlc", for = "linux" },
+]
+
+# Audio opener
+audio = [
+  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+  { run = 'mpv "$@"', orphan = true, desc = "mpv", for = "linux" },
+  { run = 'vlc "$@"', orphan = true, desc = "vlc", for = "linux" },
+]
+
+# Archive opener
+archive = [
+  { run = 'tar -tf "$1" | yazi', block = true, desc = "view archive contents", for = "unix" },
+  { run = 'bsdtar -tf "$1" | yazi', block = true, desc = "view archive contents", for = "macos" },
+  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+]
+
+# Fallback opener
+fallback = [
+  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+  { run = 'open "$@"', orphan = true, desc = "open", for = "macos" },
+  { run = 'cmd /c start "" "$@"', orphan = true, desc = "start", for = "windows" },
+]
+
+[open]
+rules = [
+  # Folders
+  { name = "*/", use = "folder" },
+
+  # Text files
+  { mime = "text/*", use = "text" },
+  { mime = "application/json", use = "text" },
+  { mime = "application/xml", use = "text" },
+  { mime = "application/x-shellscript", use = "text" },
+  { mime = "application/javascript", use = "text" },
+  { mime = "application/typescript", use = "text" },
+  { mime = "application/x-python", use = "text" },
+
+  # Images
+  { mime = "image/*", use = "image" },
+
+  # Videos
+  { mime = "video/*", use = "video" },
+  { mime = "application/octet-stream", use = "video" },  # May be videos that aren't identified
+
+  # Audio
+  { mime = "audio/*", use = "audio" },
+  { mime = "application/vnd.apple.mpegurl", use = "audio" },
+  { mime = "application/x-mpegurl", use = "audio" },
+
+  # Documents
+  { mime = "application/pdf", use = "document" },
+  { mime = "application/epub+zip", use = "document" },
+  { mime = "application/x-mobipocket-ebook", use = "document" },
+  { mime = "application/msword", use = "document" },
+  { mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document", use = "document" },
+  { mime = "application/vnd.ms-excel", use = "document" },
+  { mime = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", use = "document" },
+  { mime = "application/vnd.ms-powerpoint", use = "document" },
+  { mime = "application/vnd.openxmlformats-officedocument.presentationml.presentation", use = "document" },
+
+  # Archives
+  { mime = "application/zip", use = "archive" },
+  { mime = "application/gzip", use = "archive" },
+  { mime = "application/x-bzip", use = "archive" },
+  { mime = "application/x-bzip2", use = "archive" },
+  { mime = "application/x-tar", use = "archive" },
+  { mime = "application/x-7z-compressed", use = "archive" },
+  { mime = "application/x-rar", use = "archive" },
+  { mime = "application/x-xz", use = "archive" },
+  { mime = "application/x-lzma", use = "archive" },
+  { mime = "application/x-lz4", use = "archive" },
+  { mime = "application/x-zstd", use = "archive" },
+  { mime = "application/zip", use = "archive" },
+  { mime = "application/x-compressed-tar", use = "archive" },
+  { mime = "application/x-bzip-compressed-tar", use = "archive" },
+  { mime = "application/x-xz-compressed-tar", use = "archive" },
+  { mime = "application/x-lzma-compressed-tar", use = "archive" },
+  { mime = "application/x-lzip-compressed-tar", use = "archive" },
+  { mime = "application/x-compress", use = "archive" },
+
+  # Others
+  { name = "inode/x-empty", use = "text" },  # Empty files
+  { mime = "*", use = "fallback" },  # Fallback rule
+]
+
+[preview]
+# Preview settings
+max_width = 800              # Maximum width of preview
+max_height = 800             # Maximum height of preview
+cache_dir = ""               # Directory for cached previews (empty means auto-detect)
+image_filter = "triangle"    # Image scaling filter: "nearest", "bilinear", "lanczos3"
+image_quality = 90           # Image preview quality (for formats like JPEG)
+sixel_fraction = 15          # Sixel fraction value
+
+# Syntax highlighting
+syntax_set = "default"       # Syntax set to use
+syntax_theme = "base16-ocean-dark"  # Syntax highlight theme
+
+# Timeout in milliseconds for previewing
+timeout = 5000
+
+# Use external previewers (faster for complex files)
+external = [
+  { name = "*.md", run = "glow", for = "unix" },
+  { name = "*.json", run = "jq '.'", for = "unix" },
+  { run = "bat", for = "unix" },
+]
+
+[plugin]
+# Prepend fetchers (these run before the default fetchers)
+prepend_fetchers = [
+  { id = "git", name = "*", run = "git" },
+  { id = "git", name = "*/", run = "git" },
+  { id = "folder-size", name = "*/", run = "folder-size" },
+  { id = "custom-icons", name = "*", run = "icon" },
+]
+
+# Append fetchers (these run after the default fetchers)
+append_fetchers = [
+  { id = "archive", name = "*", run = "archive" },
+]
+
+# Prepend managers (these run before the default managers)
+prepend_managers = [
+  { id = "custom-hover", name = "*", run = "hover" },
+]
+
+# Append managers (these run after the default managers)
+append_managers = [
+  { id = "custom-status", name = "*", run = "status" },
+]
+
+[log]
+# Logging level: "off", "error", "warn", "info", "debug", "trace"
+level = "error"
+
+# Whether to log to a file
+to_file = false

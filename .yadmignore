@@ -30,3 +30,16 @@ oauth_creds.json
 */tmp/
 */temp/
 /tmp/
+.qwen/installation_id
+.qwen/oauth_creds.json
+
+
+# OpenCode directories (but allow opencode.json to be tracked)
+.config/opencode/*
+!.config/opencode/opencode.json
+.cache/opencode/
+.opencode/
+
+# Yazi backup files
+.config/yazi/*.backup
+.config/yazi/*-176*.toml
