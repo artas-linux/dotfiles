@@ -21,12 +21,7 @@
         "bunx",
         "mcp-remote",
         "http://localhost:8051/mcp",
-        "--allow-http",
-        "--timeout=30000",
-        "--transport",
-        "sse-first",
-        "--header",
-        "Accept: text/event-stream"
+        "--allow-http"
       ],
       "enabled": true
     },
