@@ -24,8 +24,6 @@
         "mcp-remote",
         "http://localhost:8051/mcp",
         "--allow-http",
-        "--transport",
-        "sse-only",
         "--header",
         "Accept: application/json, text/event-stream"
       ],
