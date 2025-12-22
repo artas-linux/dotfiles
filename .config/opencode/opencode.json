@@ -50,6 +50,14 @@
         "DEEPWIKI_MAX_RETRIES": "3",
         "DEEPWIKI_RETRY_DELAY": "250"
       }
+    },
+    "desktop-commander": {
+      "type": "local",
+      "command": ["bunx", "@wonderwhy-er/desktop-commander@latest"],
+      "enabled": true,
+      "environment": {
+        "MAX_MCP_OUTPUT_TOKENS": "20000"
+      }
     }
   }
 }
