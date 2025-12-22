@@ -23,8 +23,10 @@
         "http://localhost:8051/mcp",
         "--allow-http",
         "--timeout=30000",
-        "--headers",
-        "Accept:text/event-stream"
+        "--transport",
+        "sse-first",
+        "--header",
+        "Accept: text/event-stream"
       ],
       "enabled": true
     },
