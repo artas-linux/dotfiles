@@ -4,7 +4,8 @@
     "Sequential Thinking": {
       "type": "local",
       "command": [
-        "bunx",
+        "npx",
+        "-y",
         "@modelcontextprotocol/server-sequential-thinking"
       ],
       "enabled": true,
@@ -18,10 +19,13 @@
     "archon": {
       "type": "local",
       "command": [
-        "bunx",
+        "npx",
+        "-y",
         "mcp-remote",
         "http://localhost:8051/mcp",
-        "--allow-http"
+        "--allow-http",
+        "--header",
+        "Accept: text/event-stream"
       ],
       "enabled": true
     },
@@ -53,7 +57,11 @@
     },
     "desktop-commander": {
       "type": "local",
-      "command": ["npx", "-y", "@wonderwhy-er/desktop-commander@latest"],
+      "command": [
+        "npx",
+        "-y",
+        "@wonderwhy-er/desktop-commander@latest"
+      ],
       "enabled": true,
       "environment": {
         "MAX_MCP_OUTPUT_TOKENS": "20000"
