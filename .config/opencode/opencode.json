@@ -19,8 +19,15 @@
     "archon": {
       "type": "local",
       "command": [
-        "node",
-        "/home/archbtw/archon_mcp_bridge.js"
+        "npx",
+        "-y",
+        "mcp-remote",
+        "http://localhost:8051/mcp",
+        "--allow-http",
+        "--transport",
+        "sse-only",
+        "--header",
+        "Accept: application/json, text/event-stream"
       ],
       "enabled": true
     },
