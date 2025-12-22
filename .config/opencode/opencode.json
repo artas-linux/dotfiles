@@ -22,7 +22,9 @@
         "mcp-remote",
         "http://localhost:8051/mcp",
         "--allow-http",
-        "--timeout=10000"
+        "--timeout=30000",
+        "--headers",
+        "Accept:text/event-stream"
       ],
       "enabled": true
     },
