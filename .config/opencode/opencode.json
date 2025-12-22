@@ -27,7 +27,7 @@
         "--transport",
         "sse-only",
         "--header",
-        "Accept: text/event-stream"
+        "Accept: application/json, text/event-stream"
       ],
       "enabled": true
     },
