@@ -53,7 +53,7 @@
     },
     "desktop-commander": {
       "type": "local",
-      "command": ["bunx", "@wonderwhy-er/desktop-commander@latest"],
+      "command": ["npx", "-y", "@wonderwhy-er/desktop-commander@latest"],
       "enabled": true,
       "environment": {
         "MAX_MCP_OUTPUT_TOKENS": "20000"
